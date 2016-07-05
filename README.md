@@ -1,6 +1,6 @@
 # Website of the IEEE Student Branch Karlsruhe
 
-This repository contains the sources of our website. It is build using the static site generator [Nikola](https://getnikola.com/). And deployed to the branch gh-pages and available on https://ieee-ka.de
+This repository contains the sources of our website. It is build using the static site generator [Nikola](https://getnikola.com/). And deployed to the branch gh-pages and available on http://ieee-ka.de
 
 ### Build
 
