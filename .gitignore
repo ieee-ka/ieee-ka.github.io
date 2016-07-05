@@ -92,3 +92,6 @@ ENV/
 .doit.*
 /cache/
 /output/
+
+# Custom ignores
+state_data.json
