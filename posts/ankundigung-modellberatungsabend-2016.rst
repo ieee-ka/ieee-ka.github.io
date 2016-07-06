@@ -7,7 +7,7 @@
 .. description: 
 .. type: text
 
-Am **07.07.2016** findet der Modellberatungsabend der Fakultät Elektro- und Informationstechnik von **17:00 - 19:00 Uhr** im **Audimax** des KIT statt. Dort können sich Studierende der Fachrichtung ETIT über die angebotenen Studienmodelle informiern. 
+Am **07.07.2016** findet der Modellberatungsabend der Fakultät Elektro- und Informationstechnik von **17:00 - 19:00 Uhr** im **Audimax** des KIT statt. Dort können sich Studierende der Fachrichtung ETIT über die angebotenen Studienmodelle informieren. 
 
 Die IEEE Student Branch wird ebenfalls vor Ort sein, um uns kennenzulernen und zum lockeren Austausch. 
 
