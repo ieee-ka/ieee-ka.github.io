@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# vim: et:ts=4:sw=4
 
 from __future__ import unicode_literals
 import time
@@ -17,7 +18,7 @@ import time
 
 
 # Data about this site
-BLOG_AUTHOR = "Felix Wunsch"  # (translatable)
+BLOG_AUTHOR = "IEEE Student Branch Karlsruhe"  # (translatable)
 BLOG_TITLE = "IEEE Student Branch Karlsruhe"  # (translatable)
 # This is the main URL for your site. It will be used
 # in a prominent link. Don't forget the protocol (http/https)!
@@ -25,7 +26,7 @@ SITE_URL = "http://www.ieee-ka.de/"
 # This is the URL where Nikola's output will be deployed.
 # If not set, defaults to SITE_URL
 # BASE_URL = "http://www.ieee-ka.de/"
-BLOG_EMAIL = "felix.wunsch@kit.edu"
+BLOG_EMAIL = "info@ieee-ka.de"
 BLOG_DESCRIPTION = "In touch with the future of communications."  # (translatable)
 
 # Nikola is multilingual!
@@ -141,7 +142,7 @@ THEME = "bootstrap3"
 
 # Primary color of your theme. This will be used to customize your theme and
 # auto-generate related colors in POSTS_SECTION_COLORS. Must be a HEX value.
-THEME_COLOR = '#5670d4'
+THEME_COLOR = '#006699'
 
 # POSTS and PAGES contains (wildcard, destination, template) tuples.
 #
@@ -170,13 +171,16 @@ THEME_COLOR = '#5670d4'
 
 POSTS = (
     ("posts/*.rst", "posts", "post.tmpl"),
-    ("posts/*.txt", "posts", "post.tmpl"),
+    ("posts/*.md", "posts", "post.tmpl"),
     ("posts/*.html", "posts", "post.tmpl"),
 )
 PAGES = (
-    ("stories/*.rst", "stories", "story.tmpl"),
-    ("stories/*.txt", "stories", "story.tmpl"),
-    ("stories/*.html", "stories", "story.tmpl"),
+    ("events/*.rst", "events", "story.tmpl"),
+    ("events/*.md", "events", "story.tmpl"),
+    ("events/*.html", "events", "story.tmpl"),
+    ("pages/*.rst", "", "story.tmpl"),
+    ("pages/*.md", "", "story.tmpl"),
+    ("pages/*.html", "", "story.tmpl"),
 )
 
 
@@ -211,7 +215,7 @@ TIMEZONE = "Europe/Berlin"
 # 2 = using a string like “2 days ago”
 #
 # Your theme must support it, bootstrap and bootstrap3 already do.
-# DATE_FANCINESS = 0
+DATE_FANCINESS = 2
 
 # While Nikola can select a sensible locale for each language,
 # sometimes explicit control can come handy.
@@ -276,7 +280,7 @@ COMPILERS = {
 # Nikola supports logo display.  If you have one, you can put the URL here.
 # Final output is <img src="LOGO_URL" id="logo" alt="BLOG_TITLE">.
 # The URL may be relative to the site root.
-# LOGO_URL = ''
+LOGO_URL = '/images/logo.png'
 
 # If you want to hide the title of your website (for example, if your logo
 # already contains the text), set this to False.
