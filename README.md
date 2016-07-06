@@ -6,10 +6,10 @@ This repository contains the sources of our website. It is build using the stati
 
 To build we use [Conda](http://conda.pydata.org/) to create the build environment:
 ```sh
-$ git clone https://github.com/ieee-ka/site.git ieeekasite  # or the URL to your fork
-$ cd ieeekasite  # the repo base directory
+$ git clone https://github.com/ieee-ka/ieee-ka.github.io  # or the URL to your fork
+$ cd ieee-ka.github.io  # the repo base directory
 $ conda env create
-$ source activate ieeekasite
+$ source activate nikola
 $ nikola build
 ```
 With this setup the site can be edited, build and deployed using the ```nikola``` command
