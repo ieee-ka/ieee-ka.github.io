@@ -131,6 +131,11 @@ TRANSLATIONS_PATTERN = "{path}.{lang}.{ext}"
 
 NAVIGATION_LINKS = {
     DEFAULT_LANG: (
+        ("/about-us/", "Über uns"),
+        ((
+            ("/events/student-paper-contest/", "Student Paper Contest"),
+            ("/events/sigint-callenge/", "Signal Intelligence Callenge"),
+        ), 'Events'),
         ("/archive.html", "Archiv"),
         ("/categories/", "Tags"),
         ("/rss.xml", "RSS-Feed"),
