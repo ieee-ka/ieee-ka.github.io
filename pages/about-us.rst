@@ -20,7 +20,7 @@ Treffen
 
 Der Student Branch Karlsruhe trifft sich regelmäßig im Gasthaus zum kleinen Ketterer am Lidellplatz. 
 
-Die Termine werden rechtzeitig in unserem `Kalender <link://slug/calendar>`_ bekanntgegeben.
+Die Termine werden rechtzeitig in unserem :doc:`Kalender <calendar>` bekanntgegeben.
 
 
 Mitglied werden
