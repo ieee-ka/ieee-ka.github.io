@@ -1,7 +1,7 @@
 .. title: Signal Intelligence Challenge
 .. slug: sigint-callenge
 
-Die Signal Intelligence Challenge findet jährlich in Zusammenarbeit mit dem Institut für Nachrichtentechnik (CEL) und Instituten/Einrichtungen anderer Universitäten und Hochschulen statt und richtet sich an Enthusiasten der drahtlosen Datenübertragung, Verschlüsselungsverfahren, Nachrichtentechnik, Software Defined Radio…. sowie alle, die gerne Rätsel lösen!
+Die Signal Intelligence Challenge findet jährlich in Zusammenarbeit mit dem Institut für Nachrichtentechnik (CEL) und Instituten/Einrichtungen anderer Universitäten und Hochschulen statt und richtet sich an Enthusiasten der drahtlosen Datenübertragung, Verschlüsselungsverfahren, Nachrichtentechnik, Software Defined Radio… sowie alle, die gerne Rätsel lösen!
 
 
 Beschreibung
@@ -17,7 +17,7 @@ Zum Empfang notwendige Hardware (Software Defined Radio Dongles) kann an den Aus
 
 Organisatorisches
 -----------------
-Die genauen Termine werden hier bekannt gegeben. Wir behalten uns vor die Regeln vor Beginn jeder Challenge zu ändern.
+Die genauen Termine werden hier bekannt gegeben. Wir behalten uns vor, die Regeln vor Beginn jeder Challenge zu ändern.
 
 Infoveranstaltung
 `````````````````
@@ -28,12 +28,12 @@ Die Termine für die einzelnen Austragungsorte werden hier bekannt gegeben.
 
 Teilnahmebedingungen
 ````````````````````
-Teilnehmen können Teams von 2 bis maximal 4 Studenten. Teams, die sowohl Kompetenzen in der Kryptographie, als auch in der Nachrichtentechnik haben sind dabei am erfolgversprechendsten.
+Teilnehmen können Teams von 2 bis maximal 4 Studenten. Teams, die sowohl Kompetenzen in der Kryptographie, als auch in der Nachrichtentechnik mitbringen sind dabei am erfolgversprechendsten.
 
 
 Regeln (Version 2015)
 `````````````````````
-- Es gilt, insgesamt elf Challenges, in denen bis zu drei Flags versteckt sind. Das können ASCII Zeichen oder Bits sein.
+- Es gibt insgesamt elf Challenges, in denen bis zu drei Flags versteckt sind. Das können ASCII Zeichen oder Bits sein.
 - Beim Einreichen der Flags wird auf Groß-/Kleinschreibung geachtet. Falls dies auf Grund der Modulationsart nicht erkenntlich ist, einfach Großbuchstaben wählen.
 - Für jedes korrekt eingereichte Flag gibt es 10 Punkte.
 - Es gibt je Flag einen extra Punkt für das schnellste Team.

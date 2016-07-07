@@ -27,7 +27,7 @@ Mitglied werden
 ```````````````
 Falls Du Informatik oder Elektrotechnik und Informationstechnik an der Universität Karlsruhe studierst, kannst du der IEEE Student Branch beitreten. Dies schliesst eine Mitgliedschaft im IEEE, dem weltweit größten Fachverband für Ingenieure und Informatiker ein. Für Studenten in Deutschland kostet die Mitgliedschaft nur $27 pro Jahr. In diesem Preis inbegriffen ist ein Abonnement des monatlich erscheinenden Magazins Spectrum. Mehr Informationen zur Mitgliedschaft findest du direkt beim IEEE.
 
-Bei uns hast die Möglichkeit, mit engagierten Leuten zusammenzuarbeiten und auch höhere Semester kennenzulernen. Schreib‘ uns eine Email oder komm‘ doch einfach bei unserem nächsten Treffen vorbei.
+Bei uns hast die Möglichkeit, mit engagierten Leuten zusammenzuarbeiten und auch höhere Semester sowie Doktoranden kennenzulernen. Schreib‘ uns eine Email oder komm‘ doch einfach bei unserem nächsten Treffen vorbei.
 
 
 Kontaktdaten
