@@ -6,15 +6,27 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://www.ieee-ka.de/galleries/rss.xml</loc>
-  <lastmod>2016-07-05T11:35:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://www.ieee-ka.de/rss.xml</loc>
-  <lastmod>2016-07-05T11:39:00Z</lastmod>
+  <lastmod>2016-07-07T10:01:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/sitemap.xml</loc>
-  <lastmod>2016-07-05T11:40:00Z</lastmod>
+  <lastmod>2016-07-07T10:01:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.ieee-ka.de/tags/awb.xml</loc>
+  <lastmod>2016-07-07T09:55:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.ieee-ka.de/tags/mba.xml</loc>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.ieee-ka.de/tags/rsec.xml</loc>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.ieee-ka.de/tags/spc.xml</loc>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
  </sitemap>
 </sitemapindex>

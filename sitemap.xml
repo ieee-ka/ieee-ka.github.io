@@ -7,22 +7,78 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.ieee-ka.de/</loc>
-  <lastmod>2016-07-05T11:39:00Z</lastmod>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/2016/</loc>
+  <lastmod>2016-07-06T09:03:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/about-us/</loc>
+  <lastmod>2016-07-06T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/announcements/</loc>
+  <lastmod>2016-07-07T09:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/announcements/2016/awb-july/</loc>
+  <lastmod>2016-07-07T09:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/announcements/2016/mba/</loc>
+  <lastmod>2016-07-07T09:49:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/archive.html</loc>
-  <lastmod>2016-07-05T11:35:00Z</lastmod>
+  <lastmod>2016-07-07T09:56:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.ieee-ka.de/categories/</loc>
-  <lastmod>2016-07-05T11:35:00Z</lastmod>
+  <loc>http://www.ieee-ka.de/calendar/</loc>
+  <lastmod>2016-07-06T11:37:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.ieee-ka.de/galleries/</loc>
-  <lastmod>2016-07-05T11:35:00Z</lastmod>
+  <loc>http://www.ieee-ka.de/events/sigint-callenge/</loc>
+  <lastmod>2016-07-06T11:21:00Z</lastmod>
  </url>
  <url>
-  <loc>http://www.ieee-ka.de/listings/</loc>
-  <lastmod>2016-07-05T11:35:00Z</lastmod>
+  <loc>http://www.ieee-ka.de/events/student-paper-contest/</loc>
+  <lastmod>2016-07-06T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/impressum/</loc>
+  <lastmod>2016-07-06T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/reports/</loc>
+  <lastmod>2016-07-07T09:08:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/reports/2016/rs-challenge/</loc>
+  <lastmod>2016-07-07T09:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/reports/2016/spc/</loc>
+  <lastmod>2016-07-07T09:49:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/tags/</loc>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/tags/awb/</loc>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/tags/mba/</loc>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/tags/rsec/</loc>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/tags/spc/</loc>
+  <lastmod>2016-07-07T09:53:00Z</lastmod>
  </url>
 </urlset>
