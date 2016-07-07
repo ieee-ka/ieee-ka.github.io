@@ -1,8 +1,7 @@
 .. title: Ankündigung: Modellberatungsabend 2016
-.. slug: mba-ankundigung
+.. slug: mba
 .. date: 2016-07-06 18:36:15 UTC+02:00
 .. tags: MBA
-.. category: Announcements
 .. link: 
 .. description: 
 .. type: text

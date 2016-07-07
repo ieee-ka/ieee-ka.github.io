@@ -1,8 +1,7 @@
 .. title: Nächstes Treffen zum After-Work-Beer
-.. slug: nachstes-treffen-zum-after-work-beer
+.. slug: awb-july
 .. date: 2016-07-07 10:30:27 UTC+02:00
 .. tags: AWB
-.. category: Announcements
 .. link: 
 .. description: 
 .. type: text

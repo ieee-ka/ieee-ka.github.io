@@ -138,7 +138,7 @@ NAVIGATION_LINKS = {
             ("/events/sigint-callenge/", "Signal Intelligence Callenge"),
         ), 'Events'),
         ("/archive.html", "Archiv"),
-        ("/categories/", "Tags"),
+        ("/tags/", "Tags"),
         ("/rss.xml", "RSS-Feed"),
     ),
 }
@@ -176,14 +176,14 @@ THEME_COLOR = '#006699'
 #
 
 POSTS = (
-    ("posts/*.rst", "posts", "post.tmpl"),
-    ("posts/*.md", "posts", "post.tmpl"),
-    ("posts/*.html", "posts", "post.tmpl"),
+    ("posts/announcements/*.rst", "announcements", "post.tmpl"),
+    ("posts/announcements/*.md", "announcements", "post.tmpl"),
+    ("posts/announcements/*.html", "announcements", "post.tmpl"),
+    ("posts/reports/*.rst", "reports", "post.tmpl"),
+    ("posts/reports/*.md", "reports", "post.tmpl"),
+    ("posts/reports/*.html", "reports", "post.tmpl"),
 )
 PAGES = (
-    ("events/*.rst", "events", "story.tmpl"),
-    ("events/*.md", "events", "story.tmpl"),
-    ("events/*.html", "events", "story.tmpl"),
     ("pages/*.rst", "", "story.tmpl"),
     ("pages/*.md", "", "story.tmpl"),
     ("pages/*.html", "", "story.tmpl"),
@@ -331,12 +331,12 @@ POSTS_SECTIONS = True
 # Names are determined from the output directory name automatically or the
 # metadata label. Unless overwritten below, names will use title cased and
 # hyphens replaced by spaces.
-# POSTS_SECTION_NAME = {
-#    DEFAULT_LANG: {
-#        'posts': 'Blog Posts',
-#        'uncategorized': 'Odds and Ends',
-#    },
-# }
+POSTS_SECTION_NAME = {
+   DEFAULT_LANG: {
+       'announcements': 'Ankündigungen',
+       'reports': 'Berichte',
+   },
+}
 
 # Titles for per-section index pages. Can be either one string where "{name}"
 # is substituted or the POSTS_SECTION_NAME, or a dict of sections. Note
@@ -355,7 +355,7 @@ POSTS_SECTIONS = True
 # output / TRANSLATION[lang] / TAG_PATH / tag.html (list of posts for a tag)
 # output / TRANSLATION[lang] / TAG_PATH / tag.xml (RSS feed for a tag)
  # (translatable)
-# TAG_PATH = "categories"
+TAG_PATH = "tags"
 
 # See TAG_PATH's "list of tags" for the default setting value. Can be overwritten
 # here any path relative to the output directory.
@@ -377,12 +377,14 @@ POSTS_SECTIONS = True
 # }
 
 # Set special titles for tag pages. The default is "Posts about TAG".
-# TAG_PAGES_TITLES = {
-#    DEFAULT_LANG: {
-#        "blogging": "Meta-posts about blogging",
-#        "open source": "Posts about open source software"
-#    },
-# }
+TAG_PAGES_TITLES = {
+   DEFAULT_LANG: {
+       "AWB": "After-Work-Beer",
+       "MBA": "Modellberatungsabende",
+       "RSEC": "R&S Engingeering Competition",
+       "SPC": "Student Paper Contest",
+   },
+}
 
 # If you do not want to display a tag publicly, you can mark it as hidden.
 # The tag will not be displayed on the tag list page, the tag cloud and posts.

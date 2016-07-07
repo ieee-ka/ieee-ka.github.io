@@ -1,8 +1,7 @@
 .. title: Stefan Wunsch gewinnt den Region 8 Student Paper Contest 2016
-.. slug: spc-results
+.. slug: spc
 .. date: 2016-04-21 17:52:18 UTC+02:00
 .. tags: SPC
-.. category: Reports
 .. link: 
 .. description: 
 .. type: text

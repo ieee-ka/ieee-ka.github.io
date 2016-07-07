@@ -1,8 +1,7 @@
 .. title: Team des KIT gewinnt R&S Engingeering Competition 2016
-.. slug: rs-challenge-results
+.. slug: rs-challenge
 .. date: 2016-06-27 18:02:58 UTC+02:00
 .. tags: RSEC
-.. category: Reports
 .. link: 
 .. description: 
 .. type: text
