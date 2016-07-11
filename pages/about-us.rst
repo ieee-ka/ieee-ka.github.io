@@ -23,6 +23,11 @@ Der Student Branch Karlsruhe trifft sich regelmäßig zum After-Work-Beer, um si
 Die Termine werden rechtzeitig in unserem :doc:`Kalender <calendar>` bekanntgegeben.
 
 
+Mailinglist
+```````````
+Falls Du über Aktuelles per E-Mail informiert werden willst, so melde Dich bei unserem E-Mail-Verteiler ieee@lists.kit.edu über https://www.lists.kit.edu/sympa/info/ieee an.
+
+
 Mitglied werden
 ```````````````
 Falls Du Informatik oder Elektrotechnik und Informationstechnik an der Universität Karlsruhe studierst, kannst du der IEEE Student Branch beitreten. Dies schliesst eine Mitgliedschaft im IEEE, dem weltweit größten Fachverband für Ingenieure und Informatiker ein. Für Studenten in Deutschland kostet die Mitgliedschaft nur $27 pro Jahr. In diesem Preis inbegriffen ist ein Abonnement des monatlich erscheinenden Magazins Spectrum. Mehr Informationen zur Mitgliedschaft findest du direkt beim IEEE.
