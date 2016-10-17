@@ -1,37 +1,38 @@
-.. title: Signal Intelligence Challenge 2016
+.. title: Signal Intelligence Challenge
 .. slug: sigint-challenge
 
 Die Signal Intelligence Challenge findet jährlich in Zusammenarbeit mit dem Institut für Nachrichtentechnik (CEL) und Instituten/Einrichtungen anderer Universitäten und Hochschulen statt und richtet sich an Enthusiasten der drahtlosen Datenübertragung, Verschlüsselungsverfahren, Nachrichtentechnik, Software Defined Radio… sowie alle, die gerne Rätsel lösen!
 
-Wir freuen uns sehr, auch dieses Jahr das **Secure Mobile Networking Lab** (SEEMOO) der TU Darmstadt sowie die **Arbeitsgruppe Kryptographie des ITI** des KIT in der Runde der Veranstalter begrüßen zu dürfen!
-
-.. image:: /images/2016/posterisic16.png
-    :align: center
 
 Beschreibung
 ------------
-Dieses Jahr ist es an euch, eine international gesuchte Bande von Bankräubern dingfest zu machen! Zuverlässige Quellen haben uns die Information zugespielt, dass der nächste Coup am **23. November 2016** stattfinden soll - Die Zeit drängt! Wie wir erfahren haben, kommunizieren die Bankräuber verschlüsselt per Funk. Nun sind eure Fähigkeiten gefragt, sie bei ihren Planungen zu belauschen, ihre Verschlüsselungen zu knacken und die Information an die Behörden weiterzugeben. Die Jagd startet für Karlsruher Studenten am **27. Oktober um 17:30 Uhr** mit einem Briefing im Communications Engineering Lab in der Kreuzstraße 11, 76133 Karlsruhe (Darmstadt: TBD). Dort erfahrt ihr alles Nötige und könnt Fragen stellen sowie Mitglieder für eure Teams (je zwei bis vier Studenten) finden!
+Für den Zeitraum der Challenge werden an den Austragungsorten identische Sender betrieben, die verschiedene Nachrichten aussenden. Diese sind auf verschiedene Arten verschlüsselt und moduliert. Wie und bei welcher Frequenz die Daten versteckt sind, gilt es herauszufinden — mit Mitteln der Spektralanalyse, Kryptoanalyse, Signalverarbeitung, drahtlosen Datenübertragung, Software Defined Radio und sicher auch einer Portion Glück. Weitere Aufgaben beinhalten bspw. auch das Erzeugen von Signalen.
 
-Solltet ihr erfolgreich sein und zur Verhaftung der Bande beitragen, könnt ihr tolle Preise gewinnen: Als Hauptpreise vergeben wir ein **USRP B200 mini** sowie Tickets für den berühmten Kongress des Chaos-Computer-Clubs, den **33C3**.
+Ziel ist das auffinden sogenannter Flags, die an unseren Flag Server übermittelt werden. Die versteckten Nachrichten passen alle zum Motto der Challenge. Vielleicht ein Filmzitat, vielleicht ein Bild? Wer weiß… Auf dem Weg gefundene Flags können an den Flag Server übermittelt werden. Ist das Flag korrekt, gibt es Punkte. Je schwieriger das Quest, desto mehr Punkte.
 
-Es gilt also: **Catch them if you can!**
+Hardware
+````````
+Zum Empfang notwendige Hardware (Software Defined Radio Dongles) kann an den Austragungsorten ausgeliehen werden.
 
 
 Organisatorisches
 -----------------
-- Einführungsveranstaltung am 27.10.2016, 17:30 Uhr im CEL (Darmstadt: TBD)
-- Wettbewerbszeitraum: 28.10.2016 - 23.11.2016
-- Zum Empfang notwendige Hardware (Software Defined Radio Dongles) kann an den Austragungsorten ausgeliehen werden.
-- Teilnehmen können Teams von 2 bis maximal 4 Studenten. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
+Die genauen Termine werden hier bekannt gegeben. Wir behalten uns vor, die Regeln vor Beginn jeder Challenge zu ändern.
 
-Einreichung der Ergebnisse
---------------------------
-Die Information, die ihr den Signalen entnommen habt, könnt ihr ab dem **28.10.2016** auf unserem Server einreichen. Den Link werden wir an dieser Stelle bekanntgeben.
+Infoveranstaltung
+`````````````````
+Zu Beginn jeder Challenge gibt eine Infoveranstaltung. Dies ist der ideale Ort, um Teampartner zu finden. Außerdem gibt es eine Vorführung für Einsteiger zum Empfang mit einem Software Defined Radio und es werden Fragen zum Wettbewerb beantwortet.
 
-Regeln
-------
-Dies ist die Version der letztjährigen Challenge und nur zur Orientierung gedacht. Wir behalten uns vor, die Regeln vor Beginn des Wettbewerbs zu ändern. Die endgültige Version werden wir vor Beginn hier einstellen.
+Die Termine für die einzelnen Austragungsorte werden hier bekannt gegeben. 
 
+
+Teilnahmebedingungen
+````````````````````
+Teilnehmen können Teams von 2 bis maximal 4 Studenten. Teams, die sowohl Kompetenzen in der Kryptographie, als auch in der Nachrichtentechnik mitbringen sind dabei am erfolgversprechendsten.
+
+
+Regeln (Version 2015)
+`````````````````````
 - Es gibt insgesamt elf Challenges, in denen bis zu drei Flags versteckt sind. Das können ASCII Zeichen oder Bits sein.
 - Beim Einreichen der Flags wird auf Groß-/Kleinschreibung geachtet. Falls dies auf Grund der Modulationsart nicht erkenntlich ist, einfach Großbuchstaben wählen.
 - Für jedes korrekt eingereichte Flag gibt es 10 Punkte.
