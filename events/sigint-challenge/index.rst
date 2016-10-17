@@ -1,5 +1,5 @@
 .. title: Signal Intelligence Challenge
-.. slug: sigint-callenge
+.. slug: sigint-challenge
 
 Die Signal Intelligence Challenge findet jährlich in Zusammenarbeit mit dem Institut für Nachrichtentechnik (CEL) und Instituten/Einrichtungen anderer Universitäten und Hochschulen statt und richtet sich an Enthusiasten der drahtlosen Datenübertragung, Verschlüsselungsverfahren, Nachrichtentechnik, Software Defined Radio… sowie alle, die gerne Rätsel lösen!
 
