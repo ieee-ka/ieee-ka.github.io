@@ -1,5 +1,6 @@
 .. title: Signal Intelligence Challenge 2016
 .. slug: sigint-challenge
+.. tags: isic
 
 Die Signal Intelligence Challenge findet jährlich in Zusammenarbeit mit dem Institut für Nachrichtentechnik (CEL) und Instituten/Einrichtungen anderer Universitäten und Hochschulen statt und richtet sich an Enthusiasten der drahtlosen Datenübertragung, Verschlüsselungsverfahren, Nachrichtentechnik, Software Defined Radio… sowie alle, die gerne Rätsel lösen!
 
@@ -10,7 +11,7 @@ Wir freuen uns sehr, auch dieses Jahr das **Secure Mobile Networking Lab** (SEEM
 
 Beschreibung
 ------------
-Dieses Jahr ist es an euch, eine international gesuchte Bande von Bankräubern dingfest zu machen! Zuverlässige Quellen haben uns die Information zugespielt, dass der nächste Coup am **23. November 2016** stattfinden soll - Die Zeit drängt! Wie wir erfahren haben, kommunizieren die Bankräuber verschlüsselt per Funk. Nun sind eure Fähigkeiten gefragt, sie bei ihren Planungen zu belauschen, ihre Verschlüsselungen zu knacken und die Information an die Behörden weiterzugeben. Die Jagd startet für Karlsruher Studenten am **27. Oktober um 17:30 Uhr** mit einem Briefing im Communications Engineering Lab in der Kreuzstraße 11, 76133 Karlsruhe (Darmstadt: TBD). Dort erfahrt ihr alles Nötige und könnt Fragen stellen sowie Mitglieder für eure Teams (je zwei bis vier Studenten) finden!
+Dieses Jahr ist es an euch, eine international gesuchte Bande von Bankräubern dingfest zu machen! Zuverlässige Quellen haben uns die Information zugespielt, dass der nächste Coup am **23. November 2016** stattfinden soll - Die Zeit drängt! Wie wir erfahren haben, kommunizieren die Bankräuber verschlüsselt per Funk. Nun sind eure Fähigkeiten gefragt, sie bei ihren Planungen zu belauschen, ihre Verschlüsselungen zu knacken und die Information an die Behörden weiterzugeben. Die Jagd startet für Karlsruher Studenten am **27. Oktober um 17:30 Uhr** mit einem Briefing im Communications Engineering Lab in der Kreuzstraße 11, 76133 Karlsruhe (Darmstadt: 25.10.2016, 17:45 Uhr in S4|14, Raum 3.1.01). Dort erfahrt ihr alles Nötige und könnt Fragen stellen sowie Mitglieder für eure Teams (je zwei bis vier Studenten) finden!
 
 Solltet ihr erfolgreich sein und zur Verhaftung der Bande beitragen, könnt ihr tolle Preise gewinnen: Als Hauptpreise vergeben wir ein **USRP B200 mini** sowie Tickets für den berühmten Kongress des Chaos-Computer-Clubs, den **33C3**.
 
@@ -19,8 +20,9 @@ Es gilt also: **Catch them if you can!**
 
 Organisatorisches
 -----------------
-- Einführungsveranstaltung am 27.10.2016, 17:30 Uhr im CEL (Darmstadt: TBD)
+- Einführungsveranstaltung am 27.10.2016, 17:30 Uhr im CEL (Darmstadt: 25.10.2016, 17:45 Uhr in S4|14, Raum 3.1.01)
 - Wettbewerbszeitraum: 28.10.2016 - 23.11.2016
+- Siegerehrung: 23.11.2016 im CEL (Darmstadt: TBD)
 - Zum Empfang notwendige Hardware (Software Defined Radio Dongles) kann an den Austragungsorten ausgeliehen werden.
 - Teilnehmen können Teams von 2 bis maximal 4 Studenten. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
 
