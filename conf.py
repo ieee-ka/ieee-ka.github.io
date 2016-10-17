@@ -135,7 +135,7 @@ NAVIGATION_LINKS = {
         ((
             ("/calendar/", "Kalender"),
             ("/events/student-paper-contest/", "Student Paper Contest"),
-            ("/events/sigint-callenge/", "Signal Intelligence Callenge"),
+            ("/events/sigint-challenge/", "Signal Intelligence Callenge"),
         ), 'Events'),
         ("/archive.html", "Archiv"),
         ("/tags/", "Tags"),
