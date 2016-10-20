@@ -20,7 +20,8 @@ Es gilt also: **Catch them if you can!**
 
 Organisatorisches
 -----------------
-- Einführungsveranstaltung am 27.10.2016, 17:30 Uhr im CEL (Darmstadt: 25.10.2016, 17:45 Uhr in S4|14, Raum 3.1.01)
+- **Einführungsveranstaltung Karlsruhe: 27.10.2016, 17:30 Uhr im CEL** 
+- **Einführungsveranstaltung Darmstadt: 25.10.2016, 17:10 Uhr in S202/C205** 
 - Wettbewerbszeitraum: 28.10.2016 - 23.11.2016
 - Siegerehrung: 23.11.2016 im CEL (Darmstadt: TBD)
 - Zum Empfang notwendige Hardware (Software Defined Radio Dongles) kann an den Austragungsorten ausgeliehen werden.

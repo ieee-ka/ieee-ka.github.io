@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/"><channel><title>IEEE Student Branch Karlsruhe</title><link>http://www.ieee-ka.de/</link><description>In touch with the future of communications.</description><atom:link href="http://www.ieee-ka.de/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>de</language><lastBuildDate>Mon, 17 Oct 2016 11:09:56 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Upcoming: Signal Intelligence Challenge 2016</title><link>http://www.ieee-ka.de/announcements/2016/upcoming-signal-intelligence-challenge-2016/?utm_source=/rss.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Felix</dc:creator><description>&lt;div&gt;&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2016/posterisic16.png"&gt;&lt;img alt="/images/2016/posterisic16.thumbnail.png" class="align-right" src="http://www.ieee-ka.de/images/2016/posterisic16.thumbnail.png" style="width: 380px;"&gt;&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="assets/xml/rss.xsl" media="all"?><rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0"><channel><title>IEEE Student Branch Karlsruhe</title><link>http://www.ieee-ka.de/</link><description>In touch with the future of communications.</description><atom:link href="http://www.ieee-ka.de/rss.xml" type="application/rss+xml" rel="self"></atom:link><language>de</language><lastBuildDate>Thu, 20 Oct 2016 19:54:59 GMT</lastBuildDate><generator>https://getnikola.com/</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Upcoming: Signal Intelligence Challenge 2016</title><link>http://www.ieee-ka.de/announcements/2016/upcoming-signal-intelligence-challenge-2016/?utm_source=/rss.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Felix</dc:creator><description>&lt;div&gt;&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2016/posterisic16.png"&gt;&lt;img alt="/images/2016/posterisic16.thumbnail.png" class="align-right" src="http://www.ieee-ka.de/images/2016/posterisic16.thumbnail.png" style="width: 380px;"&gt;&lt;/a&gt;
 &lt;p&gt;Bald beginnt die dritte &lt;strong&gt;IEEE Signal Intelligence Challenge&lt;/strong&gt;! Findet euch in Gruppen zusammen, um als Cybercrime Investigation Teams eine gefährliche Bande an Bankräubern dingfest zu machen!&lt;/p&gt;
 &lt;p&gt;Die wichtigsten Daten:&lt;/p&gt;
 &lt;ul class="simple"&gt;
 &lt;li&gt;Kick-Off Karlsruhe: 27.10.2016, 17:30 Uhr im CEL (Kreuzstraße 11)&lt;/li&gt;
-&lt;li&gt;Kick-Off Darmstadt: 25.10.2016, 17:45 Uhr in S4|14, Raum 3.1.01&lt;/li&gt;
+&lt;li&gt;Kick-Off Darmstadt: 25.10.2016, 17:10 Uhr in S202/C205&lt;/li&gt;
 &lt;li&gt;Wettbewerbszeitraum: 28.10.2016 - 23.11.2016&lt;/li&gt;
 &lt;li&gt;Siegerehrung Karlsruhe: 23.11.2016 im CEL&lt;/li&gt;
-&lt;li&gt;Siegerehrung Darmstadt: TBD&lt;/li&gt;
+&lt;li&gt;Siegerehrung Darmstadt: t.b.d.&lt;/li&gt;
 &lt;li&gt;Preise: USRP B210 mini, Tickets für den 33C3 u.v.m.&lt;/li&gt;
 &lt;li&gt;Teamgröße: zwei bis vier Studenten&lt;/li&gt;
 &lt;/ul&gt;
