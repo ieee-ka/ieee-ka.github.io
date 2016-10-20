@@ -17,10 +17,10 @@ Bald beginnt die dritte **IEEE Signal Intelligence Challenge**! Findet euch in G
 Die wichtigsten Daten:
 
 - Kick-Off Karlsruhe: 27.10.2016, 17:30 Uhr im CEL (Kreuzstraße 11)
-- Kick-Off Darmstadt: 25.10.2016, 17:45 Uhr in S4|14, Raum 3.1.01
+- Kick-Off Darmstadt: 25.10.2016, 17:10 Uhr in S202/C205
 - Wettbewerbszeitraum: 28.10.2016 - 23.11.2016
 - Siegerehrung Karlsruhe: 23.11.2016 im CEL
-- Siegerehrung Darmstadt: TBD
+- Siegerehrung Darmstadt: t.b.d.
 - Preise: USRP B210 mini, Tickets für den 33C3 u.v.m.
 - Teamgröße: zwei bis vier Studenten
 
