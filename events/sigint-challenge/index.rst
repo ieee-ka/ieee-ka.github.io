@@ -23,7 +23,7 @@ Organisatorisches
 - **Einführungsveranstaltung Karlsruhe: 27.10.2016, 17:30 Uhr im CEL** 
 - **Einführungsveranstaltung Darmstadt: 25.10.2016, 17:10 Uhr in S202/C205** 
 - Wettbewerbszeitraum: 28.10.2016 - 23.11.2016
-- Siegerehrung: 23.11.2016 im CEL (Darmstadt: TBD)
+- Siegerehrung: 24.11.2016 im CEL (Darmstadt: TBD, vorraussichtlich gemeinsam in Karlsruhe)
 - Zum Empfang notwendige Hardware (Software Defined Radio Dongles) kann an den Austragungsorten ausgeliehen werden.
 - Teilnehmen können Teams von 2 bis maximal 4 Studenten. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
 
@@ -31,16 +31,16 @@ Einreichung der Ergebnisse
 --------------------------
 Die Information, die ihr den Signalen entnommen habt, könnt ihr ab dem **28.10.2016** auf unserem Server einreichen. Den Link werden wir an dieser Stelle bekanntgeben.
 
-Regeln
-------
-Dies ist die Version der letztjährigen Challenge und nur zur Orientierung gedacht. Wir behalten uns vor, die Regeln vor Beginn des Wettbewerbs zu ändern. Die endgültige Version werden wir vor Beginn hier einstellen.
+Regeln 2016
+-----------
+**Update 27.10.2016: Neue Regeln 2016**
 
-- Es gibt insgesamt elf Challenges, in denen bis zu drei Flags versteckt sind. Das können ASCII Zeichen oder Bits sein.
+- Es gibt insgesamt 7 Challenges, in denen bis zu drei Flags versteckt sind. Das können ASCII Zeichen oder Bits sein.
 - Beim Einreichen der Flags wird auf Groß-/Kleinschreibung geachtet. Falls dies auf Grund der Modulationsart nicht erkenntlich ist, einfach Großbuchstaben wählen.
 - Für jedes korrekt eingereichte Flag gibt es 10 Punkte.
-- Es gibt je Flag einen extra Punkt für das schnellste Team.
+- Es gibt je Flag 3/2/1 extra Punkte für die drei schnellsten Teams.
 - Bei einer Challenge müssen Samples eines Signals erzeugt werden. Der Link hierzu wird bei Anmeldung mitgeteilt. Auch dafür gibt es Punkte.
-- Es gewinnt das Team, das bis zum 4.6. die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
+- Es gewinnt das Team, das bis zum 23.11.2016 die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
 - Potenzielle Flags können auf dem Flag Server eingereicht werden, worauf man ein Feedback erhält. Das Einreichen falscher Flags führt nicht zu Punktabzug, wobei die Anzahl der Einreichungen pro Zeit limitiert ist, um brute-force Angriffe abzuwehren.
 - Die Juroren können im Laufe des Wettbewerbs Tipps geben, um die Signale zu finden. Diese Informationen reduzieren die Punktzahl des entsprechenden Quests und die Gesamtanzahl der möglichen Punkte wird reduziert.
 
@@ -55,4 +55,3 @@ Links
 - MIT open course ware (eine komplette Vorlesung zu digital communications): http://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-02-introduction-to-eecs-ii-digital-communication-systems-fall-2012/readings/
 - Grundlagen der Spektralanalyse: http://cp.literature.agilent.com/litweb/pdf/5965-7920E.pdf
 - Grundlagen der Signal Vektor Analyse: http://cp.literature.agilent.com/litweb/pdf/5990-7451EN.pdf
-
