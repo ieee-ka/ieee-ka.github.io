@@ -13,7 +13,7 @@ Beschreibung
 ------------
 Dieses Jahr ist es an euch, eine international gesuchte Bande von Bankräubern dingfest zu machen! Zuverlässige Quellen haben uns die Information zugespielt, dass der nächste Coup am **23. November 2016** stattfinden soll - Die Zeit drängt! Wie wir erfahren haben, kommunizieren die Bankräuber verschlüsselt per Funk. Nun sind eure Fähigkeiten gefragt, sie bei ihren Planungen zu belauschen, ihre Verschlüsselungen zu knacken und die Information an die Behörden weiterzugeben. Die Jagd startet für Karlsruher Studenten am **27. Oktober um 17:30 Uhr** mit einem Briefing im Communications Engineering Lab in der Kreuzstraße 11, 76133 Karlsruhe (Darmstadt: 25.10.2016, 17:45 Uhr in S4|14, Raum 3.1.01). Dort erfahrt ihr alles Nötige und könnt Fragen stellen sowie Mitglieder für eure Teams (je zwei bis vier Studenten) finden!
 
-Solltet ihr erfolgreich sein und zur Verhaftung der Bande beitragen, könnt ihr tolle Preise gewinnen: Als Hauptpreise vergeben wir ein **USRP B200 mini** sowie Tickets für den berühmten Kongress des Chaos-Computer-Clubs, den **33C3**.
+Solltet ihr erfolgreich sein und zur Verhaftung der Bande beitragen, könnt ihr tolle Preise gewinnen: Als Hauptpreise vergeben wir ein **USRP B200 mini** sowie Tickets für einen deutschen Hacker Kongress.
 
 Es gilt also: **Catch them if you can!**
 
