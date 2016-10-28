@@ -29,7 +29,11 @@ Organisatorisches
 
 Einreichung der Ergebnisse
 --------------------------
-Die Information, die ihr den Signalen entnommen habt, könnt ihr ab dem **28.10.2016** auf unserem Server einreichen. Den Link werden wir an dieser Stelle bekanntgeben.
+**Update 28.10.2016: Flag Server online!**
+
+Die Information, die ihr den Signalen entnommen habt, könnt ihr ab dem **28.10.2016** auf unserem **Flag-Server** einreichen:
+
+https://isic.seemoo.tu-darmstadt.de/
 
 Regeln 2016
 -----------
