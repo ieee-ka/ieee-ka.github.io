@@ -4,7 +4,7 @@
 
 Die Signal Intelligence Challenge findet jährlich in Zusammenarbeit mit dem Institut für Nachrichtentechnik (CEL) und Instituten/Einrichtungen anderer Universitäten und Hochschulen statt und richtet sich an Enthusiasten der drahtlosen Datenübertragung, Verschlüsselungsverfahren, Nachrichtentechnik, Software Defined Radio… sowie alle, die gerne Rätsel lösen!
 
-Wir freuen uns sehr, auch dieses Jahr das **Secure Mobile Networking Lab** (SEEMOO) der TU Darmstadt sowie die **Arbeitsgruppe Kryptographie des ITI** des KIT in der Runde der Veranstalter begrüßen zu dürfen!
+Wir freuen uns sehr, auch dieses Jahr die **Arbeitsgruppe Kryptographie des ITI** des KIT in der Runde der Veranstalter begrüßen zu dürfen!
 
 .. image:: /images/2016/posterisic16.png
     :align: center
@@ -23,7 +23,7 @@ Organisatorisches
 - **Einführungsveranstaltung Karlsruhe: 27.10.2016, 17:30 Uhr im CEL** 
 - **Einführungsveranstaltung Darmstadt: 25.10.2016, 17:10 Uhr in S202/C205** 
 - Wettbewerbszeitraum: 28.10.2016 - 23.11.2016
-- Siegerehrung: 24.11.2016 im CEL (Darmstadt: TBD, vorraussichtlich gemeinsam in Karlsruhe)
+- Siegerehrung: 24.11.2016 im CEL (Darmstadt: TBD, voraussichtlich gemeinsam in Karlsruhe)
 - Zum Empfang notwendige Hardware (Software Defined Radio Dongles) kann an den Austragungsorten ausgeliehen werden.
 - Teilnehmen können Teams von 2 bis maximal 4 Studenten. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
 

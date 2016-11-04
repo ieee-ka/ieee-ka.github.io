@@ -8,4 +8,4 @@
 .. type: text
 .. author: Johannes
 
-Hiermit weisen wir (IEEE Student Branch Karlsruhe) ausdrücklich darauf hin, dass der Chaos Computer Club (CCC) nicht Sponsor unserer Veranstaltung **Signal Intelligence Challenge 2016** ist. Die Sponsoren sind: **Ettus Research**, **Secure Mobile Networking Lab**, **Rohde & Schwarz** . Wir bedanken uns recht herzlich für deren Unterstützung!
+Hiermit weisen wir (IEEE Student Branch Karlsruhe) ausdrücklich darauf hin, dass der Chaos Computer Club (CCC) nicht Sponsor unserer Veranstaltung **Signal Intelligence Challenge 2016** ist. Die Sponsoren sind: **Ettus Research** und **Rohde & Schwarz** . Wir bedanken uns recht herzlich für deren Unterstützung!
