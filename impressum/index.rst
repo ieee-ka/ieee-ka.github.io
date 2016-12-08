@@ -12,11 +12,11 @@ Vertreten durch:
 	Johannes Fink
 
 Kontakt:
-	| Telefon: +49 721-608-43791
+	| Telefon: +49 721-608-46071
 	| E-Mail: info@ieee-ka.de
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-	| Johannes Fink 
+	| Felix Wunsch
 	| Institut für Nachrichtentechnik (CEL) 
 	| Karlsruher Institut für Technologie
 	| 76128 Karlsruhe 
