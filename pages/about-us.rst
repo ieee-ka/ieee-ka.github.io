@@ -9,8 +9,8 @@ Personen
 --------
 
 :Counselor: Prof. Juergen Becker
-:Chairman: Johannes Fink
-:Vice Chair: Felix Wunsch
+:Chairman: Felix Wunsch
+:Ex-chairman: Johannes Fink
 :Treasurer: Ankit Kaushik
 :Secretary: Sebastian Koslowski
 
@@ -53,7 +53,7 @@ Besucher / Paketdienst:
 	| 76133 Karlsruhe
 
 Telefon, Email:
-	| Tel (international): +49 / 721 / 608-43791
+	| Tel (international): +49 / 721 / 608-46276
 	| Fax (international): +49 / 721 / 608-46071
 	| WWW: http://www.ieee-ka.de/
 	| E-Mail: info@ieee-ka.de
