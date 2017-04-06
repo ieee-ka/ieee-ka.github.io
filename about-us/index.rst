@@ -11,7 +11,7 @@ Personen
 :Counselor: Prof. Juergen Becker
 :Chairman: Felix Wunsch
 :Ex-chairman: Johannes Fink
-:Treasurer: Ankit Kaushik
+:Treasurer: Sebastian Müller
 :Secretary: Sebastian Koslowski
 
 
