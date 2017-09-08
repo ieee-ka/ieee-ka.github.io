@@ -1,52 +1,35 @@
-.. title: Signal Intelligence Challenge 2016
+.. title: Signal Intelligence Challenge 2017
 .. slug: sigint-challenge
 .. tags: isic
 
-Die Signal Intelligence Challenge findet jährlich in Zusammenarbeit mit dem Institut für Nachrichtentechnik (CEL) und Instituten/Einrichtungen anderer Universitäten und Hochschulen statt und richtet sich an Enthusiasten der drahtlosen Datenübertragung, Verschlüsselungsverfahren, Nachrichtentechnik, Software Defined Radio… sowie alle, die gerne Rätsel lösen!
-
-Wir freuen uns sehr, auch dieses Jahr die **Arbeitsgruppe Kryptographie des ITI** des KIT in der Runde der Veranstalter begrüßen zu dürfen!
-
-.. image:: /images/2016/posterisic16.png
-    :align: center
-
-Beschreibung
+Die Story
 ------------
-Dieses Jahr ist es an euch, eine international gesuchte Bande von Bankräubern dingfest zu machen! Zuverlässige Quellen haben uns die Information zugespielt, dass der nächste Coup am **23. November 2016** stattfinden soll - Die Zeit drängt! Wie wir erfahren haben, kommunizieren die Bankräuber verschlüsselt per Funk. Nun sind eure Fähigkeiten gefragt, sie bei ihren Planungen zu belauschen, ihre Verschlüsselungen zu knacken und die Information an die Behörden weiterzugeben. Die Jagd startet für Karlsruher Studenten am **27. Oktober um 17:30 Uhr** mit einem Briefing im Communications Engineering Lab in der Kreuzstraße 11, 76133 Karlsruhe (Darmstadt: 25.10.2016, 17:45 Uhr in S4|14, Raum 3.1.01). Dort erfahrt ihr alles Nötige und könnt Fragen stellen sowie Mitglieder für eure Teams (je zwei bis vier Studenten) finden!
-
-Solltet ihr erfolgreich sein und zur Verhaftung der Bande beitragen, könnt ihr tolle Preise gewinnen: Als Hauptpreise vergeben wir ein **USRP B200 mini** sowie Tickets für einen deutschen Hacker Kongress.
-
-Es gilt also: **Catch them if you can!**
+"In einer fernen, unserer jedoch nicht ganz unähnlichen Spektraldimension leben die beiden Herrscher Fourier und Laplace. Zwischen ihnen tobt seit Äonen ein niemals endender Streit um Konvergenzgebiete. In seinem neuesten Versuch, die Oberhand in diesem Kampf zu erlangen, hat Laplace nun seinen besten Agenten ins feindliche Gebiet jenseits der imaginären Achse entsandt. Der Agent - Codename P0L - ist darauf spezialisiert, Systeme zu destabilisieren und Informationen über verschlüsselte, hochfrequente elektromagnetische Schwingungen zu exfiltrieren. Er soll als Leibfrisör Fouriers dessen stattliche Lockenpracht täglich neu in Schwingung versetzen und gleichzeitig Informationen über die nächsten Schritte des Gegners sammeln. Leider ist besagter Agent durch die Summe seiner Erfolge in der Vergangenheit jedoch mittlerweile unendlich eingebildet, weshalb er etwas träge geworden ist und seine Vorbereitung für diesen Einsatz vernachlässigt hat. Die mangelnde Bandbreite an Frisörfähigkeiten hat deshalb in kürzester Zeit zur Enttarnung P0Ls geführt. Entgegen der üblichen Praxis, P0L durch Agent 0 eliminieren zu lassen, hat sich Fourier jedoch dazu entschieden, den feindlichen Agenten vollständig zu integrieren und gezielt zur Desinformation des Gegners zu nutzen. Um die hochkomplizierten Nachrichten P0Ls zu überwachen und zu entschlüsseln, soll nun eine neue Geheimdienstabteilung gegründet werden, die dringend nach Experten in den Bereichen Kryptographie und Nachrichtentechnik sucht..."
 
 
 Organisatorisches
 -----------------
-- **Einführungsveranstaltung Karlsruhe: 27.10.2016, 17:30 Uhr im CEL** 
-- **Einführungsveranstaltung Darmstadt: 25.10.2016, 17:10 Uhr in S202/C205** 
-- Wettbewerbszeitraum: 28.10.2016 - 23.11.2016
-- Siegerehrung: 24.11.2016 im CEL (Darmstadt: TBD, voraussichtlich gemeinsam in Karlsruhe)
-- Zum Empfang notwendige Hardware (Software Defined Radio Dongles) kann an den Austragungsorten ausgeliehen werden.
+- Wettbewerbszeitraum: 26.10.2017 - 23.11.2017
 - Teilnehmen können Teams von 2 bis maximal 4 Studenten. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
+- Folgt @ieee_ka auf Twitter, um keine Neuigkeiten zu verpassen!
+
 
 Einreichung der Ergebnisse
 --------------------------
-**Update 28.10.2016: Flag Server online!**
+Dieses Jahr könnt ihr eure Ergebnisse per Twitter Direktnachricht einreichen! @realHeinrHertz ist wartet gespannt auf eure Nachrichten!
 
-Die Information, die ihr den Signalen entnommen habt, könnt ihr ab dem **28.10.2016** auf unserem **Flag-Server** einreichen:
 
-https://isic.seemoo.tu-darmstadt.de/
-
-Regeln 2016
+Regeln 2017
 -----------
-**Update 27.10.2016: Neue Regeln 2016**
+Die Regeln sind bisher im wesentlichen die des Vorjahres, eventuell ergeben sich bis zum Beginn des Wettbewerbs noch Änderungen.
 
-- Es gibt insgesamt 7 Challenges, in denen bis zu drei Flags versteckt sind. Das können ASCII Zeichen oder Bits sein.
-- Beim Einreichen der Flags wird auf Groß-/Kleinschreibung geachtet. Falls dies auf Grund der Modulationsart nicht erkenntlich ist, einfach Großbuchstaben wählen.
-- Für jedes korrekt eingereichte Flag gibt es 10 Punkte.
-- Es gibt je Flag 3/2/1 extra Punkte für die drei schnellsten Teams.
-- Bei einer Challenge müssen Samples eines Signals erzeugt werden. Der Link hierzu wird bei Anmeldung mitgeteilt. Auch dafür gibt es Punkte.
-- Es gewinnt das Team, das bis zum 23.11.2016 die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
-- Potenzielle Flags können auf dem Flag Server eingereicht werden, worauf man ein Feedback erhält. Das Einreichen falscher Flags führt nicht zu Punktabzug, wobei die Anzahl der Einreichungen pro Zeit limitiert ist, um brute-force Angriffe abzuwehren.
-- Die Juroren können im Laufe des Wettbewerbs Tipps geben, um die Signale zu finden. Diese Informationen reduzieren die Punktzahl des entsprechenden Quests und die Gesamtanzahl der möglichen Punkte wird reduziert.
+- Die Signalrätsel bestehen häufig aus mehreren Stufen, sodass sich genaues Hinsehen lohnt, um nichts zu verpassen!
+- Es gibt keinen Abzug für das Einreichen falscher Informationen, jedoch führen offensichtliche Brute-Force-Angriffe zum Ausschluss vom Wettbewerb!
+- Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung geachtet. 
+- Für jedes korrekt eingereichte Geheimnis gibt es 100 Punkte.
+- Die schnellsten Teams bekommen einen Bonus.
+- Es gewinnt das Team, das am 22.11.2017 23:59:59 Uhr die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
+- Die Juroren können im Laufe des Wettbewerbs Tipps geben, um die Signale zu finden. Diese Informationen reduzieren unter Umständen die Punktzahl des entsprechenden Rätsels.
 
 
 Links
