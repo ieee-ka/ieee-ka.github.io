@@ -31,6 +31,17 @@ Die Regeln sind bisher im wesentlichen die des Vorjahres, eventuell ergeben sich
 - Es gewinnt das Team, das am 22.11.2017 23:59:59 Uhr die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
 - Die Juroren können im Laufe des Wettbewerbs Tipps geben, um die Signale zu finden. Diese Informationen reduzieren unter Umständen die Punktzahl des entsprechenden Rätsels.
 
+Sponsoren und Preise
+--------------------
+Wir freuen uns, dass wir auch dieses Jahr wieder großzügige Sponsoren gewinnen konnten und dementsprechend tolle Preise vergeben können. Mit dabei sind:
+
+- Procitec: HackRF SDRs
+- Ettus Research (National Instruments): USRP B200mini
+- Rohde & Schwarz: Literatur zum Thema Spektralschätzung, Merchandise
+
+Wir möchten uns ganz herzlich bei allen Sponsoren bedanken, die uns unterstützen und uns ermöglichen,
+den Wettbewerb in dieser Form ausrichten zu können!
+
 
 Links
 -----
