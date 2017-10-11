@@ -15,7 +15,7 @@ großzügige Unterstützung geht an:
 
 .. thumbnail:: /images/2017/isic17_sponsorenlogos.jpg
     :align: right
-    :width: 350px
+    :height: 150px
     
 - **Procitec**: HackRF SDRs
 - **Ettus Research**: USRP B200mini
