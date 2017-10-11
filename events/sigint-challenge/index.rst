@@ -2,6 +2,10 @@
 .. slug: sigint-challenge
 .. tags: isic
 
+.. image:: /images/2017/isic17_poster.png
+    :align: center
+
+
 Die Story
 ------------
 "In einer fernen, unserer jedoch nicht ganz unähnlichen Spektraldimension leben die beiden Herrscher Fourier und Laplace. Zwischen ihnen tobt seit Äonen ein niemals endender Streit um Konvergenzgebiete. In seinem neuesten Versuch, die Oberhand in diesem Kampf zu erlangen, hat Laplace nun seinen besten Agenten ins feindliche Gebiet jenseits der imaginären Achse entsandt. Der Agent - Codename P0L - ist darauf spezialisiert, Systeme zu destabilisieren und Informationen über verschlüsselte, hochfrequente elektromagnetische Schwingungen zu exfiltrieren. Er soll als Leibfrisör Fouriers dessen stattliche Lockenpracht täglich neu in Schwingung versetzen und gleichzeitig Informationen über die nächsten Schritte des Gegners sammeln. Leider ist besagter Agent durch die Summe seiner Erfolge in der Vergangenheit jedoch mittlerweile unendlich eingebildet, weshalb er etwas träge geworden ist und seine Vorbereitung für diesen Einsatz vernachlässigt hat. Die mangelnde Bandbreite an Frisörfähigkeiten hat deshalb in kürzester Zeit zur Enttarnung P0Ls geführt. Entgegen der üblichen Praxis, P0L durch Agent 0 eliminieren zu lassen, hat sich Fourier jedoch dazu entschieden, den feindlichen Agenten vollständig zu integrieren und gezielt zur Desinformation des Gegners zu nutzen. Um die hochkomplizierten Nachrichten P0Ls zu überwachen und zu entschlüsseln, soll nun eine neue Geheimdienstabteilung gegründet werden, die dringend nach Experten in den Bereichen Kryptographie und Nachrichtentechnik sucht..."
@@ -10,6 +14,7 @@ Die Story
 Organisatorisches
 -----------------
 - Wettbewerbszeitraum: 26.10.2017 - 23.11.2017
+- Kick-off Event: 25.10.2017, 17:30 Uhr im CEL
 - Teilnehmen können Teams von 2 bis maximal 4 Studenten. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
 - Folgt @ieee_ka auf Twitter, um keine Neuigkeiten zu verpassen!
 

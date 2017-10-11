@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://www.ieee-ka.de/announcements/rss.xml</loc>
-  <lastmod>2017-10-07T22:47:00Z</lastmod>
+  <lastmod>2017-10-11T08:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/reports/rss.xml</loc>
@@ -15,11 +15,11 @@
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/rss.xml</loc>
-  <lastmod>2017-10-07T22:47:00Z</lastmod>
+  <lastmod>2017-10-11T08:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/sitemap.xml</loc>
-  <lastmod>2017-10-07T22:47:00Z</lastmod>
+  <lastmod>2017-10-11T08:38:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/awb.xml</loc>
@@ -35,7 +35,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/isic.xml</loc>
-  <lastmod>2017-10-07T22:47:00Z</lastmod>
+  <lastmod>2017-10-11T08:34:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/mba.xml</loc>
