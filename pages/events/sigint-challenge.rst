@@ -4,6 +4,7 @@
 
 .. image:: /images/2017/isic17_poster.png
     :align: center
+    :width: 600px
 
 
 Die Story
