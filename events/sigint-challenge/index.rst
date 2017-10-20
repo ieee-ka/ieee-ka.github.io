@@ -17,7 +17,9 @@ Organisatorisches
 - Wettbewerbszeitraum: 26.10.2017 - 23.11.2017
 - Kick-off Event: 25.10.2017, 17:30 Uhr im CEL
 - Teilnehmen können Teams von 2 bis maximal 4 Studenten. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
+- Das Kick-off Event ist ausdrücklich zur Teamfindung gedacht, ihr müsst nicht schon vorher ein Team gebildet haben!
 - Folgt @ieee_ka auf Twitter, um keine Neuigkeiten zu verpassen!
+- Wir verleihen (kostenlos) SDR-Dongles für den Zeitraum der Challenge
 
 
 Einreichung der Ergebnisse
