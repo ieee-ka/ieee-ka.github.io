@@ -27,13 +27,19 @@ Einreichung der Ergebnisse
 Dieses Jahr könnt ihr eure Ergebnisse per Twitter Direktnachricht einreichen! @realHeinrHertz ist wartet gespannt auf eure Nachrichten!
 
 
-Regeln 2017
+Hinweise und Regeln
 -----------
 Die Regeln sind bisher im wesentlichen die des Vorjahres, eventuell ergeben sich bis zum Beginn des Wettbewerbs noch Änderungen.
 
+- Lösungen für die Rätsel per Twitter Direktnachricht an @realHeinrHertz schicken! Dieser wird sich innerhalb einer Minute zurückmelden.
+- Eine Nachricht mit Inhalt "stats" gibt euch zurück, welche Challenges von euch gelöst wurden, wie viele Punkte ihr bereits habt und auf welchem Rang ihr euch aktuell befindet.
+- Sollten die Antworten von @realHeinrHertz wider Erwarten ausbleiben, schreibt uns eine Mail an info@ieee-ka.de, damit wir uns darum kümmern können. Eure Lösungen werden trotzdem in der gleichen Reihenfolge verarbeitet und müssen nicht nochmal gesendet werden!
+- Globale Rankings mit allen Teams werden wir in regelmäßigen Abständen veröffentlichen.
 - Die Signalrätsel bestehen häufig aus mehreren Stufen, sodass sich genaues Hinsehen lohnt, um nichts zu verpassen!
+- Nicht alle Rätsel sind rein funk-basiert! Achtet auf Hinweise, z. B. von @realHeinrHertz!
+- Wenn die Natur des Rätsels es erlaubt, beginnen die Lösungen mit "@Hz" und enden mit "#isic"
+- Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung, Sonder- oder Leerzeichen geachtet. "@Hz" und "#isic" können weggelassen werden. 
 - Es gibt keinen Abzug für das Einreichen falscher Informationen, jedoch führen offensichtliche Brute-Force-Angriffe zum Ausschluss vom Wettbewerb!
-- Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung geachtet. 
 - Für jedes korrekt eingereichte Geheimnis gibt es 100 Punkte.
 - Die schnellsten Teams bekommen einen Bonus.
 - Es gewinnt das Team, das am 22.11.2017 23:59:59 Uhr die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
