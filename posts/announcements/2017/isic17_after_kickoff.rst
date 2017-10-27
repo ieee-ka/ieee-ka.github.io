@@ -1,4 +1,4 @@
-.. title: "Operation Dauerwelle" hat begonnen!
+.. title: ISIC17: "Operation Dauerwelle" hat begonnen!
 .. slug: operation-dauerwelle-hat-begonnen
 .. date: 2017-10-27 23:37:28 UTC+02:00
 .. tags: isic 
@@ -14,5 +14,4 @@ An dieser Stelle wollen wir noch einmal darauf hinweisen, dass man sich nach wie
 
 Seit gestern sind die Signale nun live und wir haben auch schon die ersten richtigen Lösungen erhalten! Also haltet euch ran, das Rennen hat begonnen! ;)
 
-In den nächsten Tagen werden wir hier auch das nächste Übersichtsranking veröffentlichen. Wir sind gespannt, wer den ersten Platz (vorerst) für sich entscheiden kann! Happy hacking!
-
+In den nächsten Tagen werden wir hier und auf Twitter (einfach @ieee_ka folgen) auch das nächste Übersichtsranking veröffentlichen. Wir sind gespannt, wer den ersten Platz (vorerst) für sich entscheiden kann! Happy hacking!
