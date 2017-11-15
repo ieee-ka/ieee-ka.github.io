@@ -6,43 +6,47 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://www.ieee-ka.de/galleries/rss.xml</loc>
-  <lastmod>2017-02-16T18:06:00Z</lastmod>
+  <loc>http://www.ieee-ka.de/announcements/rss.xml</loc>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.ieee-ka.de/reports/rss.xml</loc>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/rss.xml</loc>
-  <lastmod>2017-11-15T17:59:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/sitemap.xml</loc>
-  <lastmod>2017-11-15T17:59:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/awb.xml</loc>
-  <lastmod>2017-08-15T13:36:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/cat_announcements.xml</loc>
-  <lastmod>2017-07-05T14:57:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/cat_awb.xml</loc>
-  <lastmod>2016-12-08T15:36:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/isic.xml</loc>
-  <lastmod>2017-11-15T17:59:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/mba.xml</loc>
-  <lastmod>2016-07-14T07:41:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/rsec.xml</loc>
-  <lastmod>2016-07-14T07:41:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/spc.xml</loc>
-  <lastmod>2016-07-14T07:41:00Z</lastmod>
+  <lastmod>2017-11-15T21:11:00Z</lastmod>
  </sitemap>
 </sitemapindex>
