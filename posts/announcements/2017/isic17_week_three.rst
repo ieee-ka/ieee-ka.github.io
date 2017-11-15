@@ -10,6 +10,8 @@
 
 Die letzte Woche der ISIC17 bricht an und die ersten Plätze sind nach wie vor hart umkämpft! Hier nun das letzte vollständige Ranking mit allen Teams vor der **Siegerehrung bei unserem Thanksgiving Dinner** am 23.11.2017. Möglicherweise gibt es diese Woche auch noch eine neue Challenge, also folgt weiterhin @ieee_ka auf Twitter um nichts zu verpassen!
 
+Damit die Challenge auch bis zur letzten Sekunde spannend bleibt, haben wir entschieden, ab sofort keine Rankings mehr herauszugeben. Das heißt, dass ihr auch per "stats"-Kommando zwar weiterhin die gelösten Challenges und euren Punktestand erhaltet, aber nicht mehr euren Rang. Also haltet euch ran, es sind nach wie vor ungelöste Signalrätsel vorhanden! :) Die letzten Nachrichten nimmt @realHeinrHertz am 22.11.2017 um 23:59 Uhr entgegen.
+
 ===== ========================== =============== === === === === === === === === === === === === === === === === === === === === === === ==== ==== ==== ==== ==== ============ 
 Platz Team                       Twitter         1.1 2.1 2.2 2.3 2.4 2.5 3.1 3.2 3.3 3.4 3.5 3.6 4.1 4.2 5.1 6.1 6.2 7.1 8.1 8.2 9.1 9.2 10.1 10.2 11.1 11.2 11.3 Gesamtpunkte 
 ===== ========================== =============== === === === === === === === === === === === === === === === === === === === === === === ==== ==== ==== ==== ==== ============ 

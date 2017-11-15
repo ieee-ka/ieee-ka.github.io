@@ -14,7 +14,7 @@ Die Story
 
 Organisatorisches
 -----------------
-- Wettbewerbszeitraum: 26.10.2017 - 23.11.2017
+- Wettbewerbszeitraum: 26.10.2017 - 23.11.2017 (Einreichungen möglich bis 22.11.2017 23:59 Uhr)
 - Frequenzbereich: 863-870 MHz
 - Kick-off Event: 25.10.2017, 17:30 Uhr im CEL
 - Anmeldungen sind jederzeit möglich über info@ieee-ka.de
