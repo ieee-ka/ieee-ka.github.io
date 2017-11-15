@@ -57,6 +57,15 @@ Wir freuen uns, dass wir auch dieses Jahr wieder großzügige Sponsoren gewinnen
 Wir möchten uns ganz herzlich bei allen Sponsoren bedanken, die uns unterstützen und uns ermöglichen,
 den Wettbewerb in dieser Form ausrichten zu können!
 
+Siegerehrung
+------------
+
+.. thumbnail:: /images/2017/poster_thanksgiving.jpg
+    :align: right
+    :height: 350px
+    
+Die Siegerehrung findet im Rahmen des alljährlichen Thanksgiving Events der IEEE Student Branch Karlsruhe am 23.11.2017 ab 18 Uhr im Seminarraum des CEL statt. Der Eintritt ist selbstverständlich kostenfrei, eine Anmeldung ist nicht notwendig. Eine kurze, formlose Email erleichtert uns jedoch die Planung.
+
 
 Links
 -----
