@@ -6,43 +6,51 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
+  <loc>http://www.ieee-ka.de/announcements/rss.xml</loc>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
   <loc>http://www.ieee-ka.de/galleries/rss.xml</loc>
-  <lastmod>2018-01-15T12:57:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.ieee-ka.de/reports/rss.xml</loc>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/rss.xml</loc>
-  <lastmod>2018-01-15T12:57:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/sitemap.xml</loc>
-  <lastmod>2018-01-15T12:57:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/awb.xml</loc>
-  <lastmod>2018-01-15T12:57:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/cat_announcements.xml</loc>
-  <lastmod>2017-07-05T14:57:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/cat_awb.xml</loc>
-  <lastmod>2016-12-08T15:36:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/isic.xml</loc>
-  <lastmod>2018-01-15T12:57:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/mba.xml</loc>
-  <lastmod>2016-07-14T07:41:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/rsec.xml</loc>
-  <lastmod>2016-07-14T07:41:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/spc.xml</loc>
-  <lastmod>2016-07-14T07:41:00Z</lastmod>
+  <lastmod>2018-03-07T17:58:00Z</lastmod>
  </sitemap>
 </sitemapindex>
