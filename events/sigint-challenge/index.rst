@@ -1,22 +1,26 @@
-.. title: Signal Intelligence Challenge 2017
+.. title: Signal Intelligence Challenge 2018
 .. slug: sigint-challenge
 .. tags: isic
 
-.. image:: /images/2017/isic17_poster.png
+.. image:: /images/2018/isic18_poster.png
     :align: center
     :width: 600px
 
 
 Die Story
 ------------
-"In einer fernen, unserer jedoch nicht ganz unähnlichen Spektraldimension leben die beiden Herrscher Fourier und Laplace. Zwischen ihnen tobt seit Äonen ein niemals endender Streit um Konvergenzgebiete. In seinem neuesten Versuch, die Oberhand in diesem Kampf zu erlangen, hat Laplace nun seinen besten Agenten ins feindliche Gebiet jenseits der imaginären Achse entsandt. Der Agent - Codename P0L - ist darauf spezialisiert, Systeme zu destabilisieren und Informationen über verschlüsselte, hochfrequente elektromagnetische Schwingungen zu exfiltrieren. Er soll als Leibfrisör Fouriers dessen stattliche Lockenpracht täglich neu in Schwingung versetzen und gleichzeitig Informationen über die nächsten Schritte des Gegners sammeln. Leider ist besagter Agent durch die Summe seiner Erfolge in der Vergangenheit jedoch mittlerweile unendlich eingebildet, weshalb er etwas träge geworden ist und seine Vorbereitung für diesen Einsatz vernachlässigt hat. Die mangelnde Bandbreite an Frisörfähigkeiten hat deshalb in kürzester Zeit zur Enttarnung P0Ls geführt. Entgegen der üblichen Praxis, P0L durch Agent 0 eliminieren zu lassen, hat sich Fourier jedoch dazu entschieden, den feindlichen Agenten vollständig zu integrieren und gezielt zur Desinformation des Gegners zu nutzen. Um die hochkomplizierten Nachrichten P0Ls zu überwachen und zu entschlüsseln, soll nun eine neue Geheimdienstabteilung gegründet werden, die dringend nach Experten in den Bereichen Kryptographie und Nachrichtentechnik sucht..."
+Die Besatzung der Deep Space Survey Station (DSSS) ging gerade noch ihrem gewohnten Tagesablauf nach, als sich plötzlich in Sichtweite der Raumstation ein Wurmloch auftut! Doch damit nicht genug: Kurz darauf erscheint ein außerirdisches Raumschiff mit der Aufschrift "Galaxy Cruises", bevor sich das Wurmloch wieder so schnell schließt, wie es gekommen ist. 
+
+Unklar, was sie von diesem Ereignis zu halten haben, aber eben doch ganz Wissenschaftler, richten die Astronauten auf der DSSS sofort alle verfügbaren Antennen auf das fremde Schiff - und sie können kaum glauben, was sie da zu hören bekommen! Offensichtlich handelt es sich um einen intergalaktischen Freizeitraumkreuzer, der nach einer durchzechten Nacht gehörig vom Kurs abgekommen ist und momentan planlos im All treibt.
+
+Welch eine Gelegenheit für die Wissenschaft! Leider sind jedoch viele der Funksprüche, die der Raumkreuzer absetzt, für die Besatzung der DSSS nicht verständlich. Deshalb werden Expertenteams gesucht, die helfen können, neues Wissen über unsere galaktischen Mitbewohner zu erhalten! Wer weiß, wie lange das Schiff noch da ist...
 
 
 Organisatorisches
 -----------------
-- Wettbewerbszeitraum: 26.10.2017 - 23.11.2017 (Einreichungen möglich bis 22.11.2017 23:59 Uhr)
+- Wettbewerbszeitraum: 26.10.2018 - 22.11.2018 (Einreichungen möglich bis 21.11.2018 23:59 Uhr)
 - Frequenzbereich: 863-870 MHz
-- Kick-off Event: 25.10.2017, 17:30 Uhr im CEL
+- Kick-off Event: 25.10.2017, 17:30 Uhr im CEL (Dachgeschoss)
 - Anmeldungen sind jederzeit möglich über info@ieee-ka.de
 - Teilnehmen können Teams von 2 bis maximal 4 Studierenden. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
 - Das Kick-off Event ist ausdrücklich zur Teamfindung gedacht, ihr müsst nicht schon vorher ein Team gebildet haben!
@@ -26,11 +30,11 @@ Organisatorisches
 
 Einreichung der Ergebnisse
 --------------------------
-Dieses Jahr könnt ihr eure Ergebnisse per Twitter Direct Message (DM) einreichen! @realHeinrHertz ist wartet gespannt auf eure Nachrichten und wird sich dann innerhalb weniger Minuten bei euch melden! Wenn die Natur des Rätsels es erlaubt, beginnen die Lösungen mit "@Hz" und enden mit "#isic". Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung, Sonder- oder Leerzeichen geachtet. "@Hz" und "#isic" können weggelassen werden. 
+Dieses Jahr könnt ihr eure Ergebnisse per Twitter Direct Message (DM) einreichen! Das @ISICSpaceCenter wartet gespannt auf eure Nachrichten und wird sich umgehend bei euch melden! Wenn die Natur des Rätsels es erlaubt, enthalten die Nachrichten eindeutige Marker, um Beginn und Ende anzuzeigen. Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung, Sonder- oder Leerzeichen geachtet. Die Marker können ebenfalls weggelassen werden.
 
 Eine Nachricht mit Inhalt "stats" gibt euch zurück, welche Challenges von euch gelöst wurden, wie viele Punkte ihr bereits habt und auf welchem Rang ihr euch aktuell befindet. 
 
-Sollten die Antworten von @realHeinrHertz wider Erwarten ausbleiben, schreibt uns eine Mail an info@ieee-ka.de oder eine DM an @ieee_ka, damit wir uns darum kümmern können. Eure Lösungen werden trotzdem in der gleichen Reihenfolge verarbeitet und müssen nicht nochmal gesendet werden!
+Sollten die Antworten von @ISICSpaceCenter wider Erwarten ausbleiben, schreibt uns eine Mail an info@ieee-ka.de oder eine DM an @ieee_ka, damit wir uns darum kümmern können.
 
 
 Hinweise und Regeln
@@ -39,32 +43,29 @@ Die Regeln sind bisher im wesentlichen die des Vorjahres, eventuell ergeben sich
 
 - Globale Rankings mit allen Teams werden wir in regelmäßigen Abständen veröffentlichen.
 - Die Signalrätsel bestehen häufig aus mehreren Stufen, sodass sich genaues Hinsehen lohnt, um nichts zu verpassen!
-- Nicht alle Rätsel sind rein funk-basiert! Achtet auf Hinweise, z. B. von @realHeinrHertz!
+- Nicht alle Rätsel sind rein funk-basiert! Achtet auf Hinweise, z. B. von @ISICSpaceCenter!
 - Es gibt keinen Abzug für das Einreichen falscher Informationen, jedoch führen offensichtliche Brute-Force-Angriffe zum Ausschluss vom Wettbewerb!
 - Für jedes korrekt eingereichte Geheimnis gibt es 100 Punkte.
 - Die schnellsten Teams bekommen einen Bonus.
-- Es gewinnt das Team, das am 22.11.2017 23:59:59 Uhr die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
+- Es gewinnt das Team, das am 21.11.2018 23:59:59 Uhr die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
 - Die Juroren können im Laufe des Wettbewerbs Tipps geben, um die Signale zu finden. Diese Informationen reduzieren unter Umständen die Punktzahl des entsprechenden Rätsels.
 
 Sponsoren und Preise
 --------------------
 Wir freuen uns, dass wir auch dieses Jahr wieder großzügige Sponsoren gewinnen konnten und dementsprechend tolle Preise vergeben können. Mit dabei sind:
 
-- Procitec: HackRF SDRs
+- Procitec: 3x HackRF SDR
 - Ettus Research (National Instruments): USRP B200mini
-- Rohde & Schwarz: Literatur zum Thema Spektralschätzung, Merchandise
 
 Wir möchten uns ganz herzlich bei allen Sponsoren bedanken, die uns unterstützen und uns ermöglichen,
 den Wettbewerb in dieser Form ausrichten zu können!
 
 Siegerehrung
 ------------
-
-.. thumbnail:: /images/2017/poster_thanksgiving.jpg
-    :align: right
-    :height: 350px
     
-Die Siegerehrung findet im Rahmen des alljährlichen Thanksgiving Events der IEEE Student Branch Karlsruhe am 23.11.2017 ab 18 Uhr im Seminarraum des CEL statt. Der Eintritt ist selbstverständlich kostenfrei, eine Anmeldung ist nicht notwendig. Eine kurze, formlose Email erleichtert uns jedoch die Planung.
+Die Siegerehrung findet im Rahmen des alljährlichen Thanksgiving Events der IEEE Student Branch Karlsruhe am 22.11.2017 ab 18 Uhr im Seminarraum des CEL statt. Der Eintritt ist selbstverständlich kostenfrei, eine Anmeldung ist nicht notwendig. Eine kurze, formlose Email erleichtert uns jedoch die Planung.
+
+Weitere Details zur Siegerehrung folgen in Kürze!
 
 
 Links
