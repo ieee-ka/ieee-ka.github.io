@@ -20,7 +20,7 @@ Organisatorisches
 -----------------
 - Wettbewerbszeitraum: 26.10.2018 - 22.11.2018 (Einreichungen möglich bis 21.11.2018 23:59 Uhr)
 - Frequenzbereich: 863-870 MHz
-- Kick-off Event: 25.10.2017, 17:30 Uhr im CEL (Dachgeschoss)
+- Kick-off Event: 25.10.2018, 17:30 Uhr im CEL (Dachgeschoss)
 - Anmeldungen sind jederzeit möglich über info@ieee-ka.de
 - Teilnehmen können Teams von 2 bis maximal 4 Studierenden. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
 - Das Kick-off Event ist ausdrücklich zur Teamfindung gedacht, ihr müsst nicht schon vorher ein Team gebildet haben!
