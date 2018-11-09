@@ -63,10 +63,9 @@ den Wettbewerb in dieser Form ausrichten zu können!
 Siegerehrung
 ------------
     
-Die Siegerehrung findet im Rahmen des alljährlichen Thanksgiving Events der IEEE Student Branch Karlsruhe am 22.11.2018 ab 18 Uhr im Seminarraum des CEL statt. Der Eintritt ist selbstverständlich kostenfrei, eine Anmeldung ist nicht notwendig. Eine kurze, formlose Email erleichtert uns jedoch die Planung.
+Die Siegerehrung findet im Rahmen des alljährlichen Thanksgiving-Events der IEEE Student Branch Karlsruhe am 22.11.2018 ab 18 Uhr im Seminarraum des CEL statt. Der Eintritt ist selbstverständlich kostenfrei, eine Anmeldung ist nicht notwendig. Eine kurze, formlose Email erleichtert uns jedoch die Planung.
 
-Weitere Details zur Siegerehrung folgen in Kürze!
-
+Neben der Siegerehrung wird es beim Thanksgiving-Event auch einen spannenden Vortrag von Johannes Fink und Hans Schriefers (Firma Bosch) zum Thema "Fahrerassistenzsysteme und Radar" geben!
 
 Links
 -----
