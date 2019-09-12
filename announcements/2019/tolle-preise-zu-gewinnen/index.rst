@@ -1,7 +1,7 @@
 .. title: Tolle Preise zu gewinnen!
 .. slug: tolle-preise-zu-gewinnen
 .. date: 2019-09-12 08:12:16 UTC+02:00
-.. tags: 
+.. tags: isic
 .. category: 
 .. link: 
 .. description: 
