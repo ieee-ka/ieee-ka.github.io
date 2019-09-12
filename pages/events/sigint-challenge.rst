@@ -48,7 +48,11 @@ Die Regeln sind bisher im wesentlichen die des Vorjahres, eventuell ergeben sich
 
 Sponsoren und Preise
 --------------------
-tba
+Wir freuen uns, PROCITEC, Ettus Research und seit diesem Jahr auch ViGEM als Sponsoren präsentieren zu können! Wir bedanken uns bei allen für ihre Großzügigkeit, die auch dieses Jahr wieder tolle Preise ermöglicht:
+
+- HackRF SDRs (PROCITEC)
+- USRP SDR (Ettus Research)
+- Raspberry PIs (ViGEM)
 
 Siegerehrung
 ------------
