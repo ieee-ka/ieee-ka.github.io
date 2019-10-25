@@ -2,7 +2,7 @@
 .. slug: sigint-challenge
 .. tags: isic
 
-.. image:: /images/2019/plakat_2019_nosponsors.png
+.. image:: /images/2019/plakat_2019_wsponsors.jpg
     :align: center
     :width: 600px
 
