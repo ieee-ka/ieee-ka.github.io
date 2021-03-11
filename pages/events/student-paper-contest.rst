@@ -40,4 +40,4 @@ Vergangene Student Paper Contests
 
 :2011: Ralph Tanbourgi gewinnt den SB Karlsruhe SPC und wird 3. Sieger des Region 8 SPC in Lissabon.
 
-:2010: Micha Linda gewinnt den SB Karlsruhe SPC und wird 2. Sieger des Region 8 SPC in Malta.
+:2010: Micha Linde gewinnt den SB Karlsruhe SPC und wird 2. Sieger des Region 8 SPC in Malta.
