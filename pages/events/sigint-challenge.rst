@@ -9,15 +9,14 @@
 
 Die Story
 ------------
-Peter Barker arbeitete als Nachrichtentechnik-Ingenieur an Radarsystemen, bis er eines Tages in die erste Fresnelzone seines Deep-Space-Radars geriet, woraufhin er sich in Folge einer spontanen Mutation in "Radio Man" verwandelte. Seither verteidigt er die elektromagnetische Dimension gegen die zerstörerischen Absichten böser Kanäle. Seine Erzfeinde, die hinterlistigen Spektralbarone Ray Leigh und R. Ice, haben nun ihre gefährlichsten Vasallen, die Doppler Demons, entsandt, um Radio Man den Garaus zu machen. Glücklicherweise sind die Dämonen zwar schnell, aber nicht sehr schlau, weshalb bei genauem Hinhören immer wieder Gespräche zwischen den Dreien aufgeschnappt werden können, die möglicherweise ihre Schwachstellen offenbaren!
 
 
 Organisatorisches
 -----------------
-- Wettbewerbszeitraum: 30.10.2019 - 26.11.2019 (Einreichungen möglich bis 26.11.2019 23:59 Uhr)
+- Wettbewerbszeitraum: 02.11.2022 - 23.11.2022 (Einreichungen möglich bis 23.11.2019 23:59 Uhr)
 - Frequenzbereich: 863-870 MHz
-- Kick-off Event: 29.10.2019, 18 Uhr im CEL (Dachgeschoss)
-- Anmeldungen sind jederzeit möglich über info@ieee-ka.de
+- Kick-off Event: 02.11.2022, 19 Uhr im CEL (Dachgeschoss)
+- Anmeldungen sind jederzeit möglich über info@ieee-ka.de oder per DM an @moroqi-outpost:matrix.org
 - Teilnehmen können Teams von 2 bis maximal 4 Studierenden. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
 - Das Kick-off Event ist ausdrücklich zur Teamfindung gedacht, ihr müsst nicht schon vorher ein Team gebildet haben!
 - Folgt @ieee_ka auf Twitter, um keine Neuigkeiten zu verpassen!
@@ -26,11 +25,11 @@ Organisatorisches
 
 Einreichung der Ergebnisse
 --------------------------
-Dieses Jahr könnt ihr eure Ergebnisse per Twitter Direct Message (DM) einreichen! Das @RadioManHQ wartet gespannt auf eure Nachrichten und wird sich umgehend bei euch melden! Wenn die Natur des Rätsels es erlaubt, enthalten die Nachrichten eindeutige Marker, um Beginn und Ende anzuzeigen. Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung, Sonder- oder Leerzeichen geachtet. Die Marker können ebenfalls weggelassen werden.
+Dieses Jahr könnt ihr eure Ergebnisse per Matrix Direct Message (DM) einreichen! Das @moroqi-outpost:matrix.org wartet gespannt auf eure Nachrichten und wird sich umgehend bei euch melden! Wenn die Natur des Rätsels es erlaubt, enthalten die Nachrichten eindeutige Marker, um Beginn und Ende anzuzeigen. Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung, Sonder- oder Leerzeichen geachtet. Die Marker können ebenfalls weggelassen werden.
 
 Eine Nachricht mit Inhalt "stats" gibt euch zurück, welche Challenges von euch gelöst wurden, wie viele Punkte ihr bereits habt und auf welchem Rang ihr euch aktuell befindet. 
 
-Sollten die Antworten von @RadioManHQ wider Erwarten ausbleiben, schreibt uns eine Mail an info@ieee-ka.de oder eine DM an @ieee_ka, damit wir uns darum kümmern können.
+Sollten die Antworten von @moroqi-outpost:matrix.org wider Erwarten ausbleiben, schreibt uns eine Mail an info@ieee-ka.de oder eine DM an @noc0lour:atrz.de, damit wir uns darum kümmern können.
 
 
 Hinweise und Regeln
