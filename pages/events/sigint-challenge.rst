@@ -9,14 +9,18 @@
 
 Die Story
 ------------
-
+Über das Deep Space Relay hat uns eine Hilfsanfrage der hochentwickelten außerirdischen Spezies der De-Coder erreicht. Eines ihrer Schiffe, die EN-Coder, wurde in der Nähe der Erdumlaufbahn stark beschädigt. Insbesondere die Kommunikation zum Deep Space Relay ist gestört und die Navigationseinheit ist wohl nicht einsatzfähig. Da EN-coder noch zusätzlich mit veraltetem Übertragungsequipment ausgestattet ist, hoffen die De-Coder, dass ihr Nachrichten des Schiffs in Not empfangen könnt um diese an das Deep Space Relay weiterzugeben.
+Für das Weitergeben der Nachrichten der EN-Coder werden euch wertvolle Space-bits, aber auch andere Preise in Form von hochwertigem Equipment versprochen. 
+Nachrichten der EN-coder können mit dem Affix „@SR#“ und dem Suffix „#isic“ identifiziert werden.
+Die Rescue Mission der De-Coder wird wohl am 24.11. die EN-Coder erreichen, bis zu diesem Zeitpunkt liegt die Kommunikation des Schiffes in euren Händen.
+Also, @SR#Ready for Space Rescue?#isic
 
 Organisatorisches
 -----------------
 - Wettbewerbszeitraum: 02.11.2022 - 23.11.2022 (Einreichungen möglich bis 23.11.2019 23:59 Uhr)
 - Frequenzbereich: 863-870 MHz
 - Kick-off Event: 02.11.2022, 19 Uhr im CEL (Dachgeschoss)
-- Anmeldungen sind jederzeit möglich über info@ieee-ka.de oder per DM an @moroqi-outpost:matrix.org
+- Anmeldungen sind jederzeit möglich über info@ieee-ka.de oder per DM an FIXME@moroqi-outpost:matrix.org
 - Teilnehmen können Teams von 2 bis maximal 4 Studierenden. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
 - Das Kick-off Event ist ausdrücklich zur Teamfindung gedacht, ihr müsst nicht schon vorher ein Team gebildet haben!
 - Folgt @ieee_ka auf Twitter, um keine Neuigkeiten zu verpassen!
@@ -27,7 +31,7 @@ Einreichung der Ergebnisse
 --------------------------
 Dieses Jahr könnt ihr eure Ergebnisse per Matrix Direct Message (DM) einreichen! Das @moroqi-outpost:matrix.org wartet gespannt auf eure Nachrichten und wird sich umgehend bei euch melden! Wenn die Natur des Rätsels es erlaubt, enthalten die Nachrichten eindeutige Marker, um Beginn und Ende anzuzeigen. Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung, Sonder- oder Leerzeichen geachtet. Die Marker können ebenfalls weggelassen werden.
 
-Eine Nachricht mit Inhalt "stats" gibt euch zurück, welche Challenges von euch gelöst wurden, wie viele Punkte ihr bereits habt und auf welchem Rang ihr euch aktuell befindet. 
+Eine Nachricht mit Inhalt "stats" gibt euch zurück, welche Challenges von euch gelöst wurden, wie viele Punkte(Space-bits) ihr bereits habt und auf welchem Rang ihr euch aktuell befindet. 
 
 Sollten die Antworten von @moroqi-outpost:matrix.org wider Erwarten ausbleiben, schreibt uns eine Mail an info@ieee-ka.de oder eine DM an @noc0lour:atrz.de, damit wir uns darum kümmern können.
 
@@ -38,7 +42,7 @@ Die Regeln sind bisher im wesentlichen die des Vorjahres, eventuell ergeben sich
 
 - Globale Rankings mit allen Teams werden wir in regelmäßigen Abständen veröffentlichen.
 - Die Signalrätsel bestehen häufig aus mehreren Stufen, sodass sich genaues Hinsehen lohnt, um nichts zu verpassen!
-- Nicht alle Rätsel sind rein funk-basiert! Achtet auf Hinweise, z. B. von @RadioManHQ!
+- Nicht alle Rätsel sind rein funk-basiert! Achtet auf Hinweise, z. B. von FIXME@RadioManHQ!
 - Es gibt keinen Abzug für das Einreichen falscher Informationen, jedoch führen offensichtliche Brute-Force-Angriffe zum Ausschluss vom Wettbewerb!
 - Für jedes korrekt eingereichte Geheimnis gibt es 100 Punkte.
 - Die schnellsten Teams bekommen einen Bonus.
