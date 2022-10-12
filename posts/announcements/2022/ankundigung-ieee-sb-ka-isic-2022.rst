@@ -9,7 +9,7 @@
 .. author: Andrej
 
 .. thumbnail:: /images/2022/poster_output_website.webp
-    :align: center
+    :align: right
     :width: 250px
 
 Das lange Warten hat ein Ende! Nach zweijähriger Pause freut es uns euch mitteilen zu dürfen, dass wir die mittlerweile **siebte IEEE Signal Intelligence Challenge** ausrichten werden!
