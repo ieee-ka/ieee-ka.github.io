@@ -22,6 +22,6 @@ Nachrichten der EN-coder können mit dem Affix „@SR#“ und dem Suffix „#isi
 Die Rescue Mission der De-Coder wird wohl am 24.11. die EN-Coder erreichen, bis zu diesem Zeitpunkt liegt die Kommunikation des Schiffes in euren Händen.
 Also, @SR#Ready for Space Rescue?#isic
 
-Stellt euer Team zusammen und helft den De-Codern bei der Rettung ihres Raumschiffs! Wir haben auch wieder tolle Preise für euch organisiert! Die Infos zum Event werden gesammelt und laufend aktualsiiert auf der `Event-Page <http://www.ieee-ka.de/events/sigint-challenge/>`_.
+Stellt euer Team zusammen und helft den De-Codern bei der Rettung ihres Raumschiffs! Wir haben auch wieder tolle Preise für euch organisiert! Die Infos zum Event werden gesammelt und laufend aktualisiert auf der `Event-Page <http://www.ieee-ka.de/events/sigint-challenge/>`_.
 
-TLDR; Das Kick-Off-Event findet am 02.11.2022 um 19 im Dachgeschoss des Instituts für Nachrichtentechnik (CEL) in Gebäude 06.45 in der Hertzstraße 16, 76187 Karlsruhe (KIT Campus West) statt. Wir werden euch sowohl eine kleine Einführung in mögliche Tools geben, als auch die Möglichkeit euch in Teams zusammenzufinden. Kommt also zum Kick-Off auch wenn ihr noch niemand Gleichgesinntes für das Lösen der Signal Intelligence Challenge gefunden habt!
+TLDR; Das Kick-Off-Event findet am 02.11.2022 um 19 im Seminarraum des Instituts für Nachrichtentechnik (CEL) in Gebäude 06.45 in der Hertzstraße 16, 76187 Karlsruhe (KIT Campus West) statt. Wir werden euch sowohl eine kleine Einführung in mögliche Tools geben, als auch die Möglichkeit euch in Teams zusammenzufinden. Kommt also zum Kick-Off auch wenn ihr noch niemand Gleichgesinntes für das Lösen der Signal Intelligence Challenge gefunden habt!
