@@ -17,7 +17,7 @@ Also, @SR#Ready for Space Rescue?#isic
 
 Organisatorisches
 -----------------
-- Wettbewerbszeitraum: 02.11.2022 - 23.11.2022 (Einreichungen möglich bis 23.11.2019 23:59 Uhr)
+- Wettbewerbszeitraum: 02.11.2022 - 23.11.2022 (Einreichungen möglich bis 23.11.2022 23:59 Uhr)
 - Frequenzbereich: 863-870 MHz
 - Kick-off Event: 02.11.2022, 19 Uhr im CEL (Dachgeschoss)
 - Anmeldungen sind jederzeit möglich über info@ieee-ka.de
@@ -52,7 +52,7 @@ Die Regeln sind bisher im wesentlichen die des Vorjahres, eventuell ergeben sich
 Siegerehrung
 ------------
     
-Die Siegerehrung findet im Rahmen des alljährlichen Thanksgiving-Events der IEEE Student Branch Karlsruhe am 24.11.2019 ab 18 Uhr im Seminarraum des CEL statt. Der Eintritt ist selbstverständlich kostenfrei, eine Anmeldung ist nicht notwendig. Eine kurze, formlose Email erleichtert uns jedoch die Planung.
+Die Siegerehrung findet im Rahmen des alljährlichen Thanksgiving-Events der IEEE Student Branch Karlsruhe am 24.11.2022 ab 18 Uhr im Seminarraum des CEL statt. Der Eintritt ist selbstverständlich kostenfrei, eine Anmeldung ist nicht notwendig. Eine kurze, formlose Email erleichtert uns jedoch die Planung.
 
 Neben der Siegerehrung wird es beim Thanksgiving-Event auch einen spannenden Vortrag geben! Den genauen Titel geben wir noch bekannt.
 
