@@ -24,7 +24,7 @@ Die Termine werden rechtzeitig über unsere Mailingliste bekanntgegeben.
 
 
 Mailingliste
-```````````
+````````````
 Falls Du über Aktuelles per E-Mail informiert werden willst, so melde Dich bei unserem E-Mail-Verteiler ieee@lists.kit.edu über https://www.lists.kit.edu/sympa/info/ieee an.
 
 
@@ -40,7 +40,7 @@ Kontaktdaten
 
 Adresse:
 	| IEEE Student Branch Karlsruhe
-	| Institut für Nachrichtentechnik (CEL) 
+	| Institut für Nachrichtentechnik (CEL)
 	| Karlsruher Institut für Technologie
 	| 76128 Karlsruhe
 	| GERMANY
@@ -49,8 +49,9 @@ Besucher / Paketdienst:
 	| IEEE Student Branch Karlsruhe
 	| Institut für Nachrichtentechnik (CEL)
 	| Karlsruher Institut für Technologie
-  | Hertzstraße 16
+	| Hertzstraße 16
 	| 76187 Karlsruhe
+	| GERMANY
 
 Telefon, Email:
 	| Tel (international): +49 / 721 / 608-46276
