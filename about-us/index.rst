@@ -9,10 +9,10 @@ Personen
 --------
 
 :Counselor: Prof. Juergen Becker
-:Chairman: Felix Wunsch
-:Ex-chairman: Johannes Fink
-:Treasurer: Sebastian Müller
-:Secretary: Sebastian Koslowski
+:Chairman: Charlotte Muth
+:Ex-chairman: Benjamin Sturm
+:Vice Chairman: Andrej Rode
+:Treasurer: Marcus Müller
 
 
 Treffen
@@ -20,10 +20,10 @@ Treffen
 
 Der Student Branch Karlsruhe trifft sich regelmäßig zum After-Work-Beer, um sich in geselliger Runde auszutauschen und aktuelle Themen zu besprechen. 
 
-Die Termine werden rechtzeitig in unserem :doc:`Kalender <calendar>` bekanntgegeben.
+Die Termine werden rechtzeitig über unsere Mailingliste bekanntgegeben.
 
 
-Mailinglist
+Mailingliste
 ```````````
 Falls Du über Aktuelles per E-Mail informiert werden willst, so melde Dich bei unserem E-Mail-Verteiler ieee@lists.kit.edu über https://www.lists.kit.edu/sympa/info/ieee an.
 
@@ -49,8 +49,8 @@ Besucher / Paketdienst:
 	| IEEE Student Branch Karlsruhe
 	| Institut für Nachrichtentechnik (CEL)
 	| Karlsruher Institut für Technologie
-	| Kreuzstraße 11
-	| 76133 Karlsruhe
+  | Hertzstraße 16
+	| 76187 Karlsruhe
 
 Telefon, Email:
 	| Tel (international): +49 / 721 / 608-46276
