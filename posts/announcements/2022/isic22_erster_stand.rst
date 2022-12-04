@@ -14,7 +14,6 @@ Die ISIC 2022 hat begonnen, nach einem guten Auftakt am ersten Tag, bis kurz nac
     :align: right
     :width: 250px
 
-
 Ein erstes Ranking mit allen Teams findet ihr hier: Die Schlaflosen machen ihren Namen alle Ehre und haben keine Nacht verpasst um an den Rätseln zu knobeln! Bisher haben auch nur zwei weitere Teams bisher Rätsel in den Signalen lösen können. Jedoch ist das Rennen noch lange nicht gelaufen!
 Wir erwarten, dass in den nächsten Tagen noch weitere Signale gefunden werden. Das Schiff 'EN-Coder' hat schon gute Unterstützung der Teams bekommen, ist jedoch noch nicht gerettet und weiterhin auf eure Hilfe angewiesen! Falls wir weitere Signale entdecken wird das `@deepspace-relay:matrix.org` im `#isic2022:kit.edu` Channel den Empfang der neuen Signale ankündigen.
 
