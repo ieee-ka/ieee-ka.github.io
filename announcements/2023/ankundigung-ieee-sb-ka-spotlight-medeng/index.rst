@@ -1,4 +1,4 @@
-.. title: Science Spotlight: Medical Engineering & Local Paper Student Contest - Save the Date
+.. title: Science Spotlight: Medical Engineering & Local Student Paper Contest - Save the Date
 .. slug: ankundigung-ieee-sb-ka-spotlight-medeng
 .. date: 2023-07-03 23:28:46 UTC+02:00
 .. tags: 
