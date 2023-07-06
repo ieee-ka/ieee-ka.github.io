@@ -18,11 +18,22 @@ Mitmachen darf jeder, der Mitglied im IEEE ist und entweder Student ist oder vor
 Wie funktioniert das alles?
 ```````````````````````````
 
-Die IEEE Student Branch Karlsruhe schreibt gegen Ende des Jahres einen internen Paper Contest aus, an dem alle Interessierten mitmachen können. Die Teilnehmer reichen Ihre Papers als PDF, Full Papers im IEEE Conference Stil ein. Die Details finden sich auf der `Student Activities Seite der Region 8 <http://www.ieeer8.org/category/student-activities/awards-and-contests/student-paper-contest/>`_. Abgabe ist meistens Ende November.
+Die IEEE Student Branch Karlsruhe schreibt gegen Ende des Jahres einen internen Paper Contest aus, an dem alle Interessierten mitmachen können. Die Teilnehmer reichen Ihre Papers als PDF, Full Papers im IEEE Conference Stil ein. Die Details finden sich auf der `Student Activities Seite der Region 8 <https://ieeer8.org/category/student-activities/sa-spc/>`_. Abgabe ist meistens Ende November.
 
-Pro 100 Mitgliedern darf die Student Branch ein Papers an den Region 8 Contest weiterleiten. Dazu werden die Paper intern begutachtet und der Vorstand der Student Branch entscheidet auf Basis der Gutachten welche Paper weitergeleitet werden.
+Pro 100 Mitgliedern darf die Student Branch ein Papers an den Region 8 Contest weiterleiten. Dazu werden die Paper intern begutachtet und eine vom Vorstand des Student Branches eingesetzte Jury entscheidet auf Basis der Gutachten welche Paper weitergeleitet werden.
+
+Da unser Student Branch aktuell weniger als 100 Mitglieder hat wird das Gewinner Paper vom Local Student Paper Contest an den Region 8 Paper Contest weitergeleitet.
 
 Von da an ist ein Komittee der Region 8 für die weitere Auswahl zuständig. 
+
+
+Zeitplan
+````````
+:25. Juli: Kick-Off und Infos auf dem Science Spotlight: Medical Engineering
+:6. Oktober: Deadline Einreichung bei Local Student Paper Contest
+:ca. 15. Oktober: Information der Sieger mit Verbesserungsvorschlägen für Einreichung beim R8 SPC
+:23. November: Siegerehrung und Preisverleihung im Rahmen des Thanksgiving Events
+:Anfang Dezember: Einreichung beim IEEE R8 SPC
 
 
 Vergangene Student Paper Contests
