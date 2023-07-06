@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.ieee-ka.de/</loc>
-  <lastmod>2023-05-23T14:34:00Z</lastmod>
+  <lastmod>2023-07-06T14:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/2016/</loc>
@@ -222,6 +222,10 @@
   <lastmod>2022-11-16T00:12:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.ieee-ka.de/announcements/2023/ankundigung-ieee-sb-ka-spotlight-medeng-details/</loc>
+  <lastmod>2023-07-06T14:11:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.ieee-ka.de/announcements/2023/ankundigung-ieee-sb-ka-spotlight-medeng/</loc>
   <lastmod>2023-07-03T22:05:00Z</lastmod>
  </url>
@@ -243,11 +247,11 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/index-4.html</loc>
-  <lastmod>2023-07-03T22:05:00Z</lastmod>
+  <lastmod>2023-07-06T14:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/archive.html</loc>
-  <lastmod>2023-07-03T22:05:00Z</lastmod>
+  <lastmod>2023-07-06T14:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/calendar/</loc>
@@ -283,7 +287,11 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/index-4.html</loc>
-  <lastmod>2023-07-03T22:05:00Z</lastmod>
+  <lastmod>2023-07-06T14:11:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/index-5.html</loc>
+  <lastmod>2023-07-06T14:11:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/reports/</loc>
