@@ -16,7 +16,7 @@ With this setup the site can be edited, build and deployed using the ```nikola``
 
 OR
 
-2. Create python virutal environment and install with requirements:
+2. Create python virutal environment and install with requirements (project currently only with python3.9):
 ```sh
 $ git clone https://github.com/ieee-ka/ieee-ka.github.io  # or the URL to your fork
 $ cd ieee-ka.github.io  # the repo base directory

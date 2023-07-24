@@ -1,8 +1,27 @@
 .. title: Student Paper Contest
 .. slug: student-paper-contest
 
-Was ist der Student Paper Contest?
-----------------------------------
+The local SB Karlsruhe Student Paper Contest
+----------------------------------------------
+All interested students and former KIT students can hand in a student paper.
+The format follows the S8 student paper contest:
+
+* Contributions are 6 pages maximum
+* IEEE style: Using a `template <https://www.ieee.org/conferences/publishing/templates.html>`_ might help, we recommend using latex
+* Contributions need to be a student's original work
+
+
+Prizes of the local contest include:
+
+* IEEE student memberships
+* Gadgets and vouchers
+* Qualification for the Region 8 Student Paper Contest
+
+
+If you would like to participate feel free to contact info@ieee-ka.de for any additional questions. You can also receive some guidance concerning academic writing. We additionally point to `this helpful guide <http://www-mech.eng.cam.ac.uk/mmd/ashby-paper.pdf>`_. 
+
+Was ist der S8 Student Paper Contest?
+--------------------------------------
 
 Der Student Paper Contest (SPC) der IEEE Region 8 ist ein jährlicher Wettbewerb, bei dem Studenten ihre Forschungs-Arbeiten in Form eines Papers einreichen können. Veranstalter ist die Region 8 des IEEE, die Europa, Afrika und Teile Asiens umfasst. Von allen Student Branches in der Region 8 können Studenten teilnehmen.
 
@@ -18,7 +37,7 @@ Mitmachen darf jeder, der Mitglied im IEEE ist und entweder Student ist oder vor
 Wie funktioniert das alles?
 ```````````````````````````
 
-Die IEEE Student Branch Karlsruhe schreibt gegen Ende des Jahres einen internen Paper Contest aus, an dem alle Interessierten mitmachen können. Die Teilnehmer reichen Ihre Papers als PDF, Full Papers im IEEE Conference Stil ein. Die Details finden sich auf der `Student Activities Seite der Region 8 <https://ieeer8.org/category/student-activities/sa-spc/>`_. Abgabe ist meistens Ende November.
+Die IEEE Student Branch Karlsruhe schreibt gegen Ende des Jahres einen internen Paper Contest aus, an dem *alle Interessierten* mitmachen können. Die Teilnehmer reichen Ihre Papers als PDF, Full Papers im IEEE Conference Stil ein. Die Details finden sich auf der `Student Activities Seite der Region 8 <https://ieeer8.org/category/student-activities/sa-spc/>`_. Die Abgabe ist dieses Jahr am **6. Oktober 2023**.
 
 Pro 100 Mitgliedern darf die Student Branch ein Papers an den Region 8 Contest weiterleiten. Dazu werden die Paper intern begutachtet und eine vom Vorstand des Student Branches eingesetzte Jury entscheidet auf Basis der Gutachten welche Paper weitergeleitet werden.
 
@@ -42,8 +61,6 @@ Vergangene Student Paper Contests
 :2016: Stefan Wunsch gewinnt den SB Karlsruhe SPC und wird Sieger beim Region 8 SPC in Zypern.
 
 :2015: Sebastian Müller gewinnt den SB Karlsruhe SPC. 
-
-:2014: Leider keine Einreichungen in Karlsruhe 
 
 :2013: Ein Student des KIT gewinnt den SB Karlsruhe SPC.
 
