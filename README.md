@@ -32,6 +32,7 @@ View changes in newly opened browser
 ```sh
 $ nikola serve -b
 ```
+use Ctrl + c to end browser
 
 ### Update
 
