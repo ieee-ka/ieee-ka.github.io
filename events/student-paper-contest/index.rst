@@ -1,9 +1,14 @@
 .. title: Student Paper Contest
 .. slug: student-paper-contest
 
+.. thumbnail:: /images/2023/Plakat_SPC.jpg
+    :align: center
+    :width: 600px
+
 The local SB Karlsruhe Student Paper Contest
 ----------------------------------------------
 All interested students and former KIT students can hand in a student paper.
+
 The format follows the `R8 student paper contest <https://ieeer8.org/category/student-activities/sa-spc>`_:
 
 * Contributions are 6 pages maximum

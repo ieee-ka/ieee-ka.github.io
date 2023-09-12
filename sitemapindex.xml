@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://www.ieee-ka.de/announcements/rss.xml</loc>
-  <lastmod>2023-08-09T12:25:00Z</lastmod>
+  <lastmod>2023-09-12T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/reports/rss.xml</loc>
@@ -15,11 +15,11 @@
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/rss.xml</loc>
-  <lastmod>2023-08-09T12:25:00Z</lastmod>
+  <lastmod>2023-09-12T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/sitemap.xml</loc>
-  <lastmod>2023-08-09T12:25:00Z</lastmod>
+  <lastmod>2023-09-12T16:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/awb.xml</loc>
@@ -43,7 +43,7 @@
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/other.xml</loc>
-  <lastmod>2023-08-09T12:25:00Z</lastmod>
+  <lastmod>2023-08-09T12:29:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/rsec.xml</loc>
