@@ -39,7 +39,7 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/</loc>
-  <lastmod>2023-05-23T13:45:00Z</lastmod>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/2016/awb-august/</loc>
@@ -222,6 +222,14 @@
   <lastmod>2022-11-16T00:12:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.ieee-ka.de/announcements/2023/ankundigung-hackathon-chemnitz-2023/</loc>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/announcements/2023/ankundigung-ieee-sb-ka-cfp-spc/</loc>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.ieee-ka.de/announcements/2023/ankundigung-ieee-sb-ka-spotlight-medeng-details/</loc>
   <lastmod>2023-07-06T14:11:00Z</lastmod>
  </url>
@@ -232,6 +240,10 @@
  <url>
   <loc>http://www.ieee-ka.de/announcements/2023/ankundigung-ieee-sb-ka-spotlight-ml/</loc>
   <lastmod>2023-05-23T13:45:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/announcements/2023/ankundigung-ieeextreme-2023/</loc>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/index-1.html</loc>
@@ -247,11 +259,15 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/index-4.html</loc>
-  <lastmod>2023-07-06T14:11:00Z</lastmod>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/announcements/index-5.html</loc>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/archive.html</loc>
-  <lastmod>2023-07-06T14:11:00Z</lastmod>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/calendar/</loc>
@@ -291,7 +307,7 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/index-5.html</loc>
-  <lastmod>2023-07-06T14:11:00Z</lastmod>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/reports/</loc>
@@ -311,7 +327,7 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/tags/</loc>
-  <lastmod>2023-05-23T13:45:00Z</lastmod>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/tags/awb/</loc>
@@ -332,6 +348,10 @@
  <url>
   <loc>http://www.ieee-ka.de/tags/mba/</loc>
   <lastmod>2022-10-11T19:29:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/tags/other/</loc>
+  <lastmod>2023-09-14T12:35:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/tags/rsec/</loc>
