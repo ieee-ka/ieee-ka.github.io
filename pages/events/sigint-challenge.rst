@@ -1,34 +1,31 @@
-.. title: Signal Intelligence Challenge 2022
+.. title: Signal Intelligence Challenge 2023
 .. slug: sigint-challenge
 .. tags: isic
 
-.. image:: /images/2022/poster_output_website.webp
+.. image:: /images/2023/poster_website.webp
     :align: center
     :width: 600px
 
 
-Die Story
+The Story
 ------------
-Über das Deep Space Relay hat uns eine Hilfsanfrage der hochentwickelten außerirdischen Spezies der De-Coder erreicht. Eines ihrer Schiffe, die EN-Coder, wurde in der Nähe der Erdumlaufbahn stark beschädigt. Insbesondere die Kommunikation zum Deep Space Relay ist gestört und die Navigationseinheit ist wohl nicht einsatzfähig. Da EN-coder noch zusätzlich mit veraltetem Übertragungsequipment ausgestattet ist, hoffen die De-Coder, dass ihr Nachrichten des Schiffs in Not empfangen könnt um diese an das Deep Space Relay weiterzugeben.
-Für das Weitergeben der Nachrichten der EN-Coder werden euch wertvolle Space-bits, aber auch andere Preise in Form von hochwertigem Equipment versprochen. 
-Nachrichten der EN-coder können mit dem Affix „@SR#“ und dem Suffix „#isic“ identifiziert werden.
-Die Rescue Mission der De-Coder wird wohl am 24.11. die EN-Coder erreichen, bis zu diesem Zeitpunkt liegt die Kommunikation des Schiffes in euren Händen.
-Also, @SR#Ready for Space Rescue?#isic
+This year, we shift our eyes from up in the sky to down below our feet, where a hightech species of dwarves mine for the mystical adamantine. Glorisibelle Metalchin is in search of a worthy successor of her mining business, and has set up a challenge to find an adamantine vein. The first to succeed in this challenge will be named as her successor and therefore will have to tools at hand to mine said adamantine vein. A dwarf named Thraldronlir Orebuckle has made contact with us surface-dwellers in hopes that we can aid him in finding the adamantine and beat the others competitors.    
+So, @TV#Time to burrow!#isic
 
-Organisatorisches
+Orga
 -----------------
-- Wettbewerbszeitraum: 02.11.2022 - 23.11.2022 (Einreichungen möglich bis 23.11.2022 23:59 Uhr)
-- Frequenzbereich: 863-870 MHz
-- Kick-off Event: 02.11.2022, 19 Uhr im CEL (Dachgeschoss)
-- Anmeldungen sind jederzeit möglich über info@ieee-ka.de
-- Teilnehmen können Teams von 2 bis maximal 4 Studierenden. Vorwissen in Nachrichtentechnik sowie Kryptographie ist hilfreich.
-- Das Kick-off Event ist ausdrücklich zur Teamfindung gedacht, ihr müsst nicht schon vorher ein Team gebildet haben!
-- Folgt @ieee_ka auf Twitter, um keine Neuigkeiten zu verpassen!
-- Wir verleihen (kostenlos) SDR-Dongles für den Zeitraum der Challenge
+- Time frame: 02.11.2023 - 22.11.2023 (submission closes on 22.11.2023 23:59)
+- Frequency: 863-870 MHz
+- Kick-off Event: 02.11.2023, 19:00 at CEL (Seminarraum 2.OG)
+- Registration is open through the duration of the challenge
+- For participation, you need teams of 2 to 4 students. Knowledge of communication engineering and cryptographie is helpful.
+- The Kick-off Event is intended to form teams, so you don't need to do that beforehand!
+- We rent out SDR-dongles (for free) for the duration of the challenge
 
 
-Einreichung der Ergebnisse
+Handing in results
 --------------------------
+This section is subject to changes.
 Dieses Jahr könnt ihr eure Ergebnisse per Matrix Direct Message (DM) einreichen! Das @deepspace-relay:matrix.org wartet gespannt auf eure Nachrichten und wird sich umgehend bei euch melden! Wenn die Natur des Rätsels es erlaubt, enthalten die Nachrichten eindeutige Marker, um Beginn und Ende anzuzeigen. Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung, Sonder- oder Leerzeichen geachtet. Die Marker können ebenfalls weggelassen werden.
 
 Eine Nachricht mit Inhalt "!stats" gibt euch zurück, welche Challenges von euch gelöst wurden, wie viele Punkte(Space-bits) ihr bereits habt und auf welchem Rang ihr euch aktuell befindet.
@@ -36,28 +33,31 @@ Eine Nachricht mit Inhalt "!stats" gibt euch zurück, welche Challenges von euch
 Sollten die Antworten von @deepspace-relay:matrix.org wider Erwarten ausbleiben, schreibt uns eine Mail an info@ieee-ka.de oder eine DM an @noc0lour:atrz.de, damit wir uns darum kümmern können.
 
 
-Hinweise und Regeln
+Rules
 -------------------
-Die Regeln sind bisher im wesentlichen die des Vorjahres, eventuell ergeben sich bis zum Beginn des Wettbewerbs noch Änderungen.
+Rules are identical to last year, we will notify participants before the challenge starts is changes occur.
 
-- Globale Rankings mit allen Teams werden wir in regelmäßigen Abständen veröffentlichen.
-- Die Signalrätsel bestehen häufig aus mehreren Stufen, sodass sich genaues Hinsehen lohnt, um nichts zu verpassen!
-- Nicht alle Rätsel sind rein funk-basiert! Achtet auf Hinweise, z. B. von @deepspace-relay:matrix.org!
-- Es gibt keinen Abzug für das Einreichen falscher Informationen, jedoch führen offensichtliche Brute-Force-Angriffe zum Ausschluss vom Wettbewerb!
-- Für jedes korrekt eingereichte Geheimnis gibt es 100 Punkte.
-- Die schnellsten Teams bekommen einen Bonus.
-- Es gewinnt das Team, das am Schluss die meisten Punkte hat. Bei Gleichstand wird bei der Preisverleihung ein Quiz zum Themengebiet veranstaltet, bis ein Sieger feststeht.
-- Die Juroren können im Laufe des Wettbewerbs Tipps geben, um die Signale zu finden. Diese Informationen reduzieren unter Umständen die Punktzahl des entsprechenden Rätsels.
+- Global rankings of groups will be posted in even intervals during the challenge.
+- Problems tend to consist of multiple levels, so it is worth it to analyse them in detail!
+- Not all problems are send over the air, mind other hints, for example on our webpage or the in the matrix group!
+- Handing in false solutions does not result in point-deduction. However, obvious brute-force-attacks will result in your team being disqualified!
+- Each problem solution (secret) will award your team with 100 points.
+- The fastest teams gain bonus points. 
+- The team collecting most points during the challenge wins. In case of a tie, we will hold a quiz concerning topics of the challenge until a winner is found.
+- The jury can provide hints to find the signals. This information might reduce the amount of points given for the solution of this problem. 
 
-Siegerehrung
-------------
-    
-Die Siegerehrung findet im Rahmen des alljährlichen Thanksgiving-Events der IEEE Student Branch Karlsruhe am 24.11.2022 ab 18 Uhr im Seminarraum des CEL statt. Der Eintritt ist selbstverständlich kostenfrei, eine Anmeldung ist nicht notwendig. Eine kurze, formlose Email erleichtert uns jedoch die Planung.
 
-Neben der Siegerehrung wird es beim Thanksgiving-Event auch einen spannenden Vortrag geben! Den genauen Titel geben wir noch bekannt.
+Prize ceremony
+-----------------
+
+The prize ceremony is held in the context of the yearly Thanksgiving Event of the IEEE Student Branch Karlsruhe on November 23, starting at 19:00 at CEL. Every contestant is invited to this free of charge event, there is no registration necessary. 
+
+Additionally to the prize ceremony, there will be an interesting presentation! Exact details on the topic will follow shortly before the event.
+ 
 
 Links
------
+-------
+- Examples and explanations to some example problems of 2022: https://doi.org/10.5281/zenodo.8163122
 - GNU Radio + SDR Tutorials: http://gnuradio.org
 - Ettus Knowledge Base: http://www.ettus.com/kb/detail/software-defined-radio-usrp-and-gnu-radio-tutorial-set
 - sehenswerter Kurzfilm über FM und AM: http://hackaday.com/2013/09/24/retrotechtacular-fundamentals-of-am-and-fm-radio-communication/
