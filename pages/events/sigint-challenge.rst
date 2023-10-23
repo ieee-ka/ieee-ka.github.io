@@ -23,14 +23,11 @@ Orga
 - We rent out SDR-dongles (for free) for the duration of the challenge
 
 
-Handing in results
---------------------------
-This section is subject to changes.
-Dieses Jahr könnt ihr eure Ergebnisse per Matrix Direct Message (DM) einreichen! Das @deepspace-relay:matrix.org wartet gespannt auf eure Nachrichten und wird sich umgehend bei euch melden! Wenn die Natur des Rätsels es erlaubt, enthalten die Nachrichten eindeutige Marker, um Beginn und Ende anzuzeigen. Beim Einreichen der geknackten Nachrichten wird nicht auf Groß-/Kleinschreibung, Sonder- oder Leerzeichen geachtet. Die Marker können ebenfalls weggelassen werden.
+Communication & Handing in results
+------------------------------------
+During the competition, to communicate with other participants and the organizers you can use our `Matrix room <https://matrix.to/#/#isic2023:kit.edu>`_. Also keep an eye since hints or additional challenges might appear there.
 
-Eine Nachricht mit Inhalt "!stats" gibt euch zurück, welche Challenges von euch gelöst wurden, wie viele Punkte(Space-bits) ihr bereits habt und auf welchem Rang ihr euch aktuell befindet.
-
-Sollten die Antworten von @deepspace-relay:matrix.org wider Erwarten ausbleiben, schreibt uns eine Mail an info@ieee-ka.de oder eine DM an @noc0lour:atrz.de, damit wir uns darum kümmern können.
+The system to hand in solutions is our `CTF system <https://tv.ieee-ka.de/>`_. You can monitor your team's progress there. We will show off how to create teams in the kick-off event.
 
 
 Rules
