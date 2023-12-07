@@ -1,5 +1,42 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE Student Branch Karlsruhe (Berichte)</title><link>http://www.ieee-ka.de/</link><description></description><atom:link href="http://www.ieee-ka.de/reports/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>de</language><lastBuildDate>Sat, 02 Dec 2023 20:14:27 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>ISIC 2023: Finale und Thanksgiving Event</title><link>http://www.ieee-ka.de/reports/2023/thanksgiving_event/?utm_source=/reports/rss.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Andrej</dc:creator><description>&lt;div&gt;&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2023/thanksgiving_teilnehmer.jpg"&gt;&lt;img alt="/images/2023/thanksgiving_teilnehmer.thumbnail.jpg" class="align-right" src="http://www.ieee-ka.de/images/2023/thanksgiving_teilnehmer.thumbnail.jpg" style="width: 200px;"&gt;&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE Student Branch Karlsruhe (Berichte)</title><link>http://www.ieee-ka.de/</link><description></description><atom:link href="http://www.ieee-ka.de/reports/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>de</language><lastBuildDate>Thu, 07 Dec 2023 18:18:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>LED Weihnachtsbaum Lötkurs 2023</title><link>http://www.ieee-ka.de/reports/2023/loetkurs/?utm_source=/reports/rss.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Andrej</dc:creator><description>&lt;div&gt;&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2023/loeten1.jpg"&gt;&lt;img alt="/images/2023/loeten1.thumbnail.jpg" class="align-right" src="http://www.ieee-ka.de/images/2023/loeten1.thumbnail.jpg" style="width: 300px;"&gt;&lt;/a&gt;
+&lt;p&gt;In diesem Jahr hat der IEEE Student Branch Karlsruhe erstmalig ein Lötevent gemeinsam mit der Fachschaft Elektrotechnik des KIT ausgerichtet.
+Hierfür hat die SIGHT IEEE Germany dankenswerterweise Bausätze mit LED Weihnachtsbäumen gesponsert. Mit tatkräftiger Unterstützung durch einige Tutoren
+aus dem Kreise der Fachschaft konnten so 24 Studierende in zwei Gruppen praktische Erfahrungen mit dem Lötkolben sammeln.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/led-tree.gif"&gt;&lt;img alt="/images/led-tree.thumbnail.gif" class="align-left" src="http://www.ieee-ka.de/images/led-tree.thumbnail.gif" style="width: 100px;"&gt;&lt;/a&gt;
+&lt;p&gt;In den vergangenen Jahren hat die VDE Hochschulgruppe in Zusammenarbeit mit der Fachschaft einen solchen Lötkurs angeboten und einen elektronischen Würfel gelötet.
+Der LED Weihnachstbaum hat im Vergleich zum Würfel einen deutlich höheren Schwierigkeitsgrad, da die Studierenden direkt zum Einstieg mit THT Bauteilen und SMD Bauteilen konfrontiert werden. Als Vorgehen wurde daher vorgeschlagen, dass zuerst etwas Erfahrung mit THT Löten gesammelt wird und die LEDs und Widerstände aufgelötet werden. Im Anschluss werden dann die SMD Bauteile (Transistoren, Kondensatoren und IC) aufgelötet.&lt;/p&gt;
+&lt;p&gt;Das Institut für Technik der Informationsverarbeitung (ITIV) hat für die Durchführung der Veranstaltung sowohl ihren Pool-Raum, als auch Lötkolben und Zubehör aus dem Labor Schaltungsdesign bereitgestellt. Wir möchten uns sowohl bei der SIGHT IEEE Germany, als auch beim ITIV recht herzlich für die Unterstützung bedanken. Der Fachschaft möchten wir für die gute Zusammenarbeit und Unterstützung mit Getränken für die Tutoren danken!&lt;/p&gt;
+&lt;p&gt;Wir hoffen, dass wir auch im nächsten Jahr wieder ein Lötevent anbieten können um in der weihnachtlichen Zeit etwas an den praktischen Fertigkeiten zu arbeiten und dabei auch noch etwas für das Aufhübschen des eigenen Schreibtisches zu tun.&lt;/p&gt;
+
+
+&lt;div id="gallery_container"&gt;&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten1.jpg" class="thumbnail image-reference" title="Loeten1"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten1.thumbnail.jpg" alt="Loeten1"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten3.jpg" class="thumbnail image-reference" title="Loeten3"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten3.thumbnail.jpg" alt="Loeten3"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten4.jpg" class="thumbnail image-reference" title="Loeten4"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten4.thumbnail.jpg" alt="Loeten4"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten2.jpg" class="thumbnail image-reference" title="Loeten2"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten2.thumbnail.jpg" alt="Loeten2"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul class="thumbnails"&gt;
+        &lt;li&gt;
+&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;</description><guid>http://www.ieee-ka.de/reports/2023/loetkurs/</guid><pubDate>Thu, 07 Dec 2023 16:15:20 GMT</pubDate></item><item><title>ISIC 2023: Finale und Thanksgiving Event</title><link>http://www.ieee-ka.de/reports/2023/thanksgiving_event/?utm_source=/reports/rss.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Andrej</dc:creator><description>&lt;div&gt;&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2023/thanksgiving_teilnehmer.jpg"&gt;&lt;img alt="/images/2023/thanksgiving_teilnehmer.thumbnail.jpg" class="align-right" src="http://www.ieee-ka.de/images/2023/thanksgiving_teilnehmer.thumbnail.jpg" style="width: 200px;"&gt;&lt;/a&gt;
 &lt;p&gt;Nach packenden drei Wochen Rätseln hat die achte Ausgabe der ISIC wieder beim traditionellen Thanksgiving Event des IEEE Studentbranch Karlsruhe einen würdigen Abschluss gefunden. Die Teams haben bis in die letzten Stunden um die Punkte für eingereichte Lösungen gestritten. In diesem Jahr haben die Teams bei der Kommunikation der Zwerge Hilfe geleistet um mehr Metalle und Edelsteine abzubauen.&lt;/p&gt;
 &lt;p&gt;In der Reihenfolge der Teams hat sich folgendes Bild ergeben: Platz 1 ging an die Binary Brigade mit 1287 Punkten, dicht gefolgt von Team Berni Bergmann mit 1070 Punkten. Mit einem hauchdünnen Vorsprung von 2 Punkten hat das Team kasita-mesago den dritten Platz vor dem Team Hamming Barbie ergattert. Die Teams kamen dabei auf insgesamt 527 und 525 Punkte. Den fünften Platz belegte das Team BandpassBitches.&lt;/p&gt;
 &lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2023/thanksgiving_vortrag.jpg"&gt;&lt;img alt="/images/2023/thanksgiving_vortrag.thumbnail.jpg" class="align-left" src="http://www.ieee-ka.de/images/2023/thanksgiving_vortrag.thumbnail.jpg" style="width: 200px;"&gt;&lt;/a&gt;
