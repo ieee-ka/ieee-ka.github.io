@@ -1,3 +1,0 @@
-Markdown<3.2
-nikola[extras]<8.0
-doit<0.36
