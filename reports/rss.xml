@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE Student Branch Karlsruhe (Berichte)</title><link>http://www.ieee-ka.de/</link><description></description><atom:link href="http://www.ieee-ka.de/reports/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>de</language><lastBuildDate>Thu, 07 Dec 2023 18:18:18 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>LED Weihnachtsbaum Lötkurs 2023</title><link>http://www.ieee-ka.de/reports/2023/loetkurs/?utm_source=/reports/rss.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Andrej</dc:creator><description>&lt;div&gt;&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2023/loeten1.jpg"&gt;&lt;img alt="/images/2023/loeten1.thumbnail.jpg" class="align-right" src="http://www.ieee-ka.de/images/2023/loeten1.thumbnail.jpg" style="width: 300px;"&gt;&lt;/a&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE Student Branch Karlsruhe (Berichte)</title><link>http://www.ieee-ka.de/</link><description></description><atom:link href="http://www.ieee-ka.de/reports/rss.xml" rel="self" type="application/rss+xml"></atom:link><language>de</language><lastBuildDate>Mon, 22 Jan 2024 15:52:39 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>LED Weihnachtsbaum Lötkurs 2023</title><link>http://www.ieee-ka.de/reports/2023/loetkurs/?utm_source=/reports/rss.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Andrej</dc:creator><description>&lt;div&gt;&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2023/loeten1.jpg"&gt;&lt;img alt="/images/2023/loeten1.thumbnail.jpg" class="align-right" src="http://www.ieee-ka.de/images/2023/loeten1.thumbnail.jpg" style="width: 300px;"&gt;&lt;/a&gt;
 &lt;p&gt;In diesem Jahr hat der IEEE Student Branch Karlsruhe erstmalig ein Lötevent gemeinsam mit der Fachschaft Elektrotechnik des KIT ausgerichtet.
 Hierfür hat die SIGHT IEEE Germany dankenswerterweise Bausätze mit LED Weihnachtsbäumen gesponsert. Mit tatkräftiger Unterstützung durch einige Tutoren
 aus dem Kreise der Fachschaft konnten so 24 Studierende in zwei Gruppen praktische Erfahrungen mit dem Lötkolben sammeln.&lt;/p&gt;
@@ -13,23 +13,23 @@ Der LED Weihnachstbaum hat im Vergleich zum Würfel einen deutlich höheren Schw
 &lt;div id="gallery_container"&gt;&lt;/div&gt;
 &lt;div class="row"&gt;
     &lt;div class="col-xs-6 col-md-3"&gt;
-        &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten1.jpg" class="thumbnail image-reference" title="Loeten1"&gt;
-            &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten1.thumbnail.jpg" alt="Loeten1"&gt;
-        &lt;/a&gt;
-    &lt;/div&gt;
-    &lt;div class="col-xs-6 col-md-3"&gt;
         &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten3.jpg" class="thumbnail image-reference" title="Loeten3"&gt;
             &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten3.thumbnail.jpg" alt="Loeten3"&gt;
         &lt;/a&gt;
     &lt;/div&gt;
     &lt;div class="col-xs-6 col-md-3"&gt;
-        &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten4.jpg" class="thumbnail image-reference" title="Loeten4"&gt;
-            &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten4.thumbnail.jpg" alt="Loeten4"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten1.jpg" class="thumbnail image-reference" title="Loeten1"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten1.thumbnail.jpg" alt="Loeten1"&gt;
         &lt;/a&gt;
     &lt;/div&gt;
     &lt;div class="col-xs-6 col-md-3"&gt;
         &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten2.jpg" class="thumbnail image-reference" title="Loeten2"&gt;
             &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten2.thumbnail.jpg" alt="Loeten2"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/loeten2023/loeten4.jpg" class="thumbnail image-reference" title="Loeten4"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/loeten2023/loeten4.thumbnail.jpg" alt="Loeten4"&gt;
         &lt;/a&gt;
     &lt;/div&gt;
 &lt;/div&gt;
