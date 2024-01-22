@@ -1,0 +1,5 @@
+nikola<8.0
+doit<0.36
+Markdown<3.2
+Pillow<9.3
+webassets
