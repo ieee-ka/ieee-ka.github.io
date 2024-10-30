@@ -41,7 +41,7 @@ Communication & Handing in results
 During the competition, to communicate with other participants and the organizers you can use our `Matrix room <https://matrix.to/#/#isic2024:kit.edu>`_. Also keep an eye since hints or additional challenges might appear there.
 Results of challenges to hand in have the prefix "@RR#" and the postfix "#isic".
 
-The system to hand in solutions is our `CTF system <https://rr.ieee-ka.de/>`_. You can monitor your team's progress there. We will show off how to create teams in the kick-off event.
+The system to hand in solutions is our `CTF system <https://isic.ieee-ka.de/>`_. You can monitor your team's progress there. We will show off how to create teams in the kick-off event.
 
 
 Rules
