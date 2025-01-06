@@ -7,7 +7,7 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <url>
   <loc>http://www.ieee-ka.de/</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/2016/</loc>
@@ -38,12 +38,16 @@
   <lastmod>2024-01-22T15:52:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.ieee-ka.de/2025/</loc>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.ieee-ka.de/about-us/</loc>
   <lastmod>2023-07-24T14:46:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/2016/awb-august/</loc>
@@ -262,28 +266,36 @@
   <lastmod>2024-01-22T15:52:00Z</lastmod>
  </url>
  <url>
+  <loc>http://www.ieee-ka.de/announcements/2025/awb1/</loc>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/announcements/2025/science-spotlight-automotive-radar/</loc>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
+ </url>
+ <url>
   <loc>http://www.ieee-ka.de/announcements/index-1.html</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/index-2.html</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/index-3.html</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/index-4.html</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/announcements/index-5.html</loc>
-  <lastmod>2024-10-10T08:18:00Z</lastmod>
+  <lastmod>2025-01-06T20:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/archive.html</loc>
-  <lastmod>2024-12-10T08:25:00Z</lastmod>
+  <lastmod>2025-01-06T20:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/calendar/</loc>
@@ -315,23 +327,27 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/index-1.html</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/index-2.html</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/index-3.html</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/index-4.html</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/index-5.html</loc>
-  <lastmod>2024-12-10T08:25:00Z</lastmod>
+  <lastmod>2025-01-06T20:05:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/index-6.html</loc>
+  <lastmod>2025-01-06T20:08:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/reports/</loc>
