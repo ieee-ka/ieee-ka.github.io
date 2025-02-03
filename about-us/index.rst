@@ -8,8 +8,7 @@
 Personen
 --------
 
-:Counselor: Prof. Juergen Becker
-:Chairman: Charlotte Muth
+:Counselor: Prof. Marwan Younis
 :Ex-chairman: Benjamin Sturm
 :Vice Chairman: Andrej Rode
 :Treasurer: Marcus Müller
