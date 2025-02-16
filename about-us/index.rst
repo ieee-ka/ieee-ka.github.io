@@ -47,7 +47,7 @@ Adresse:
 Besucher / Paketdienst:
 	| IEEE Student Branch Karlsruhe
 	| Institut für Nachrichtentechnik (CEL)
-  | Geb. 06.45
+	| Geb. 06.45
 	| Karlsruher Institut für Technologie
 	| Hertzstraße 16
 	| 76187 Karlsruhe
