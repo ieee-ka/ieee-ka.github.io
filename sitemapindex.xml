@@ -6,10 +6,6 @@
     xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
-  <loc>http://www.ieee-ka.de/announcements/rss.xml</loc>
-  <lastmod>2025-02-14T19:30:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://www.ieee-ka.de/galleries/loeten2023/rss.xml</loc>
   <lastmod>2025-02-16T13:16:00Z</lastmod>
  </sitemap>
@@ -18,16 +14,12 @@
   <lastmod>2025-02-16T13:16:00Z</lastmod>
  </sitemap>
  <sitemap>
-  <loc>http://www.ieee-ka.de/reports/rss.xml</loc>
-  <lastmod>2025-02-14T19:30:00Z</lastmod>
- </sitemap>
- <sitemap>
   <loc>http://www.ieee-ka.de/rss.xml</loc>
   <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/sitemap.xml</loc>
-  <lastmod>2025-02-16T13:16:00Z</lastmod>
+  <lastmod>2025-02-16T14:42:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/awb.xml</loc>
