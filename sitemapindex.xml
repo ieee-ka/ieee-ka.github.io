@@ -7,66 +7,74 @@
                         http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
  <sitemap>
   <loc>http://www.ieee-ka.de/announcements/rss.xml</loc>
-  <lastmod>2025-02-03T20:46:00Z</lastmod>
+  <lastmod>2025-02-14T19:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/galleries/loeten2023/rss.xml</loc>
-  <lastmod>2025-01-06T20:05:00Z</lastmod>
+  <lastmod>2025-02-16T13:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/galleries/rss.xml</loc>
-  <lastmod>2025-01-06T20:05:00Z</lastmod>
+  <lastmod>2025-02-16T13:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/reports/rss.xml</loc>
-  <lastmod>2024-12-10T08:27:00Z</lastmod>
+  <lastmod>2025-02-14T19:30:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/rss.xml</loc>
-  <lastmod>2025-02-03T20:46:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/sitemap.xml</loc>
-  <lastmod>2025-02-03T20:46:00Z</lastmod>
+  <lastmod>2025-02-16T13:16:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/awb.xml</loc>
-  <lastmod>2025-01-06T20:08:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.ieee-ka.de/tags/cat_ankundigungen.xml</loc>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/cat_announcements.xml</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/cat_awb.xml</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
+ </sitemap>
+ <sitemap>
+  <loc>http://www.ieee-ka.de/tags/cat_berichte.xml</loc>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/isic.xml</loc>
-  <lastmod>2024-12-10T08:27:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/mba.xml</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/other.xml</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/rsec.xml</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/science-spotlight.xml</loc>
-  <lastmod>2025-02-03T20:46:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/spc.xml</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
  <sitemap>
   <loc>http://www.ieee-ka.de/tags/spotlight.xml</loc>
-  <lastmod>2024-01-22T15:52:00Z</lastmod>
+  <lastmod>2025-02-16T12:39:00Z</lastmod>
  </sitemap>
 </sitemapindex>
