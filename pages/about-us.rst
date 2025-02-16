@@ -11,7 +11,7 @@ Personen
 :Counselor: Prof. Marwan Younis
 :Chairman: Andrej Rode
 :Vice Chairman: Yoser Al Jijakli
-:Secretary/Treasurer: CHarlotte Muth
+:Secretary/Treasurer: Charlotte Muth
 
 
 Treffen
