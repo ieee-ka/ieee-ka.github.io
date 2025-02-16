@@ -9,14 +9,14 @@ Angaben gemäß § 5 TMG
 | 76128 Karlsruhe, Germany
 
 Vertreten durch:
-	Johannes Fink
+	Andrej Rode
 
 Kontakt:
 	| Telefon: +49 721-608-46071
 	| E-Mail: info@ieee-ka.de
 
 Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV:
-	| Felix Wunsch
+	| Andrej Rode
 	| Institut für Nachrichtentechnik (CEL) 
 	| Karlsruher Institut für Technologie
 	| 76128 Karlsruhe 
