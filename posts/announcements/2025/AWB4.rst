@@ -1,5 +1,5 @@
 .. title: After Work Beer December 11th, 2025
-.. slug: awb2
+.. slug: awb4
 .. date: 2025-11-25 16:17:16 UTC+01:00
 .. tags: AWB
 .. category: 
