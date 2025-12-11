@@ -4,20 +4,7 @@ This repository contains the sources of our website. It is build using the stati
 
 ### Build
 
-1. To build we use [Conda](http://conda.pydata.org/) to create the build environment:
-```sh
-$ git clone https://github.com/ieee-ka/ieee-ka.github.io  # or the URL to your fork
-$ cd ieee-ka.github.io  # the repo base directory
-$ conda env create
-$ source activate nikola
-$ nikola build
-```
-With this setup the site can be edited, build and deployed using the ```nikola``` command
-
-OR
-
-2. Create python virutal environment and install with requirements (project currently only with python3.9):
-   Nothing newer will work...
+1. Create python virutal environment and install with requirements:
 ```sh
 $ git clone https://github.com/ieee-ka/ieee-ka.github.io  # or the URL to your fork
 $ cd ieee-ka.github.io  # the repo base directory
@@ -34,15 +21,6 @@ View changes in newly opened browser
 $ nikola serve -b
 ```
 use Ctrl + c to end browser
-
-### Update
-
-To update your build envirement you can use:
-```sh
-$ conda update conda  # optional
-$ cd ieeekasite  # the repo base directory
-$ conda env update
-```
 
 ### Deploy
 
