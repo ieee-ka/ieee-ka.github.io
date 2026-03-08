@@ -3,15 +3,13 @@
 .. date: 2012-03-30 23:00:00 UTC-03:00
 .. link:
 .. description:
-.. tags: mathjax
+.. tags:
+.. has_math: true
 .. author: The Nikola Team
 
-The Nikola Handbook
-===================
+:Version: 8.3.3
 
-:Version: 7.8.15
-
-.. class:: alert alert-info pull-right
+.. class:: alert alert-primary float-md-right
 
 .. contents::
 
@@ -23,6 +21,8 @@ After you have Nikola `installed <https://getnikola.com/getting-started.html>`_:
 
 Create an empty site (with a setup wizard):
     ``nikola init mysite``
+
+    .. _demo site:
 
     You can create a site with demo files in it with ``nikola init --demo mysite``
 
@@ -64,7 +64,7 @@ instead of something the user generates.
 
 Nikola can do:
 
-* A blog (`example <http://ralsina.me>`__)
+* A blog (`example <https://ralsina.me>`__)
 * Your company's site
 * Your personal site
 * A software project's site (`example <https://getnikola.com>`__)
@@ -95,10 +95,10 @@ Getting Help
 
 TL;DR:
 
-* You can file bugs at `the issue tracker <https://github.com/getnikola/nikola/issues>`__
-* You can discuss Nikola at the `nikola-discuss google group <http://groups.google.com/group/nikola-discuss>`_
+* You can file bugs at `the Issue tracker on GitHub <https://github.com/getnikola/nikola/issues>`__
+* You can discuss Nikola on the `Discussions page on GitHub <https://github.com/getnikola/nikola/discussions>`_
 * You can subscribe to `the Nikola Blog <https://getnikola.com/blog>`_
-* You can follow `Nikola on Twitter <https://twitter.com/GetNikola>`_
+* You can follow `Nikola on X <https://x.com/GetNikola>`_
 
 Why Static?
 -----------
@@ -136,7 +136,7 @@ Obsolescence
     You may say those are long term issues, or that they won't matter for years. Well,
     I believe things should work forever, or as close to it as we can make them.
     Nikola's static output and its input files will work as long as you can install
-    Python 3.4 or newer under Linux, Windows, or OS X and can find a server
+    Python 3.8 or newer under Linux, Windows, or macOS and can find a server
     that sends files over HTTP. That's probably 10 or 15 years at least.
 
     Also, static sites are easily handled by the Internet Archive.
@@ -173,7 +173,6 @@ Nikola provides the following features:
   * Author pages and feeds (not generated if ``ENABLE_AUTHOR_PAGES`` is set to ``False`` or there is only one author)
   * Archives with custom granularity (yearly or monthly)
   * `Comments`_
-  * Client-side tag clouds (needs manual configuration)
 
 * Static pages (not part of the blog)
 * `Math`_ rendering (via MathJax)
@@ -189,7 +188,6 @@ Nikola provides the following features:
 * Easy-to-create image galleries
 * Image thumbnail generation
 * Support for displaying source code listings
-* Image slideshows
 * Custom search
 * Asset (CSS/JS) bundling
 * gzip compression (for sending via your web server)
@@ -213,7 +211,11 @@ Creating a Blog Post
    etc. Sure, you can just figure out the URLs for each thing and use that. Or you can use
    Nikola's special link URLs. Those are done using the syntax ``link://kind/name`` and
    a full list of the included ones is `here <link://slug/path-handlers>`__ (BTW, I linked
-   to that using ``link://slug/path-handlers``)
+   to that using ``link://slug/path-handlers``).
+
+   Note that magic links with spaces won’t work with some input formats (eg.
+   reST), so you should use slugs there (eg. ``link://tag/some-tag`` instead of
+   ``link://tag/Some Tag``)
 
 
 To create a new post, the easiest way is to run ``nikola new_post``. You  will
@@ -224,7 +226,7 @@ By default, that file will contain also some extra information about your post (
 It can be placed in a separate file by using the ``-2`` option, but it's generally
 easier to keep it in a single location.
 
-The contents of your post have to be written (by default) in `reStructuredText <http://docutils.sf.net>`__
+The contents of your post have to be written (by default) in `reStructuredText <https://docutils.sourceforge.io/>`__
 but you can use a lot of different markups using the ``-f`` option.
 
 Currently, Nikola supports reStructuredText, Markdown, Jupyter Notebooks, HTML as input,
@@ -284,20 +286,38 @@ Basic
 `````
 
 title
-    Title of the post. (required)
+    Title of the post. Using HTML/math in titles is not supported/recommended.
+    If not specified, the file name will be used.
 
 slug
     Slug of the post. Used as the last component of the page URL.  We recommend
     and default to using a restricted character set (``a-z0-9-_``) because
-    other symbols may cause issues in URLs. (required)
+    other symbols may cause issues in URLs. If not specified, the file name will be used.
+
+    So, if the slug is "the-slug" the page generated would be "the-slug.html" or
+    "the-slug/index.html" (if you have the pretty URLs option enabled)
+
+    One special case is setting the slug to "index". This means the page generated
+    would be "some_folder/index.html", which means it will be open for the URL
+    that ends in "some_folder" or "some_folder/".
+
+    This is useful in some cases, in others may cause conflicts with other pages
+    Nikola generates (like blog indexes) and as a side effect it disables
+    "pretty URLs" for this page. So use with care.
 
 date
     Date of the post, defaults to now. Multiple date formats are accepted.
     Adding a timezone is recommended. (required for posts)
 
 tags
-    Comma-separated tags of the post. Some tags have special meaning, including
-    ``draft``, ``private``, ``mathjax``
+    Comma-separated tags of the post.
+
+status
+    Can be set to ``published`` (default), ``featured``, ``draft``, or ``private``.
+
+has_math
+    If set to ``true`` or ``yes``, MathJax resp. KaTeX support is enabled
+    for this post.
 
 category
     Like tags, except each post can have only one, and they usually have
@@ -327,7 +347,7 @@ author
     display (theme-dependent)
 
 enclosure
-    Add an enclosure to this post when it's used in RSS. See `more information about enclosures <http://en.wikipedia.org/wiki/RSS_enclosure>`__
+    Add an enclosure to this post when it's used in RSS. See `more information about enclosures <https://en.wikipedia.org/wiki/RSS_enclosure>`__
 
 data
     Path to an external data file (JSON/YAML/TOML dictionary), relative to ``conf.py``.
@@ -351,36 +371,28 @@ hyphenate
     hyphenation disabled by default.
 
 nocomments
-    Set to "True" to disable comments. Example:
-
-password
-    The post will be encrypted and invisible until the reader enters the password.
-    Also, the post's source code will not be available.
-
-    WARNING: **DO NOT** use for real confidential data.  The algorithm used (RC4) is insecure.  The implementation may also be easily brute-forced.  Please consider using something else if you need *real* encryption!
-
-    More information: `Issue #1547 <https://github.com/getnikola/nikola/issues/1547>`_
+    Set to "True" to disable comments.
 
 pretty_url
-    Set to "False" to disable pretty URL for this page. Example:
+    Set to "False" to disable pretty URL for this page.
 
 previewimage
     Designate a preview or other representative image path relative to BASE_URL
     for use with Open Graph for posts. Adds the image when sharing on social
-    media and many other uses.
+    media, feeds, and many other uses.
 
     .. code:: restructuredtext
 
        .. previewimage: /images/looks_great_on_facebook.png
 
+    If a post has no `previewimage` it will try to use the `DEFAULT_PREVIEW_IMAGE`
+    option from the configuration.
+
     The image can be of any size and dimension (services will crop and adapt)
     but should less than 1 MB and be larger than 300x300 (ideally 600x600).
 
-    Note that the default themes do not display this image.
-
-section
-    Section for the post (instead of inferring from output path; requires
-    ``POSTS_SECTION_FROM_META`` setting)
+    This image is displayed by ``bootblog4`` for featured posts (see `Featured
+    Posts`_ for details).
 
 template
     Change the template used to render this page/post specific page. That
@@ -389,13 +401,14 @@ template
 
     .. code:: restructuredtext
 
-       .. template: story.tmpl
+       .. template: foobar.tmpl
 
 updated
-    The last time this post was updated, defaults to now. It is not displayed
-    by default in most themes, including the defaults — you can use
-    ``post.formatted_updated(date_format)`` (and perhaps check ``if post.updated
-    != post.date``) in your post template to show it.
+    The last time this post was updated, defaults to the post’s ``date``
+    metadata value. It is not displayed by default in most themes, including
+    the defaults — you can use ``post.formatted_updated(date_format)`` (and
+    perhaps check ``if post.updated != post.date``) in your post template to
+    show it.
 
 To add these metadata fields to all new posts by default, you can set the
 variable ``ADDITIONAL_METADATA`` in your configuration.  For example, you can
@@ -408,6 +421,13 @@ to your configuration:
         'author': 'John Doe'
     }
 
+url_type
+    Change the URL_TYPE setting for the given page only. Useful for eg. error
+    pages which cannot use relative URLs.
+
+    .. code:: restructuredtext
+
+       .. url_type: full_path
 
 Metadata formats
 ~~~~~~~~~~~~~~~~
@@ -417,7 +437,7 @@ Current Nikola versions experimentally supports other metadata formats that make
 other static site generators. The currently supported metadata formats are:
 
 * reST-style comments (``.. name: value`` — default format)
-* Two-file format (reST-style comments or 7-line)
+* Two-file format (reST-style, YAML, TOML)
 * Jupyter Notebook metadata
 * YAML, between ``---`` (Jekyll, Hugo)
 * TOML, between ``+++`` (Hugo)
@@ -430,7 +450,7 @@ You can add arbitrary meta fields in any format.
 When you create new posts, by default the metadata will be created as reST style comments.
 If you prefer a different format, you can set the ``METADATA_FORMAT`` to one of these values:
 
-* ``"Nikola"``: reST comments wrapped in a comment if needed (default)
+* ``"Nikola"``: reST comments, wrapped in a HTML comment if needed (default)
 * ``"YAML"``: YAML wrapped in "---"
 * ``"TOML"``: TOML wrapped in "+++"
 * ``"Pelican"``: Native markdown metadata or reST docinfo fields. Nikola style for other formats.
@@ -446,6 +466,8 @@ The “traditional” and default meta field format is:
 
 If you are not using reStructuredText, make sure the fields are in a HTML comment in output.
 
+Also, note that this format does not support any multi-line values. Try YAML or reST docinfo if you need those.
+
 Two-file format
 ```````````````
 
@@ -457,15 +479,7 @@ Meta information can also be specified in separate ``.meta`` files. Those suppor
     .. slug: how-to-make-money
     .. date: 2012-09-15 19:52:05 UTC
 
-There is also an older version of the format. It uses the 7 base fields, in order, without names and custom meta:
-
-.. code:: text
-
-    How to make money
-    how-to-make-money
-    2012-09-15 19:52:05 UTC
-
-The support for this older format is kept only for backwards compatibility and will be removed in a future version. You can use `a converter plugin <https://plugins.getnikola.com/v7/upgrade_metadata/>`_ if you’re still using that format.
+You can also use YAML or TOML metadata inside those (with the appropriate markers).
 
 Jupyter Notebook metadata
 `````````````````````````
@@ -526,14 +540,20 @@ To do this, you need  ``USE_REST_DOCINFO_METADATA = True`` in your ``conf.py``,
 and Nikola will hide the docinfo fields in the output if you set
 ``HIDE_REST_DOCINFO = True``.
 
-Note that keys are converted to lowercase automatically.
+.. note::
 
-Markdown metadata
-`````````````````
+    Keys are converted to lowercase automatically.
 
-Markdown Metadata only works in Markdown files, and requires the ``markdown.extensions.meta`` extension
+    This setting also means that the first heading in a post will be removed
+    and considered a title. This is important if you’re mixing metadata
+    styles. This can be solved by putting a reST comment before your title.
+
+Pelican/Markdown metadata
+`````````````````````````
+
+Markdown Metadata (Pelican-style) only works in Markdown files, and requires the ``markdown.extensions.meta`` extension
 (see `MARKDOWN_EXTENSIONS <#markdown>`__). The exact format is described in
-the `markdown metadata extension docs. <https://pythonhosted.org/Markdown/extensions/meta_data.html>`__
+the `markdown metadata extension docs. <https://python-markdown.github.io/extensions/meta_data/>`__
 
 .. code:: text
 
@@ -593,6 +613,18 @@ For Hugo, use:
 
 The following source names are supported: ``yaml``, ``toml``, ``rest_docinfo``, ``markdown_metadata``.
 
+Additionally, you can use ``METADATA_VALUE_MAPPING`` to perform any extra conversions on metadata for **all** posts of a given format (``nikola`` metadata is also supported). A few examples:
+
+.. code:: python
+
+    METADATA_VALUE_MAPPING = {
+        "yaml": {"keywords": lambda value: ', '.join(value)},  # yaml: 'keywords' list -> str
+        "nikola": {
+            "widgets": lambda value: value.split(', '),  # nikola: 'widgets' comma-separated string -> list
+            "tags": str.lower  # nikola: force lowercase 'tags' (input would be string)
+         }
+    }
+
 Multilingual posts
 ~~~~~~~~~~~~~~~~~~
 
@@ -622,14 +654,14 @@ default set to:
 
 In case you translate your posts, you might also want to adjust various
 other settings so that the generated URLs match the translation. You can
-find most places in `conf.py` by searching for `(translatable)`. For example,
-you might want to localize `/categories/` (search for `TAG_PATH`), `/pages/`
-and `/posts/` (search for `POSTS` and `PAGES`, or see the next section), or
+find most places in ``conf.py`` by searching for ``(translatable)``. For example,
+you might want to localize ``/categories/`` (search for ``TAG_PATH``), ``/pages/``
+and ``/posts/`` (search for ``POSTS`` and ``PAGES``, or see the next section), or
 how to adjust the URLs for subsequent pages for indexes (search for
-`INDEXES_PRETTY_PAGE_URL`).
+``INDEXES_PRETTY_PAGE_URL``).
 
 Nikola supports multiple languages for a post (we have almost 50 translations!). If you wish to
-add support for more languages, check out `the Transifex page for Nikola <https://www.transifex.com/projects/p/nikola/>`_
+add support for more languages, check out `the Transifex page for Nikola <https://www.transifex.com/projects/p/nikola/>`_.
 
 How does Nikola decide where posts should go?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -671,8 +703,8 @@ options. The exact mechanism is explained above the config options in the
     # Finally, note that destination can be translated, i.e. you can
     # specify a different translation folder per language. Example:
     #     PAGES = (
-    #         ("pages/*.rst", {"en": "pages", "de": "seiten"}, "story.tmpl"),
-    #         ("pages/*.md", {"en": "pages", "de": "seiten"}, "story.tmpl"),
+    #         ("pages/*.rst", {"en": "pages", "de": "seiten"}, "page.tmpl"),
+    #         ("pages/*.md", {"en": "pages", "de": "seiten"}, "page.tmpl"),
     #     )
 
     POSTS = (
@@ -681,9 +713,9 @@ options. The exact mechanism is explained above the config options in the
         ("posts/*.html", "posts", "post.tmpl"),
     )
     PAGES = (
-        ("pages/*.rst", "pages", "story.tmpl"),
-        ("pages/*.txt", "pages", "story.tmpl"),
-        ("pages/*.html", "pages", "story.tmpl"),
+        ("pages/*.rst", "pages", "page.tmpl"),
+        ("pages/*.txt", "pages", "page.tmpl"),
+        ("pages/*.html", "pages", "page.tmpl"),
     )
 
 .. admonition:: POSTS and PAGES are not flat!
@@ -693,6 +725,12 @@ options. The exact mechanism is explained above the config options in the
    ``posts/foo/bar.txt`` would produce  ``output/posts/foo/bar.html``, assuming the slug is also ``bar``.
 
    If you have ``PRETTY_URLS`` enabled, that would be ``output/posts/foo/bar/index.html``.
+
+
+.. warning::
+
+    Removing the ``.rst`` entries is not recommended. Some features (eg.
+    shortcodes) may not work properly if you do that.
 
 The ``new_post`` command
 ~~~~~~~~~~~~~~~~~~~~~~~~
@@ -750,7 +788,8 @@ Teasers
 You may not want to show the complete content of your posts either on your
 index page or in RSS feeds, but to display instead only the beginning of them.
 
-If it's the case, you only need to add a "magical comment" in your post.
+If it's the case, you only need to add a "magical comment" ``TEASER_END`` or
+``END_TEASER`` in your post.
 
 In reStructuredText:
 
@@ -784,7 +823,7 @@ compatible with both WordPress and Nikola posts:
 .. code:: python
 
     import re
-    TEASER_REGEXP = re.compile('<!--\s*(more|TEASER_END)(:(.+))?\s*-->', re.IGNORECASE)
+    TEASER_REGEXP = re.compile('<!--\s*(more|TEASER_END|END_TEASER)(:(.+))?\s*-->', re.IGNORECASE)
 
 Or you can completely customize the link using the ``READ_MORE_LINK`` option.
 
@@ -801,11 +840,12 @@ Or you can completely customize the link using the ``READ_MORE_LINK`` option.
 Drafts
 ~~~~~~
 
-If you add a "draft" tag to a post, then it will not be shown in indexes and feeds.
-It *will* be compiled, and if you deploy it it *will* be made available, so use
-with care. If you wish your drafts to be not available in your deployed site, you
-can set ``DEPLOY_DRAFTS = False`` in your configuration. This will not work if
-lazily include ``nikola build`` in your ``DEPLOY_COMMANDS``.
+If you set the ``status`` metadata field of a post to ``draft``, it will not be shown
+in indexes and feeds. It *will* be compiled, and if you deploy it it *will* be made
+available, so use with care. If you wish your drafts to be not available in your
+deployed site, you can set ``DEPLOY_DRAFTS = False`` in your configuration. This will
+not work if you include ``nikola build`` in your ``DEPLOY_COMMANDS``, as the
+option removes the draft posts before any ``DEPLOY_COMMANDS`` are run.
 
 Also if a post has a date in the future, it will not be shown in indexes until
 you rebuild after that date. This behavior can be disabled by setting
@@ -818,9 +858,65 @@ Generally, you want FUTURE_IS_NOW and DEPLOY_FUTURE to be the same value.
 Private Posts
 ~~~~~~~~~~~~~
 
-If you add a "private" tag to a post, then it will not be shown in indexes and feeds.
-It *will* be compiled, and if you deploy it it *will* be made available, so it will
-not generate 404s for people who had linked to it.
+If you set the ``status`` metadata field of a post to ``private``, it will not be shown
+in indexes and feeds. It *will* be compiled, and if you deploy it it *will* be made
+available, so it will not generate 404s for people who had linked to it.
+
+Featured Posts
+~~~~~~~~~~~~~~
+
+Some themes, ``bootblog4`` in particular, support featured posts. To mark a
+post as featured, simply set the ``status`` meta field to ``featured``. All
+featured posts are available in index templates in a ``featured``
+list, but only if this is the main blog index.
+
+For bootblog4, you can display up to three posts as featured: one can be shown
+in a large gray box (jumbotron), and two more can appear in small white
+cards.  In order to enable this feature, you need to add ``THEME_CONFIG`` to
+your configuration, and set it up properly:
+
+.. code:: python
+
+    THEME_CONFIG = {
+        DEFAULT_LANG: {
+            # Show the latest featured post in a large box, with the previewimage as its background.
+            'featured_large': True,
+            # Show the first (remaining) two featured posts in small boxes.
+            'featured_small': True,
+            # Show featured posts on mobile.
+            'featured_on_mobile': True,
+            # Show image in `featured_large` on mobile.
+            # `featured_small` displays them only on desktop.
+            'featured_large_image_on_mobile': False,
+            # Strip HTML from featured post text.
+            'featured_strip_html': True,
+            # Contents of the sidebar, If empty, the sidebar is not displayed.
+            'sidebar': ''
+        }
+    }
+
+You can pick betweeen (up to) 1, 2, or 3 featured posts. You can mix
+``featured_large`` and ``featured_small``, rest assured that Nikola will always
+display the latest posts no matter what setup you choose. If only one posts
+qualifies for the small cards, one card taking up all the width will appear.
+
+Both featured box formats display an image to the right. You can set it by changing the ``previewimage`` meta value to the full path to the image (eg. ``.. previewimage: /images/featured1.png``). This works best with images in portrait orientation.
+
+Note that, due to space constraints, only the large box may show the image on
+mobile, below the text (this behavior can be disbled). Small boxes never
+display images on mobile. In particular: ``xs`` and ``sm`` display only the
+large image, and only if configured; ``md`` displays only the large image,
+``lg`` displays all three images.
+
+The boxes display only the teaser. We recommend keeping it short so
+you don’t get an ugly scrollbar.
+
+Finally, here’s an example (you’ll need to imagine a scrollbar in the right box
+yourself):
+
+.. thumbnail:: https://getnikola.com/images/bootblog4-featured2x.png
+   :align: center
+   :alt: An example of how featured posts look in bootblog4.
 
 Queuing Posts
 ~~~~~~~~~~~~~
@@ -844,7 +940,7 @@ Monday, Wednesday and Friday at 7am, add the following
     SCHEDULE_RULE = 'RRULE:FREQ=WEEKLY;BYDAY=MO,WE,FR;BYHOUR=7;BYMINUTE=0;BYSECOND=0'
 
 For more details on how to specify a recurrence rule, look at the
-`iCal specification <http://www.kanzaki.com/docs/ical/rrule.html>`_.
+`iCal specification <https://www.kanzaki.com/docs/ical/rrule.html>`_.
 Or if you are scared of this format, many calendaring applications (eg. Google
 Calendar) offer iCal exports, so you can copy-paste the repeat rule from a
 generated iCal (``.ics``) file (which is a human-readable text file).
@@ -938,13 +1034,7 @@ lead to rebuilding all index pages, which might be a problem for larger blogs
 Post taxonomy
 ~~~~~~~~~~~~~
 
-There are three taxonomy systems in Nikola, or three ways to organize posts. Those are:
-
-* tags
-* categories
-* sections
-
-Tags and categories are visible on the *Tags and Categories* page, by default available at ``/categories/``. Each tag/category/section has an index page and feeds.
+There are two taxonomy systems in Nikola, or two ways to organize posts. Those are tags and categories. They are visible on the *Tags and Categories* page, by default available at ``/categories/``. Each tag/category has an index page and feeds.
 
 Tags
 ````
@@ -959,51 +1049,34 @@ Please note that tags are case-sensitive and that you cannot have two tags that 
    ERROR: Nikola: Tag Nikola is used in: posts/second-post.rst
    ERROR: Nikola: Tag nikola is used in: posts/1.rst
 
-Nikola uses some tags to mark a post as “special” — those are ``draft``, ``private``, ``mathjax`` (for math support).
-
-You can also generate a tag cloud with the `tx3_tag_cloud <https://plugins.getnikola.com/#tx3_tag_cloud>`_ plugin.
+You can also generate a tag cloud with the `tx3_tag_cloud <https://plugins.getnikola.com/v7/tx3_tag_cloud/>`_ plugin or get a data file for a tag cloud with the `tagcloud <https://plugins.getnikola.com/v8/tagcloud/>`_ plugin.
 
 Categories
 ``````````
 
-The next unit for organizing your content are categories. A post can have only one category, specified with the ``category`` meta tag. Those are *deprecated* and replaced by sections. They are displayed alongside tags. You can have categories and tags with the same name (categories’ RSS and HTML files are prefixed with ``cat_`` by default).
+The next unit for organizing your content are categories. A post can have only one category, specified with the ``category`` meta tag. They are displayed alongside tags. You can have categories and tags with the same name (categories’ RSS and HTML files are prefixed with ``cat_`` by default).
 
-Sections
-````````
+Categories are handy to organize different parts of your blog, parts that are about different topics. Unlike tags, which you should have tens (hundreds?) of, the list of categories should be shorter.
 
-Sections are the newest feature for taxonomy, and are not supported in themes by default. There are two ways to assign a section to a post:
+Nikola v7 used to support a third taxonomy, called sections. Those have been removed, but all the functionality can be recreated by using the ``CATEGORY_DESTPATH`` settings.
 
-* through the directory structure (first directory is the section name, eg. ``/code/my-project/`` is in the `code` category) — your POSTS should have those directories as the second element, eg.
 
-  .. code:: python
+Configuring tags and categories
+```````````````````````````````
 
-     POSTS = (
-         ('posts/code/*.rst', 'code', 'posts'),
-     )
-
-* through the ``section`` meta field (requires ``POSTS_SECTION_FROM_META`` setting; recommended especially for existing sites which should not change the directory hierarchy)
-
-Sections are meant to be used to organize different parts of your blog, parts that are about different topics. Unlike tags, which you should have tens (hundreds?) of, you should ideally have less than 10 sections (though it depends on what your blog needs; there is no hard limit).
-
-With sections, you can also use some custom styling — if you install ``husl``, you can use ``post.section_color()`` from within templates to get a distinct color for the section of a post, which you can then use in some inline CSS for the section name.
-
-You can find some examples and more information in the `original announcement
-<https://getnikola.com/blog/new-feature-in-nikola-sections.html>`_
-
-Configuring tags, categories and sections
-`````````````````````````````````````````
-
-There are multiple configuration variables dedicated to each of the three taxonomies. You can set:
+There are multiple configuration variables dedicated to each of the two taxonomies. You can set:
 
 * ``TAG_PATH``, ``TAGS_INDEX_PATH``, ``CATEGORY_PATH``, ``CATEGORY_PREFIX`` to configure paths used for tags and categories
-* ``POST_SECTION_NAME``, ``POST_SECTION_TITLE`, `TAG_PAGES_TITLES``, ``CATEGORY_PAGES_TITLES`` to set friendly section names and titles for index pages
-* ``POST_SECTION_DESCRIPTIONS``, `TAG_PAGES_DESCRIPTIONS``, ``CATEGORY_PAGES_DESCRIPTIONS`` to set descriptions for each of the items
-* ``POST_SECTION_COLORS`` to customize colors for each section
+* ``TAG_TITLES``, ``CATEGORY_TITLES`` to set titles and descriptions for index pages
+* ``TAG_DESCRIPTIONS``, ``CATEGORY_DESCRIPTIONS`` to set descriptions for each of the items
 * ``CATEGORY_ALLOW_HIERARCHIES`` and ``CATEGORY_OUTPUT_FLAT_HIERARCHIES`` to allow hierarchical categories
 * ``TAG_PAGES_ARE_INDEXES`` and ``CATEGORY_PAGES_ARE_INDEXES`` to display full-size indexes instead of simple post lists
-* ``WRITE_TAG_CLOUDS`` to enable/disable generating tag cloud files
 * ``HIDDEN_TAGS``. ``HIDDEN_CATEGORIES`` to make some tags/categories invisible in lists
-* ``POSTS_SECTION_FROM_META`` to use ``.. section:`` in posts instead of inferring paths from paths
+* ``CATEGORY_DESTPATH_AS_DEFAULT`` to use the destination path as the category if none is specified in the post
+* ``CATEGORY_DESTPATH_TRIM_PREFIX`` to trim the prefix that comes from ``POSTS`` for the destination path
+* ``CATEGORY_DESTPATH_FIRST_DIRECTORY`` to only use the first directory name for the defaulted category
+* ``CATEGORY_DESTPATH_NAMES`` to specify friendly names for defaulted categories
+* ``CATEGORY_PAGES_FOLLOW_DESTPATH`` to put category pages next to their related posts (via destpath)
 
 What if I don’t want a blog?
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1020,7 +1093,7 @@ Pages are the same as posts, except that:
 
 * They are not added to the front page
 * They don't appear on the RSS feed
-* They use the ``story.tmpl`` template instead of ``post.tmpl`` by default
+* They use the ``page.tmpl`` template instead of ``post.tmpl`` by default
 
 The default configuration expects the page's metadata and text files to be on the
 ``pages`` folder, but that can be changed (see ``PAGES`` option above).
@@ -1039,7 +1112,7 @@ Supported input formats
 Nikola supports multiple input formats.  Out of the box, we have compilers available for:
 
 * reStructuredText (default and pre-configured)
-* `Markdown`_
+* `Markdown`_ (pre-configured since v7.8.7)
 * `Jupyter Notebook`_
 * `HTML`_
 * `PHP`_
@@ -1062,6 +1135,11 @@ Plus, we have specialized compilers in the Plugins Index for:
 * `txt2tags <https://plugins.getnikola.com/#txt2tags>`_
 * `CreoleWiki <https://plugins.getnikola.com/#wiki>`_
 * `WordPress posts <https://plugins.getnikola.com/#wordpress_compiler>`_
+
+To write posts in a different format, you need to configure the compiler and
+paths. To create a post, use ``nikola new_post -f COMPILER_NAME``, eg. ``nikola
+new_post -f markdown``. The default compiler used is the first entry in POSTS
+or PAGES.
 
 Configuring other input formats
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -1109,7 +1187,8 @@ The ``-f`` argument to ``new_post`` should be used in the ``ipynb@KERNEL`` forma
 It defaults to Python in the version used by Nikola if not specified.
 
 Jupyter Notebooks are also supported in stand-alone listings, if Jupyter
-support is enabled site-wide.
+support is enabled site-wide. You must have something for ``.ipynb`` in POSTS
+or PAGES for the feature to work.
 
 HTML
 ````
@@ -1190,24 +1269,11 @@ Example of a paired shortcode (note that we don't have a highlight shortcode yet
 Built-in shortcodes
 ~~~~~~~~~~~~~~~~~~~
 
-doc
-    Will link to a document in the page, see `Doc role for details
-    <#doc>`__. Example:
+.. warning::
 
-    .. code:: restructuredtext
-
-       {{% raw %}}Take a look at {{% doc %}}my other post <creating-a-theme>{{% /doc %}} about theme creating.{{% /raw %}}
-
-post-list
-    Will show a list of posts, see the `Post List directive for details <#post-list>`__
-
-media
-    Display media embedded from a URL, for example, this will embed a youtube video:
-
-    .. code:: text
-
-        {{% raw %}}{{% media url="https://www.youtube.com/watch?v=Nck6BZga7TQ" %}}{{% /raw %}}
-
+    Some of the shortcodes are implemented as bindings to reST directives. In
+    order to use them, you need at least one entry for ``*.rst`` in
+    POSTS/PAGES.
 
 chart
     Create charts via PyGal. This is similar to the `chart directive <#chart>`__ except the syntax is adapted to
@@ -1215,13 +1281,46 @@ chart
 
     .. code:: text
 
-        {{% raw %}}{{% chart Bar title='Browser usage evolution (in %)' %}}
-        x_labels='["2002","2003","2004","2005","2006","2007","2008","2009","2010","2011","2012"]'%}}
+        {{% raw %}}{{% chart Bar title='Browser usage evolution (in %)'
+x_labels='["2002","2003","2004","2005","2006","2007"]' %}}
         'Firefox', [None, None, 0, 16.6, 25, 31]
         'Chrome',  [None, None, None, None, None, None]
         'IE',      [85.8, 84.6, 84.7, 74.5, 66, 58.6]
         'Others',  [14.2, 15.4, 15.3, 8.9, 9, 10.4]
         {{% /chart %}}{{% /raw %}}
+
+    Additionally, you can use a file_data argument which can point to a JSON or YAML file, and will be used for both arguments and data.
+    Example:
+
+    .. code:: json
+
+        {
+            "x_labels": ["2002","2003","2004","2005","2006","2007"],
+            "data": {
+                "Firefox": [null, null, 0, 16.6, 25, 31],
+                "Chrome": [null, null, null, null, null, null],
+                "IE": [85.8, 84.6, 84.7, 74.5, 66, 58.6],
+                "Others": [14.2, 15.4, 15.3, 8.9, 9, 10.4]
+            }
+        }
+
+    Which can be used like this:
+
+    .. code:: text
+
+        {{% raw %}}{{% chart Bar title='Browser usage evolution (in %)' data_file="posts/browsers.json" %}}
+        {{% /chart %}}
+        {{% /raw %}}
+
+    If the data or any option is available in both the ``data_file`` and the document, the document has priority.
+
+doc
+    Will link to a document in the page, see `Doc role for details
+    <#doc>`__. Example:
+
+    .. code:: restructuredtext
+
+       {{% raw %}}Take a look at {{% doc %}}my other post <creating-a-theme>{{% /doc %}} about theme creating.{{% /raw %}}
 
 emoji
     Insert an emoji. For example:
@@ -1235,13 +1334,55 @@ emoji
 gist
     Show GitHub gists. If you know the gist's ID, this will show it in your site:
 
-    {{% raw %}}{{% gist 2395294 %}} {{% /raw %}}
+    .. code:: text
 
+        {{% raw %}}{{% gist 2395294 %}} {{% /raw %}}
+
+listing
+    Used to show a code listing. Example:
+
+    .. code:: text
+
+        {{% raw %}}{{% listing hello.py python linenumbers=True %}}{{% /raw %}}
+
+    It takes a file name or path, an optional language to highlight, and a linenumbers option to enable/disable line numbers in the output.
+
+media
+    Display media embedded from a URL, for example, this will embed a youtube video:
+
+    .. code:: text
+
+        {{% raw %}}{{% media url=https://www.youtube.com/watch?v=Nck6BZga7TQ %}}{{% /raw %}}
+
+    Note that the shortcode won’t work if your compiler turns URLs into clickable links.
+
+post-list
+    Will show a list of posts, see the `Post List directive for details <#post-list>`__.
 
 raw
     Passes the content along, mostly used so I can write this damn section and you can see the shortcodes instead
     of them being munged into shortcode **output**. I can't show an example because Inception.
 
+thumbnail
+    Display image thumbnails, with optional captions. Examples:
+
+    .. code:: text
+
+        {{% raw %}}{{% thumbnail "/images/foo.png" %}}{{% /thumbnail %}}{{% /raw %}}
+        {{% raw %}}{{% thumbnail "/images/foo.png" alt="Foo Image" align="center" %}}{{% /thumbnail %}}{{% /raw %}}
+        {{% raw %}}{{% thumbnail "/images/foo.png" imgclass="image-grayscale" figclass="figure-shadow" %}}&lt;p&gt;Image caption&lt;/p&gt;{{% /thumbnail %}}{{% /raw %}}
+        {{% raw %}}{{% thumbnail "/images/foo.png" alt="Foo Image" title="Insert title-text joke here" align="right" %}}&lt;p class="caption"&gt;Foo Image (right-aligned) caption&lt;/p&gt;{{% /thumbnail %}}{{% /raw %}}
+
+    The following keyword arguments are supported:
+
+    * alt (alt text for image)
+    * align (image alignment, left/center/right)
+    * linktitle (title text for the link, shown by e.g. baguetteBox)
+    * title (title text for image)
+    * imgclass (class for image)
+    * figclass (class for figure, used only if you provide a caption)
+
+    Looks similar to the reST thumbnail directive. Caption should be a HTML fragment.
 
 Community shortcodes
 ~~~~~~~~~~~~~~~~~~~~
@@ -1305,7 +1446,7 @@ In that case, the template engine used will be your theme's and the arguments yo
 as well as the global context from your ``conf.py``, are available to the template you
 are creating.
 
-You can use anything defined in your confguration's ``GLOBAL_CONTEXT`` as
+You can use anything defined in your configuration's ``GLOBAL_CONTEXT`` as
 variables in your shortcode template, with a caveat: Because of an unfortunate
 implementation detail (a name conflict), ``data`` is called ``global_data``
 when used in a shortcode.
@@ -1376,9 +1517,12 @@ you can't, this will work.
 Configuration
 -------------
 
-The configuration file is called ``conf.py`` and can be used to customize a lot of
-what Nikola does. Its syntax is python, but if you don't know the language, it
-still should not be terribly hard to grasp.
+The configuration file can be used to customize a lot of what Nikola does. Its
+syntax is python, but if you don't know the language, it still should not be
+terribly hard to grasp.
+
+By default, the ``conf.py`` file in the root of the Nikola website will be used.
+You can pass a different configuration file to by using the ``--conf`` command line switch.
 
 The default ``conf.py`` you get with Nikola should be fairly complete, and is quite
 commented.
@@ -1400,10 +1544,33 @@ them.  For those options, two types of values can be provided:
 * a string, which will be used for all languages
 * a dict of language-value pairs, to have different values in each language
 
-.. note:: It is possible to load the configuration from another file by specifying
-          ``--conf=path/to/other.file`` on Nikola's command line. For example, to
-          build your blog using the configuration file ``configurations/test.conf.py``,
-          you have to execute ``nikola build --conf=configurations/test.conf.py``.
+.. note::
+    As of version 8.0.3 it is possible to create configuration files which inherit values from other Python files.
+    This might be useful if you're working with similar environments.
+
+    Example:
+        conf.py:
+            .. code:: python
+
+                BLOG_AUTHOR = "Your Name"
+                BLOG_TITLE = "Demo Site"
+                SITE_URL = "https://yourname.github.io/demo-site
+                BLOG_EMAIL = "joe@demo.site"
+                BLOG_DESCRIPTION = "This is a demo site for Nikola."
+
+        debug.conf.py:
+            .. code:: python
+
+                import conf
+                globals().update(vars(conf))
+                SITE_URL = "http://localhost:8000/"
+
+            or
+
+            .. code:: python
+
+                from conf import *
+                SITE_URL = "http://localhost:8000/"
 
 Customizing Your Site
 ---------------------
@@ -1428,9 +1595,13 @@ CSS tweaking
     there and a targets file containing the list of files you want compiled.
 
 .. _LESS: http://lesscss.org/
-.. _Sass: http://sass-lang.com/
+.. _Sass: https://sass-lang.com/
 
 Template tweaking and creating themes
+    For tweaking an existing template or adding new ones,
+    you can put the respective file under ``templates/``.
+    The `demo site`_ provides an example.
+
     If you really want to change the pages radically, you will want to do a
     :doc:`custom theme <theming>`.
 
@@ -1463,13 +1634,16 @@ Navigation Links
        1. Support for submenus is theme-dependent.  Only one level of
           submenus is supported.
 
-       2. Some themes, including the default Bootstrap 3 theme, may
-          present issues if the menu is too large.  (in ``bootstrap3``, the
-          navbar can grow too large and cover contents.)
+       2. Some themes, including the default Bootstrap theme, may
+          present issues if the menu is too large.  (in Bootstrap, the navbar
+          can grow too large and cover contents.)
 
        3. If you link to directories, make sure to follow ``STRIP_INDEXES``.  If
           it’s set to ``True``, end your links with a ``/``, otherwise end them
           with ``/index.html`` — or else they won’t be highlighted when active.
+
+    There’s also ``NAVIGATION_ALT_LINKS``. Themes may display this somewhere
+    else, or not at all. Bootstrap puts it on the right side of the header.
 
     The ``SEARCH_FORM`` option contains the HTML code for a search form based on
     duckduckgo.com which should always work, but feel free to change it to
@@ -1498,10 +1672,13 @@ Fancy Dates
 Nikola can use various styles for presenting dates.
 
 DATE_FORMAT
-    The date format to use if there is no JS or fancy dates are off.  Compatible with Python’s ``strftime()`` syntax.
+    The date format to use if there is no JS or fancy dates are off.  `Compatible with CLDR syntax. <http://cldr.unicode.org/translation/date-time-1/date-time>`_
 
-JS_DATE_FORMAT
-    The date format to use if fancy dates are on.  Compatible with ``moment.js`` syntax.
+LUXON_DATE_FORMAT
+    The date format to use with Luxon. A dictionary of dictionaries: the top level is languages, and the subdictionaries are of the format ``{'preset': False, 'format': 'yyyy-MM-dd HH:mm'}``. `Used by Luxon <https://moment.github.io/luxon/docs/manual/formatting>`_ (format can be the preset name, eg. ``'DATE_LONG'``).
+
+MOMENTJS_DATE_FORMAT (formerly JS_DATE_FORMAT)
+    The date format to use if fancy dates are on, and the theme is using Moment.js.
 
 DATE_FANCINESS = 0
     Fancy dates are off, and DATE_FORMAT is used.
@@ -1518,41 +1695,45 @@ For Mako:
 
 .. code:: html
 
+    % if date_fanciness != 0:
     <!-- required scripts -- best handled with bundles -->
-    <script src="/assets/js/moment-with-locales.min.js"></script>
+    <script src="/assets/js/luxon.min.js"></script>
     <script src="/assets/js/fancydates.js"></script>
 
     <!-- fancy dates code -->
     <script>
-    moment.locale("${momentjs_locales[lang]}");
-    fancydates(${date_fanciness}, ${js_date_format});
+    luxon.Settings.defaultLocale = "${luxon_locales[lang]}";
+    fancydates(${date_fanciness}, ${luxon_date_format});
     </script>
     <!-- end fancy dates code -->
+    %endif
 
 
 For Jinja2:
 
 .. code:: html
 
+    {% if date_fanciness != 0 %}
     <!-- required scripts -- best handled with bundles -->
-    <script src="/assets/js/moment-with-locales.min.js"></script>
+    <script src="/assets/js/luxon.min.js"></script>
     <script src="/assets/js/fancydates.js"></script>
 
     <!-- fancy dates code -->
     <script>
-    moment.locale("{{ momentjs_locales[lang] }}");
-    fancydates({{ date_fanciness }}, {{ js_date_format }});
+    luxon.Settings.defaultLocale = "{{ luxon_locales[lang] }}";
+    fancydates({{ date_fanciness }}, {{ luxon_date_format }});
     </script>
     <!-- end fancy dates code -->
+    {% endif %}
 
 
 Adding Files
 ------------
 
-Any files you want to be in ``output/`` but are not generated by Nikola (for example,
-``favicon.ico``) just put it in ``files/``. Everything there is copied into
-``output`` by the ``copy_files`` task. Remember that you can't have files that collide
-with files Nikola generates (it will give an error).
+Any files you want to be in ``output/`` but are not generated by Nikola (for
+example, ``favicon.ico``) should be placed in ``files/``.  Remember that you
+can't have files that collide with files Nikola generates (it will give an
+error).
 
 .. admonition:: Important
 
@@ -1611,23 +1792,21 @@ If you create a nice theme, please share it!  You can do it as a pull
 request in the  `GitHub repository <https://github.com/getnikola/nikola-themes>`__.
 
 One other option is to tweak an existing theme using a different color scheme,
-typography and CSS in general. Nikola provides a ``bootswatch_theme`` option
-to create a custom theme by downloading free CSS files from http://bootswatch.com:
+typography and CSS in general. Nikola provides a ``subtheme`` command
+to create a custom theme by downloading free CSS files from https://bootswatch.com
+and https://hackerthemes.com
 
 
 .. code:: console
 
-    $ nikola bootswatch_theme -n custom_theme -s flatly -p bootstrap3
-    [2013-10-12T16:46:58Z] NOTICE: bootswatch_theme: Creating 'custom_theme' theme
-    from 'flatly' and 'bootstrap3'
-    [2013-10-12T16:46:58Z] NOTICE: bootswatch_theme: Downloading:
-    http://bootswatch.com//flatly/bootstrap.min.css
-    [2013-10-12T16:46:58Z] NOTICE: bootswatch_theme: Downloading:
-    http://bootswatch.com//flatly/bootstrap.css
-    [2013-10-12T16:46:59Z] NOTICE: bootswatch_theme: Theme created. Change the THEME setting to "custom_theme" to use it.
-
-You can even try what different swatches do on an existing site using
-their handy `bootswatchlet <http://news.bootswatch.com/post/29555952123/a-bookmarklet-for-bootswatch>`_
+    $ nikola subtheme -n custom_theme -s flatly -p bootstrap4
+    [2013-10-12T16:46:58Z] NOTICE: subtheme: Creating 'custom_theme' theme
+    from 'flatly' and 'bootstrap4'
+    [2013-10-12T16:46:58Z] NOTICE: subtheme: Downloading:
+    http://bootswatch.com/flatly/bootstrap.min.css
+    [2013-10-12T16:46:58Z] NOTICE: subtheme: Downloading:
+    http://bootswatch.com/flatly/bootstrap.css
+    [2013-10-12T16:46:59Z] NOTICE: subtheme: Theme created. Change the THEME setting to "custom_theme" to use it.
 
 Play with it, there's cool stuff there. This feature was suggested by
 `clodo <http://elgalpondebanquito.com.ar>`_.
@@ -1655,8 +1834,8 @@ Here is an example, from my own site's deployment script:
     ]}
 
 Other interesting ideas are using
-`git as a deployment mechanism <http://toroid.org/ams/git-website-howto>`_ (or any other VCS
-for that matter), using `lftp mirror <http://lftp.yar.ru/>`_ or unison, or Dropbox.
+`git as a deployment mechanism <https://toroid.org/git-website-howto>`_ (or any other VCS
+for that matter), using `lftp mirror <https://lftp.yar.ru/>`_ or unison, or Dropbox.
 Any way you can think of to copy files from one place to another is good enough.
 
 Deploying to GitHub
@@ -1688,7 +1867,7 @@ sure you have ``nikola`` and ``git`` installed on your PATH.
    * ``GITHUB_REMOTE_NAME`` is the remote to which changes are pushed.
    * ``GITHUB_COMMIT_SOURCE`` controls whether or not the source branch is
      automatically committed to and pushed. We recommend setting it to
-     ``True``, unless you are automating builds with Travis CI.
+     ``True``, unless you are automating builds with CI (eg. GitHub Actions/GitLab CI).
 
 4. Create a ``.gitignore`` file. We recommend adding at least the following entries:
 
@@ -1710,20 +1889,14 @@ If you want to use a custom domain, create your ``CNAME`` file in
 output directory. To add a custom commit message, use the ``-m`` option,
 followed by your message.
 
-Automated rebuilds with Travis CI
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+Automated rebuilds (GitHub Actions, GitLab)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 If you want automated rebuilds and GitHub Pages deployment, allowing you to
-blog from anywhere in the world, follow this guide:
-`Automating Nikola rebuilds with Travis CI
-<https://getnikola.com/blog/automating-nikola-rebuilds-with-travis-ci.html>`_.
+blog from anywhere in the world, you have multiple options:
 
-Automated rebuilds with GitLab
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-GitLab also offers rebuild automation if you want to use Nikola with GitLab
-Pages. Check out the example `Nikola site on GitLab
-<https://gitlab.com/pages/nikola>`_.
+* `Automating Nikola rebuilds with GitHub Actions <https://getnikola.com/blog/automating-nikola-rebuilds-with-github-actions.html>`_ (easier for GitHub)
+* `Example Nikola site for GitLab Pages <https://gitlab.com/pages/nikola>`_
 
 Comments
 --------
@@ -1733,31 +1906,43 @@ are probably expecting: comments.
 
 Nikola supports several third party comment systems:
 
-* `DISQUS <http://disqus.com>`_
-* `IntenseDebate <http://www.intensedebate.com/>`_
-* `LiveFyre <http://www.livefyre.com/>`_
-* `Moot <http://moot.it>`_
-* `Facebook <http://facebook.com/>`_
-* `isso <http://posativ.org/isso/>`_
+* `DISQUS <https://disqus.com>`_
+* `Discourse <https://discourse.com>`_
+* `IntenseDebate <https://www.intensedebate.com/>`_
+* `Muut (Formerly moot) <https://muut.com/>`_
+* `Facebook <https://facebook.com/>`_
+* `Isso <https://posativ.org/isso/>`_
+* `Commento <https://github.com/adtac/commento>`_
+* `Utterances <https://utteranc.es/>`_
 
 By default it will use DISQUS, but you can change by setting ``COMMENT_SYSTEM``
-to one of "disqus", "intensedebate", "livefyre", "moot", "facebook" or "isso"
+to one of "disqus", "intensedebate", "livefyre", "moot", "facebook", "isso", "commento" or "utterances".
+It is also possible to use a comment system added by a plugin, see the
+`Cactus Comments plugin <https://plugins.getnikola.com/#cactuscomments>`_ for an example.
 
 .. sidebar:: ``COMMENT_SYSTEM_ID``
 
    The value of ``COMMENT_SYSTEM_ID`` depends on what comment system you
    are using and you can see it in the system's admin interface.
 
-   * For DISQUS it's called the **shortname**
-   * In IntenseDebate it's the **IntenseDebate site acct**
-   * In LiveFyre it's the **siteId**
-   * In Moot it's your **username**
+   * For DISQUS, it's called the **shortname**
+   * For IntenseDebate, it's the **IntenseDebate site acct**
+   * For Muut, it's your **username**
    * For Facebook, you need to `create an app
      <https://developers.facebook.com/apps>`_ (turn off sandbox mode!)
      and get an **App ID**
-   * For isso, it is the URL of isso (must be world-accessible, encoded with
+   * For Isso, it's the URL of your Isso instance (must be world-accessible, encoded with
      Punycode (if using Internationalized Domain Names) and **have a trailing slash**,
-     default ``http://localhost:8080/``)
+     default ``http://localhost:8080/``). You can add custom config options via
+     ``GLOBAL_CONTEXT``, e.g., ``GLOBAL_CONTEXT['isso_config'] = {"require-author": "true"}``
+   * For Discourse, it's the forum instance (must be world-accessible)  and **have a trailing slash**.
+   * For Commento, it's the URL of the commento instance as required by the ``serverUrl``
+     parameter in commento's documentation.
+   * For Utterances, it's the **repo name** (``"org/user"``) on GitHub whose
+     issue tracker is used for comments. Additional Utterances configuration
+     values can be stored in the ``GLOBAL_CONTEXT``, e.g.,
+     ``GLOBAL_CONTEXT['utterances_config'] = {"issue-term": "title",
+     "label": "Comments", "theme": "github-light", "crossorigin": "anonymous")``.
 
 To use comments in a visible site, you should register with the service and
 then set the ``COMMENT_SYSTEM_ID`` option.
@@ -1803,6 +1988,14 @@ You can disable comments for a post by adding a "nocomments" metadata field to i
     You need jQuery, but not because Facebook wants it (see Issue
     #639).
 
+.. admonition:: Utterances Support
+
+   You can copy the configuration options from the `Utterances setup page
+   <https://utteranc.es>`_ into ``GLOBAL_CONTEXT['utterances_config']``,
+   except for ``repo``, which should be set as ``COMMENT_SYSTEM_ID``. Note
+   that the either ``issue-term`` or ``issue-number`` must be provided. All
+   other Utterances configuration options are optional.
+
 Images and Galleries
 --------------------
 
@@ -1810,15 +2003,41 @@ To create an image gallery, all you have to do is add a folder inside ``gallerie
 and put images there. Nikola will take care of creating thumbnails, index page, etc.
 
 If you click on images on a gallery, or on images with links in post, you will
-see a bigger image, thanks to the excellent `colorbox
-<http://www.jacklmoore.com/colorbox>`_.  If don’t want this behavior, add an
-``.islink`` class to your image or link. (The behavior is caused by
-``<a class="image-reference">`` if you need to use it outside of galleries and reST
-thumbnails.)
+see a bigger image, thanks to the excellent `baguetteBox
+<https://feimosi.github.io/baguetteBox.js/>`_.  If don’t want this behavior, add an
+``.islink`` class to your link.
 
 The gallery pages are generated using the ``gallery.tmpl`` template, and you can
-customize it there (you could switch to another lightbox instead of colorbox, change
+customize it there (you could switch to another lightbox instead of baguetteBox, change
 its settings, change the layout, etc.).
+
+Images in galleries may be provided with captions and given a specific
+ordering, by creating a file in the gallery directory called ``metadata.yml``.
+This YAML file should contain a ``name`` field for each image in the gallery
+for which you wish to provide either a caption or specific ordering. You can also
+create localized versions (``metadata.xx.yml``).
+
+Only one ``metadata.yml`` is needed per gallery. Here is an example, showing names,
+captions and ordering. ``caption`` and ``order`` are given special treatment,
+anything else is available to templates, as keys of ``photo_array`` images.
+
+.. code:: yaml
+
+    ---
+    name: ready-for-the-acid-wash.jpg
+    ---
+    name: almost-full.jpg
+    caption: The pool is now almost full
+    ---
+    name: jumping-in.jpg
+    caption: We're enjoying the new pool already
+    order: 4
+    ---
+    name: waterline-tiles.jpg
+    order: 2
+    custom: metadata is supported
+    ---
+
 
 Images to be used in normal posts can be placed in the ``images`` folder. These
 images will be processed and have thumbnails created just as for galleries, but will
@@ -1842,6 +2061,15 @@ The ``conf.py`` options affecting images and gallery pages are these:
     USE_FILENAME_AS_TITLE = True
     EXTRA_IMAGE_EXTENSIONS = []
 
+    # Use a thumbnail (defined by ".. previewimage:" in the gallery's index) in
+    # list of galleries for each gallery
+    GALLERIES_USE_THUMBNAIL = False
+
+    # Image to use as thumbnail for those galleries that don't have one
+    # None: show a grey square
+    # '/url/to/file': show the image in that url
+    GALLERIES_DEFAULT_THUMBNAIL = None
+
     # If set to False, it will sort by filename instead. Defaults to True
     GALLERY_SORT_BY_DATE = True
 
@@ -1861,7 +2089,11 @@ The ``conf.py`` options affecting images and gallery pages are these:
 
 If you add a reST file in ``galleries/gallery_name/index.txt`` its contents will be
 converted to HTML and inserted above the images in the gallery page. The
-format is the same as for posts.
+format is the same as for posts. You can use the ``title``, ``previewimage``, and
+``status`` metadata fields to change how the gallery is shown.
+
+If the ``status`` is ``private``, ``draft``, or ``publish_later``, the
+gallery will not appear in the index, the RSS feeds, nor in the sitemap.
 
 If you add some image filenames in ``galleries/gallery_name/exclude.meta``, they
 will be excluded in the gallery page.
@@ -1871,7 +2103,7 @@ is used as the photo caption. If the filename starts with a number, it will
 be stripped. For example ``03_an_amazing_sunrise.jpg`` will be render as *An amazing sunrise*.
 
 Here is a `demo gallery </galleries/demo>`_ of historic, public domain Nikola
-Tesla pictures taken from `this site <http://kerryr.net/pioneers/gallery/tesla.htm>`_.
+Tesla pictures taken from `this site <https://kerryr.net/pioneers/gallery/tesla.htm>`_.
 
 Embedding Images
 ~~~~~~~~~~~~~~~~
@@ -1980,6 +2212,22 @@ listed there.
 There is a huge number of EXIF tags, described in `the standard <http://www.cipa.jp/std/documents/e/DC-008-2012_E.pdf>`__
 
 
+Handling ICC Profiles
+---------------------
+
+Your images may contain `ICC profiles. <https://en.wikipedia.org/wiki/ICC_profile>`__  These describe the color space in which the images were created or captured.
+
+Most desktop web browsers can use embedded ICC profiles to display images accurately.  As of early 2018 few mobile browsers consider ICC profiles when displaying images.  A notable exception is Safari on iOS.
+
+By default Nikola strips out ICC profiles when preparing images for your posts and galleries.  If you want Nikola to preserve ICC profiles, add this in your ``conf.py``:
+
+.. code:: python
+
+  PRESERVE_ICC_PROFILES = True
+
+You may wish to do this if, for example, your site contains JPEG images that use a wide-gamut profile such as "Display P3".
+
+
 Post Processing Filters
 -----------------------
 
@@ -2035,19 +2283,19 @@ The currently available filters are:
       }
 
 filters.html_tidy_nowrap
-   Prettify HTML 5 documents with `tidy5 <http://www.html-tidy.org/>`_
+   Prettify HTML 5 documents with `tidy <https://www.html-tidy.org/>`_
 
 filters.html_tidy_wrap
-   Prettify HTML 5 documents wrapped at 80 characters with `tidy5 <http://www.html-tidy.org/>`_
+   Prettify HTML 5 documents wrapped at 80 characters with `tidy <https://www.html-tidy.org/>`_
 
 filters.html_tidy_wrap_attr
-   Prettify HTML 5 documents and wrap lines and attributes with `tidy5 <http://www.html-tidy.org/>`_
+   Prettify HTML 5 documents and wrap lines and attributes with `tidy <https://www.html-tidy.org/>`_
 
 filters.html_tidy_mini
-   Minify HTML 5 into smaller documents with `tidy5 <http://www.html-tidy.org/>`_
+   Minify HTML 5 into smaller documents with `tidy <https://www.html-tidy.org/>`_
 
 filters.html_tidy_withconfig
-   Run `tidy5 <http://www.html-tidy.org/>`_ with ``tidy5.conf`` as the config file (supplied by user)
+   Run `tidy <https://www.html-tidy.org/>`_ with ``tidy.conf`` as the config file (supplied by user)
 
 filters.html5lib_minify
    Minify HTML5 using html5lib_minify
@@ -2056,10 +2304,39 @@ filters.html5lib_xmllike
    Format using html5lib
 
 filters.typogrify
-   Improve typography using `typogrify <http://static.mintchaos.com/projects/typogrify/>`__
+   Improve typography using `typogrify <https://github.com/justinmayer/typogrify>`__
 
 filters.typogrify_sans_widont
    Same as typogrify without the widont filter
+
+filters.typogrify_custom
+    Run typogrify with a custom set of filters or ignored HTML elements. Takes one or
+    both of the arguments ``typogrify_filters`` or ``ignore_tags``. ``typogrify_filters``
+    must be a list of typogrify filter callables to run. ``ignore_tags`` must be a list
+    of strings specifying HTML tags, CSS classes (prefixed with ``.``), tag ``id`` names
+    (prefixed with ``#``), or a tag and a class or id. The following code should be
+    placed in ``conf.py``.
+
+    .. code-block:: python
+
+      from nikola.filters import typogrify_custom
+      import functools
+      # This filter will ignore HTML elements with the CSS class "typo-ignore"
+      FILTERS = {
+        ".html": [functools.partial(typogrify_custom, ignore_tags=[".typo-ignore"])]
+      }
+      # Alternatively, to specify ``typogrify_filters``
+      import typogrify.filters as typo
+      FILTERS = {
+        ".html": [functools.partial(typogrify_custom, typogrify_filters=[typo.amp])]
+      }
+
+    The default value for ``typogrify_filters`` is
+    ``[typo.amp, typo.widont, typo.smartypants, typo.caps, typo.initial_quotes]`` and the
+    default value for ``ignore_tags`` is ``["title", ".math"]``. If ``ignore_tags`` is
+    specified, the default tags will be appended to the supplied list. See the
+    `documentation <https://github.com/justinmayer/typogrify/blob/master/typogrify/filters.py>`__
+    for the ``process_ignores`` function in typogrify.
 
 filters.minify_lines
    **THIS FILTER HAS BEEN TURNED INTO A NOOP** and currently does nothing.
@@ -2069,7 +2346,7 @@ filters.normalize_html
    quotes. Usually not needed.
 
 filters.yui_compressor
-   Compress CSS/JavaScript using `YUI compressor <http://yui.github.io/yuicompressor/>`_
+   Compress CSS/JavaScript using `YUI compressor <https://yui.github.io/yuicompressor/>`_
 
 filters.closure_compiler
    Compile, compress, and optimize JavaScript `Google Closure Compiler <https://developers.google.com/closure/compiler/>`_
@@ -2078,13 +2355,13 @@ filters.optipng
    Compress PNG files using `optipng <http://optipng.sourceforge.net/>`_
 
 filters.jpegoptim
-   Compress JPEG files using `jpegoptim <http://www.kokkonen.net/tjko/projects.html>`_
+   Compress JPEG files using `jpegoptim <https://www.kokkonen.net/tjko/projects.html>`_
 
 filters.cssminify
-   Minify CSS using http://cssminifier.com/ (requires Internet access)
+   Minify CSS using https://cssminifier.com/ (requires Internet access)
 
 filters.jsminify
-   Minify JS using http://javascript-minifier.com/ (requires Internet access)
+   Minify JS using https://javascript-minifier.com/ (requires Internet access)
 
 filters.jsonminify
    Minify JSON files (strip whitespace and use minimal separators).
@@ -2148,16 +2425,20 @@ filters.deduplicate_ids
 
       DEDUPLICATE_IDS_TOP_CLASSES = ('postpage', 'storypage')
 
-    You can also use a file blacklist (``HEADER_PERMALINKS_FILE_BLACKLIST``),
-    useful for some index pages. Paths include the output directory (eg.
-    ``output/index.html``)
+
+   You can also use a file blacklist (``HEADER_PERMALINKS_FILE_BLACKLIST``),
+   useful for some index pages. Paths include the output directory (eg.
+   ``output/index.html``)
 
 
 You can apply filters to specific posts or pages by using the ``filters`` metadata field:
 
 .. code:: restructuredtext
 
-    .. filters: filters.html_tidy_nowrap, "sed s/foo/bar"
+    .. filters: filters.html_tidy_nowrap, "sed s/foo/bar %s"
+
+Please note that applying custom filters (not those provided via Nikola's filter module)
+via metadata only works for filters implemented via external programs like in that `sed` example.
 
 Optimizing Your Website
 -----------------------
@@ -2184,7 +2465,7 @@ different ones, or about other web servers, please share!
 4. Optionally you can create static compressed copies and save some CPU on your server
    with the GZIP_FILES option in Nikola.
 
-5. The webassets Nikola plugin can drastically decrease the number of CSS and JS files your site fetches.
+5. The bundles Nikola plugin can drastically decrease the number of CSS and JS files your site fetches.
 
 6. Through the filters feature, you can run your files through arbitrary commands, so that images
    are recompressed, JavaScript is minimized, etc.
@@ -2206,9 +2487,9 @@ Nikola uses MathJax by default. If you want to use KaTeX (faster and prettier,
 but may not support every feature yet), set ``USE_KATEX = True`` in
 ``conf.py``.
 
-To use mathematics in a post, you **must** add the ``mathjax`` tag, no matter
-which renderer you are using.  (Exception: posts that are Jupyter Notebooks are
-automatically marked as math)
+To use mathematics in a post, you **must** set the ``has_math`` metadata field
+to ``true``. (Exception: posts that are Jupyter Notebooks are automatically
+marked as math)
 
 .. Note to editors: the paragraph below uses U+200B, zero-width space. Don’t break it.
 
@@ -2322,9 +2603,9 @@ URL of the page.  For example here are two random videos:
 
 .. code:: restructuredtext
 
-    .. media:: http://vimeo.com/72425090
+    .. media:: https://vimeo.com/72425090
 
-    .. media:: http://www.youtube.com/watch?v=wyRpAat5oz0
+    .. media:: https://www.youtube.com/watch?v=wyRpAat5oz0
 
 It supports Instagram, Flickr, Github gists, Funny or Die, and dozens more, thanks to `Micawber <https://github.com/coleifer/micawber>`_
 
@@ -2332,7 +2613,7 @@ YouTube
 ~~~~~~~
 
 To link to a YouTube video, you need the id of the video. For example, if the
-URL of the video is http://www.youtube.com/watch?v=8N_tupPBtWQ what you need is
+URL of the video is https://www.youtube.com/watch?v=8N_tupPBtWQ what you need is
 **8N_tupPBtWQ**
 
 Once you have that, all you need to do is:
@@ -2341,19 +2622,20 @@ Once you have that, all you need to do is:
 
     .. youtube:: 8N_tupPBtWQ
 
-Supported options: ``height``, ``width``, ``align`` (one of ``left``,
+Supported options: ``height``, ``width``, ``start_at``, ``align`` (one of ``left``,
 ``center``, ``right``) — all are optional. Example:
 
 .. code:: restructuredtext
 
     .. youtube:: 8N_tupPBtWQ
        :align: center
+       :start_at: 4
 
 Vimeo
 ~~~~~
 
 To link to a Vimeo video, you need the id of the video. For example, if the
-URL of the video is http://www.vimeo.com/20241459 then the id is **20241459**
+URL of the video is https://vimeo.com/20241459 then the id is **20241459**
 
 Once you have that, all you need to do is:
 
@@ -2377,7 +2659,7 @@ Supported options: ``height``, ``width``, ``align`` (one of ``left``,
 Soundcloud
 ~~~~~~~~~~
 
-This directive lets you share music from http://soundcloud.com You first need to get the
+This directive lets you share music from https://soundcloud.com You first need to get the
 ID for the piece, which you can find in the "share" link. For example, if the
 WordPress code starts like this:
 
@@ -2412,6 +2694,21 @@ for ``code`` directive are provided: ``code-block`` and ``sourcecode``:
 
        print("Our virtues and our failings are inseparable")
 
+Certain lines might be highlighted via the ``emphasize-lines`` directive:
+
+.. code:: restructuredtext
+
+    .. code-block:: python
+        :emphasize-lines: 3,5
+
+        def some_function():
+            interesting = False
+            print('This line is highlighted.')
+            print('This one is not...')
+            print('...but this one is.')
+
+Line ranges are also supported, such as ``:emphasize-lines: 1-3,5-9,15``.
+
 Listing
 ~~~~~~~
 
@@ -2428,7 +2725,8 @@ and also create a ``listings/foo.py.html`` page (or in another directory, depend
 ``LISTINGS_FOLDER``) and the listing will have a title linking to it.
 
 The stand-alone ``listings/`` pages also support Jupyter notebooks, if they are
-supported site-wide.
+supported site-wide. You must have something for ``.ipynb`` in POSTS or PAGES
+for the feature to work.
 
 Listings support the same options `reST includes`__ support (including
 various options for controlling which parts of the file are included), and also
@@ -2442,7 +2740,7 @@ Extending ``LISTINGS_FOLDERS`` to ``{'listings': 'listings', 'code': 'formatted-
 will additionally process all source code files in ``code`` and put the results into
 ``output/formatted-code``.
 
-__ http://docutils.sourceforge.net/docs/ref/rst/directives.html#including-an-external-document-fragment
+__ https://docutils.sourceforge.io/docs/ref/rst/directives.html#including-an-external-document-fragment
 
 .. note::
 
@@ -2475,19 +2773,22 @@ To include an image placed in the ``images`` folder (or other folders defined in
 .. code:: restructuredtext
 
     .. thumbnail:: /images/tesla.jpg
+       :alt: Nikola Tesla
 
 The small thumbnail will be placed in the page, and it will be linked to the bigger
 version of the image when clicked, using
-`colorbox <http://www.jacklmoore.com/colorbox>`_ by default. All options supported by
-the reST `image <http://docutils.sourceforge.net/docs/ref/rst/directives.html#image>`_
-directive are supported (except ``target``). If a body element is provided, the
-thumbnail will mimic the behavior of the
-`figure <http://docutils.sourceforge.net/docs/ref/rst/directives.html#figure>`_
+`baguetteBox <https://feimosi.github.io/baguetteBox.js/>`_ by default. All options supported by
+the reST `image <https://docutils.sourceforge.io/docs/ref/rst/directives.html#image>`_
+directive are supported (except ``target``). Providing ``alt`` is recommended,
+as this is the image caption. If a body element is provided, the thumbnail will
+mimic the behavior of the `figure
+<https://docutils.sourceforge.io/docs/ref/rst/directives.html#figure>`_
 directive instead:
 
 .. code:: restructuredtext
 
     .. thumbnail:: /images/tesla.jpg
+       :alt: Nikola Tesla
 
        Nikola Tesla, the man that invented the 20th century.
 
@@ -2496,22 +2797,7 @@ least this basic HTML:
 
 .. code:: html
 
-   <a class="image-reference" href="images/tesla.jpg"><img src="images/tesla.thumbnail.jpg"></a>
-
-Slideshows
-~~~~~~~~~~
-
-To create an image slideshow, you can use the ``slides`` directive. For example:
-
-.. code:: restructuredtext
-
-    .. slides::
-
-       /galleries/demo/tesla_conducts_lg.jpg
-       /galleries/demo/tesla_lightning2_lg.jpg
-       /galleries/demo/tesla4_lg.jpg
-       /galleries/demo/tesla_lightning1_lg.jpg
-       /galleries/demo/tesla_tower1_lg.jpg
+   <a class="reference" href="images/tesla.jpg" alt="Nikola Tesla"><img src="images/tesla.thumbnail.jpg"></a>
 
 Chart
 ~~~~~
@@ -2534,13 +2820,15 @@ Here's an example of how it works:
 
 The argument passed next to the directive (Bar in that example) is the type of chart, and can be one of
 Line, StackedLine, Bar, StackedBar, HorizontalBar, XY, DateY, Pie, Radar, Dot, Funnel, Gauge, Pyramid. For
-examples of what each kind of graph is, `check here <http://pygal.org/chart_types/>`_
+examples of what each kind of graph is, `check here <http://pygal.org/en/stable/documentation/types/index.html>`_
 
 It can take *a lot* of options to let you customize the charts (in the example, title and x_labels).
-You can use any option described in `the pygal docs <http://pygal.org/basic_customizations/>`_
+You can use any option described in `the pygal docs <http://pygal.org/en/stable/documentation/configuration/chart.html>`_
 
 Finally, the content of the directive is the actual data, in the form of a label and
 a list of values, one series per line.
+
+You can also specify a ``:data_file:`` option as described in the documentation for the chart shortcut.
 
 Doc
 ~~~
@@ -2566,6 +2854,13 @@ If we want to use the post's title as the link's text, just do:
 and it will produce:
 
     Take a look at :doc:`creating-a-theme` to know how to do it.
+
+The reference in angular brackets should be the `slug` for the target page. It supports a fragment, so
+things like ``<creating-a-theme#starting-from-somewhere>`` should work. You can also use the title, and
+Nikola will slugify it for you, so ``Creating a theme`` is also supported.
+
+Keep in mind that the important thing is the slug. No attempt is made to check if the fragment points to
+an existing location in the page, and references that don't match any page's slugs will cause warnings.
 
 Post List
 ~~~~~~~~~
@@ -2602,7 +2897,6 @@ Using shortcode syntax (for other compilers):
 
    {{% raw %}}{{% post-list stop=5 %}}{{% /post-list %}}{{% /raw %}}
 
-
 The following options are recognized:
 
 * ``start`` : integer
@@ -2632,7 +2926,7 @@ The following options are recognized:
       * clause: attribute comparison_operator value (spaces optional)
           * attribute: year, month, day, hour, month, second, weekday, isoweekday; or empty for full datetime
           * comparison_operator: == != <= >= < >
-          * value: integer, 'now' or dateutil-compatible date input
+          * value: integer, 'now', 'today', or dateutil-compatible date input
 
 * ``tags`` : string [, string...]
       Filter posts to show only posts having at least one of the ``tags``.
@@ -2644,10 +2938,6 @@ The following options are recognized:
 
 * ``categories`` : string [, string...]
       Filter posts to show only posts having one of the ``categories``.
-      Defaults to None.
-
-* ``sections`` : string [, string...]
-      Filter posts to show only posts having one of the ``sections``.
       Defaults to None.
 
 * ``slugs`` : string [, string...]
@@ -2687,6 +2977,16 @@ dependency issues.
 
 If you are using this as a shortcode, flags (``reverse``, ``all``) are meant to be used
 with a ``True`` argument, eg. ``all=True``.
+
+.. sidebar:: Docutils Configuration
+
+   ReStructured Text is "compiled" by docutils, which supports a number of
+   configuration options. It would be difficult to integrate them all into
+   Nikola's configuration, so you can just put a ``docutils.conf`` next
+   to your ``conf.py`` and any settings in its ``[nikola]`` section will be used.
+
+   More information in the `docutils configuration reference <https://docutils.sourceforge.io/docs/user/config.html>`__
+
 
 Importing your WordPress site into Nikola
 -----------------------------------------
@@ -2785,11 +3085,6 @@ to your content.
 Nikola supports `Twitter Cards <https://dev.twitter.com/docs/cards>`_.
 They are implemented to use *Open Graph* tags whenever possible.
 
-.. admonition:: Important
-
-    To use Twitter Cards you need to opt-in on Twitter.
-    To do so, please visit https://cards-dev.twitter.com/validator
-
 Images displayed come from the `previewimage` meta tag.
 
 You can specify the card type by using the `card` parameter in TWITTER_CARD.
@@ -2872,7 +3167,7 @@ And upgrade them:
     Contents of the requirements-nonpy.txt file:
 
         Graphviz
-            http://www.graphviz.org/
+            https://www.graphviz.org/
 
     You have to install those yourself or through a package manager.
 

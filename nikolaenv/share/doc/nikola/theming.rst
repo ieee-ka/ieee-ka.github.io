@@ -6,20 +6,17 @@
 .. description:
 .. author: The Nikola Team
 
-Theming Nikola
-==============
+:Version: 8.3.3
+:Author: Roberto Alsina <ralsina@netmanagers.com.ar> and others
 
-:Version: 7.8.15
-:Author: Roberto Alsina <ralsina@netmanagers.com.ar>
-
-.. class:: alert alert-info pull-right
+.. class:: alert alert-primary float-md-right
 
 .. contents::
 
 .. class:: lead
 
 This document is a reference about themes. If you want a tutorial, please read
-`Creating a Theme <creating-a-theme.html>`_. If you’re looking for a ready-made
+:doc:`Creating a Theme <creating-a-theme>`. If you’re looking for a ready-made
 theme for your site, check out the `Themes Index <https://themes.getnikola.com/>`_.
 
 The Structure
@@ -36,10 +33,10 @@ assets
     references to them. The default subdirectories are ``css``, ``js``, ``xml``
     and ``fonts`` (Bootstrap).
 
-    The included themes use `Bootstrap <https://getbootstrap.com/>`_, `Colorbox
-    <http://www.jacklmoore.com/colorbox>`_, `Flowr.js
-    <https://github.com/kalyan02/flowr-js>`_ and `Moment.js
-    <https://momentjs.com/>`_, so they are in assets, along with CSS files for
+    The included themes use `Bootstrap <https://getbootstrap.com/>`_,
+    `baguetteBox <https://feimosi.github.io/baguetteBox.js/>`_, `Justified Layout by Flickr
+    <https://flickr.github.io/justified-layout/>`_ and `Luxon
+    <https://moment.github.io/luxon/>`_, so they are in assets, along with CSS files for
     syntax highlighting, reStructuredText and Jupyter, as well as a minified
     copy of jQuery.
 
@@ -73,19 +70,26 @@ parent, engine
     older).
 
 bundles
-    A text file containing a list of files to be turned into bundles using WebAssets.
-    For example:
+    A `config <https://docs.python.org/3/library/configparser.html>`_ file
+    containing a list of files to be turned into bundles. For example:
 
-    .. code:: text
+    .. code:: ini
 
-        assets/css/all.css=bootstrap.css,rst.css,code.css,colorbox.css,custom.css
+        assets/css/all.css=
+            bootstrap.min.css,
+            rst_base.css,
+            nikola_rst.css,
+            code.css,
+            baguetteBox.min.css,
+            theme.css,
+            custom.css,
 
     This creates a file called "assets/css/all.css" in your output that is the
     combination of all the other file paths, relative to the output file.
     This makes the page much more efficient because it avoids multiple connections to the server,
     at the cost of some extra difficult debugging.
 
-    WebAssets supports bundling CSS and JS files.
+    Bundling applies to CSS and JS files.
 
     Templates should use either the bundle or the individual files based on the ``use_bundles``
     variable, which in turn is set by the ``USE_BUNDLES`` option.
@@ -104,7 +108,7 @@ with the same name as your theme, and a ``.theme`` extension, eg.
    parent = base
    author = The Nikola Contributors
    author_url = https://getnikola.com/
-   based_on = Bootstrap 3 <http://getbootstrap.com/>
+   based_on = Bootstrap 3 <https://getbootstrap.com/>
    license = MIT
    tags = bootstrap
 
@@ -126,8 +130,17 @@ The following keys are currently supported:
 
     The parent is so you don’t have to create a full theme each time: just
     create an empty theme, set the parent, and add the bits you want modified.
-    You **must** define a parent, otherwise many features won’t work due to
-    missing templates, messages, and assets.
+
+    While it is possible to create a theme without a parent, it is
+    **strongly discouraged** and not officially supported, in the sense:
+    We won't help with issues that are caused by a theme being parentless,
+    and we won't guarantee that it will always work with new Nikola versions.
+    The `base` and `base-jinja` themes provide assets, messages, and generic templates
+    that Nikola expects to be able to use in all sites. That said, if you are making
+    something very custom, Nikola will not prevent the creation of a theme
+    without `base`, but you will need to manually determine which templates and
+    messages are required in your theme. (Initially setting the ``NIKOLA_TEMPLATES_TRACE``
+    environment variable might be of some help, see below.)
 
     The following settings are recommended:
 
@@ -143,7 +156,7 @@ The following keys are currently supported:
   * ``tags`` — optional list of tags (comma-separated) to describe the theme.
 
 * ``Family`` — contains information about other related themes. All values
-  optional.
+  optional. (Do not use unless you have related themes.)
 
   * ``family`` — the name of the main theme in a family, which is also used as
     the family name.
@@ -158,28 +171,57 @@ The following keys are currently supported:
     defaults to False)
   * ``ignored_assets`` — comma-separated list of assets to ignore (relative to
     the ``assets/`` directory, eg. ``css/theme.css``)
-  * ``ignore_colorbox_i18n`` — prevent copying Colorbox locales. Accepted
-    values: ``all`` (all ignored), ``unused`` (used locales copied),
-    ``none`` (all copied)
 
 Templates
 ---------
 
 In templates there is a number of files whose name ends in ``.tmpl``. Those are the
-theme’s page templates. They are done using the `Mako <http://makotemplates.org>`_
+theme’s page templates. They are done using the `Mako <https://www.makotemplates.org>`_
 or `Jinja2 <http://jinja.pocoo.org>`_ template languages. If you want to do a theme, you
 should learn one first. What engine is used by the theme is declared in the ``engine`` file.
 
 .. Tip::
 
    If you are using Mako templates, and want some extra speed when building the site
-   you can install Beaker and `make templates be cached <http://docs.makotemplates.org/en/latest/caching.html>`__
+   you can install Beaker and `make templates be cached <https://docs.makotemplates.org/en/latest/caching.html>`__
 
 
-Both template engines have a nifty concept of template inheritance. That means that, a
+Both template engines have a nifty concept of template inheritance. That means that a
 template can inherit from another and only change small bits of the output. For example,
 ``base.tmpl`` defines the whole layout for a page but has only a placeholder for content
 so ``post.tmpl`` only define the content, and the layout is inherited from ``base.tmpl``.
+
+Another concept is theme inheritance. You do not need to duplicate all the
+default templates in your theme — you can just override the ones you want
+changed, and the rest will come from the parent theme.  If your theme does not
+define a parent, it needs to be complete.  It is generally a lot harder to
+come up with a complete theme, compared to only changing a few files and using
+the rest from a suitable parent theme.
+
+.. Tip::
+
+   If you set the environment variable ``NIKOLA_TEMPLATES_TRACE`` to ``true``,
+   Nikola will log template usage, both to output and also into a file ``templates_log.txt``.
+
+Apart from the `built-in templates`_ listed below, you can add other templates for specific
+pages, which the user can then use in his ``POSTS`` or ``PAGES`` option in
+``conf.py``.  Also, you can specify a custom template to be used by a post or
+page via the ``template`` metadata, and custom templates can be added in the
+``templates/`` folder of your site.
+
+If you want to modify (override) a built-in template, use ``nikola theme -c
+<name>.tmpl``.  This command will copy the specified template file from the
+parent theme to the ``templates/`` directory of your currently used theme.
+
+Keep in mind that your theme is *yours*, so you can require whatever data you
+want (e.g., you may depend on specific custom ``GLOBAL_CONTEXT`` variables, or
+post meta attributes). You don’t need to keep the same theme structure as the
+default themes do (although many of those names are hardcoded). Inheriting from
+at least ``base`` (or ``base-jinja``) is heavily recommended, but not strictly
+required (unless you want to share it on the Themes Index).
+
+Built-in templates
+------------------
 
 These are the templates that come with the included themes:
 
@@ -195,10 +237,7 @@ These are the templates that come with the included themes:
     Template used to render the multipost indexes. The posts are in a ``posts`` variable.
     Some functionality is in the ``index_helper.tmpl`` helper template.
 
-``annotation_helper.tmpl`` (internal)
-    Code for the optional annotations feature.
-
-``archive_navigation_helper.tmpl``
+``archive_navigation_helper.tmpl`` (internal)
     Code that implements archive navigation (previous/up/next). Included by
     archive templates.
 
@@ -219,7 +258,7 @@ These are the templates that come with the included themes:
     It uses a bunch of helper templates, one for each supported comment system
     (all of which start with ``comments_helper``)
 
-``crumbs.tmpl``, ``slides.tmpl``, ``pagination_helper.tmpl``
+``ui_helper.tmpl``, ``pagination_helper.tmpl``
     These templates help render specific UI items, and can be tweaked as needed.
 
 ``gallery.tmpl``
@@ -237,7 +276,8 @@ These are the templates that come with the included themes:
       + ``title``: The title of the image.
       + ``size``: A dict containing ``w`` and ``h``, the real size of the thumbnail.
 
-    * ``photo_array_json``: a JSON dump of photo_array, used in the bootstrap theme by flowr.js
+    * ``photo_array_json``: a JSON dump of photo_array, used by the
+      ``justified-layout`` script
 
 ``list.tmpl``
     Template used to display generic lists of links, which it gets in ``items``,
@@ -260,11 +300,7 @@ These are the templates that come with the included themes:
 ``post_list_directive.tmpl``
     Template used by the ``post_list`` reStructuredText directive.
 
-``sectionindex.tmpl``
-    Used to display section indexes, if ``POST_SECTIONS_ARE_INDEXES`` is True.
-    By default, it just inherits ``index.tmpl``, with added feeds.
-
-``story.tmpl``
+``page.tmpl``
     Used for pages that are not part of a blog, usually a cleaner, less
     intrusive layout than ``post.tmpl``, but same parameters.
 
@@ -279,35 +315,56 @@ These are the templates that come with the included themes:
 ``tags.tmpl``
     Used to display the list of tags and categories.
 
-You can add other templates for specific pages, which the user can then use in his ``POSTS``
-or ``PAGES`` option in ``conf.py``. Also, keep in mind that your theme is
-*yours*, there is no reason why you would need to maintain the inheritance as
-it is, or not require whatever data you want (eg. you may depend on specific
-custom ``GLOBAL_CONTEXT`` variables, or post meta attributes)
-
-Also, you can specify a custom template to be used by a post or page via the ``template`` metadata,
-and custom templates can be added in the ``templates/`` folder of your site.
-
 Variables available in templates
 --------------------------------
 
 The full, complete list of variables available in templates is maintained in a separate
 document: `Template variables <https://getnikola.com/template-variables.html>`_
 
-Customizing themes to user color preference and section colors
---------------------------------------------------------------
+Customizing themes to user color preference, colorizing category names
+----------------------------------------------------------------------
 
 The user’s preference for theme color is exposed in templates as
 ``theme_color`` set in the ``THEME_COLOR`` option.
 
-Each section has an assigned color that is either set by the user or auto
-selected by adjusting the hue of the user’s ``THEME_COLOR``. The color is
-exposed in templates through ``post.section_color(lang)``. The function that
-generates the colors from strings and any given color (by section name and
-theme color for sections) is exposed through the
-``colorize_str_from_base_color(string, hex_color)`` function
+This theme color is exposed to the browser in default themes — some browsers
+might use this color in the user interface (eg. Chrome on Android in light mode
+displays the toolbar in this color).
 
-Hex color values, like that returned by the theme or section color can be
+Nikola also comes with support for auto-generating colors similar to a base
+color. This can be used with ``theme_color`` and eg. category names. This
+feature is exposed to templates as two functions: ``colorize_str(string,
+hex_color, presets)`` and  ``colorize_str_from_base_color(string, hex_color)``.
+If you want to display the category name in the color, first define a list of
+overrides in your ``conf.py`` file:
+
+.. code:: python
+
+    # end of conf.py
+    GLOBAL_CONTEXT = {
+        "category_colors": {
+            "Blue": "#0000FF"
+        }
+    }
+
+With that definition, you can now use ``colorize_str`` in your templates like this:
+
+.. code:: html+mako
+
+    <!-- Mako -->
+    <span style="background-color: ${colorize_str(post.meta('category'), theme_color, category_colors)}">${post.meta('category')}</span>
+
+.. code:: html+jinja
+
+    <!-- Jinja2 -->
+    <span style="background-color: {{ colorize_str(post.meta('category'), theme_color, category_colors) }}">{{ post.meta('category') }}</span>
+
+Note that the category named “Blue” will be displyed in #0000FF due to the
+override specified in your config; other categories will have an auto-generated
+color visually similar to your theme color.
+
+
+Hex color values, like that returned by the theme or string colorization can be
 altered in the HSL colorspace through the function
 ``color_hsl_adjust_hex(hex_string, adjust_h, adjust_s, adjust_l)``.
 Adjustments are given in values between 1.0 and -1.0. For example, the theme
@@ -412,19 +469,16 @@ List of page kinds provided by default plugins:
 * index, archive_page
 * index, author_page
 * index, main_index
-* index, section_page
 * index, tag_page
 * list
 * list, archive_page
 * list, author_page
-* list, section_page
 * list, tag_page
 * list, tags_page
 * post_page
 * page_page
-* story_page
+* story_page (alternate/legacy name for page_page)
 * listing
-* generic_page
 * gallery_front
 * gallery_page
 
@@ -437,8 +491,30 @@ at https://www.transifex.com/projects/p/nikola/
 If you want to create a theme that has new strings, and you want those strings to be translatable,
 then your theme will need a custom ``messages`` folder.
 
-`LESS <http://lesscss.org/>`__ and `Sass <http://sass-lang.com/>`__
--------------------------------------------------------------------
+Configuration of the raw template engine
+----------------------------------------
+
+For usage not covered by the above, you can define a method
+`TEMPLATE_ENGINE_FACTORY` in `conf.py` that constructs the raw
+underlying templating engine. That `raw_engine` that your method
+needs to return is either a `jinja2.Environment` or a
+`mako.loopkup.TemplateLookup` object. Your factory method is
+called with the same arguments as is the pertinent `__init__`.
+
+E.g., to configure `jinja2` to bark and error out on missing values,
+instead of silently continuing with empty content, you might do this:
+
+.. code:: python
+
+    # Somewhere in conf.py:
+    def TEMPLATE_ENGINE_FACTORY(**args) -> jinja2.Environment:
+        augmented_args = dict(args)
+        augmented_args['undefined'] = jinja2.DebugUndefined
+        return jinja2.Environment(**augmented_args)
+
+
+`LESS <http://lesscss.org/>`__ and `Sass <https://sass-lang.com/>`__
+--------------------------------------------------------------------
 
 .. note::
     The LESS and Sass compilers were moved to the Plugins Index in

@@ -6,13 +6,10 @@
 .. description:
 .. author: The Nikola Team
 
-Extending Nikola
-================
-
-:Version: 7.8.15
+:Version: 8.3.3
 :Author: Roberto Alsina <ralsina@netmanagers.com.ar>
 
-.. class:: alert alert-info pull-right
+.. class:: alert alert-primary float-md-right
 
 .. contents::
 
@@ -32,6 +29,9 @@ folder in your site.
 Plugins come in various flavours, aimed at extending different aspects
 of Nikola.
 
+Available Plugin Categories
+===========================
+
 Command Plugins
 ---------------
 
@@ -40,41 +40,46 @@ When you run ``nikola --help`` you will see something like this:
 .. code-block:: console
 
     $ nikola help
-    Nikola is a tool to create static websites and blogs. For full documentation and more
-    information, please visit https://getnikola.com/
-
+    Nikola is a tool to create static websites and blogs.
+    For full documentation and more information, please visit https://getnikola.com/
 
     Available commands:
-    nikola auto                 automatically detect site changes, rebuild
-                                and optionally refresh a browser
-    nikola bootswatch_theme     given a swatch name from bootswatch.com and a
-                                parent theme, creates a custom theme
-    nikola build                run tasks
-    nikola check                check links and files in the generated site
-    nikola clean                clean action / remove targets
-    nikola console              start an interactive python console with access to
-                                your site and configuration
-    nikola deploy               deploy the site
-    nikola dumpdb               dump dependency DB
-    nikola forget               clear successful run status from internal DB
-    nikola help                 show help
-    nikola ignore               ignore task (skip) on subsequent runs
-    nikola import_blogger       import a blogger dump
-    nikola import_feed          import a RSS/Atom dump
-    nikola import_wordpress     import a WordPress dump
-    nikola init                 create a Nikola site in the specified folder
-    nikola list                 list tasks from dodo file
-    nikola mincss               apply mincss to the generated site
-    nikola new_post             create a new blog post or site page
-    nikola run                  run tasks
-    nikola serve                start the test webserver
-    nikola strace               use strace to list file_deps and targets
-    nikola theme                manage themes
-    nikola version              print the Nikola version number
+      nikola auto                 builds and serves a site; automatically detects site changes,
+                                  rebuilds, and optionally refreshes a browser
+      nikola build                run tasks
+      nikola check                check links and files in the generated site
+      nikola clean                clean action / remove targets
+      nikola console              start an interactive Python console with access to your site
+      nikola default_config       Print the default Nikola configuration.
+      nikola deploy               deploy the site
+      nikola dumpdb               dump dependency DB
+      nikola forget               clear successful run status from internal DB
+      nikola github_deploy        deploy the site to GitHub Pages
+      nikola help                 show help
+      nikola ignore               ignore task (skip) on subsequent runs
+      nikola import_wordpress     import a WordPress dump
+      nikola info                 show info about a task
+      nikola init                 create a Nikola site in the specified folder
+      nikola list                 list tasks from dodo file
+      nikola new_page             create a new page in the site
+      nikola new_post             create a new blog post or site page
+      nikola orphans              list all orphans
+      nikola plugin               manage plugins
+      nikola reset-dep            recompute and save the state of file dependencies
+                                  without executing actions
+      nikola rst2html             compile reStructuredText to HTML files
+      nikola serve                start the test webserver
+      nikola status               display site status
+      nikola strace               use strace to list file_deps and targets
+      nikola subtheme             given a swatch name from bootswatch.com or hackerthemes.com
+                                  and a parent theme, creates a custom theme
+      nikola tabcompletion        generate script for tab-completion
+      nikola theme                manage themes
+      nikola version              print the Nikola version number
 
-    nikola help                 show help / reference
-    nikola help <command>       show command usage
-    nikola help <task-name>     show task usage
+      nikola help                 show help / reference
+      nikola help <command>       show command usage
+      nikola help <task-name>     show task usage
 
 That will give you a list of all available commands in your version of Nikola.
 Each and every one of those is a plugin. Let's look at a typical example:
@@ -123,7 +128,7 @@ For your own plugin, just change the values in a sensible way. The
                 'long': 'port',
                 'default': 8000,
                 'type': int,
-                'help': 'Port number (default: 8000)',
+                'help': 'Port number',
             },
             {
                 'name': 'address',
@@ -131,7 +136,7 @@ For your own plugin, just change the values in a sensible way. The
                 'long': '--address',
                 'type': str,
                 'default': '127.0.0.1',
-                'help': 'Address to bind (default: 127.0.0.1)',
+                'help': 'Address to bind',
             },
         )
 
@@ -140,6 +145,7 @@ For your own plugin, just change the values in a sensible way. The
             out_dir = self.site.config['OUTPUT_FOLDER']
             if not os.path.isdir(out_dir):
                 print("Error: Missing '{0}' folder?".format(out_dir))
+                return 1  # Exit code on failure. (return 0 not necessary)
             else:
                 os.chdir(out_dir)
                 httpd = HTTPServer((options['address'], options['port']),
@@ -154,12 +160,14 @@ As mentioned above, a plugin can have options, which the user can see by doing
 .. code-block:: console
 
     $ nikola help serve
-    Purpose: start the test webserver
-    Usage:   nikola serve [options]
+    nikola serve [options]
+    start the test webserver
 
     Options:
-    -p ARG, --port=ARG        Port number (default: 8000)
-    -a ARG, ----address=ARG   Address to bind (default: 127.0.0.1)
+        -p ARG, --port=ARG
+            Port number [default: 8000]
+        -a ARG, --address=ARG
+            Address to bind [default: 127.0.0.1]
 
     $ nikola serve -p 9000
     Serving HTTP on 127.0.0.1 port 9000 ...
@@ -267,30 +275,27 @@ provided by plugins:
 
     $ nikola list
     Scanning posts....done!
-    build_bundles
-    build_less
     copy_assets
     copy_files
+    create_bundles
     post_render
     redirect
-    render_archive
     render_galleries
-    render_galleries_clean
-    render_indexes
     render_listings
     render_pages
     render_posts
-    render_rss
     render_site
     render_sources
-    render_tags
+    render_taxonomies
+    robots_file
+    scale_images
     sitemap
 
 These have access to the ``site`` object which contains your timeline and
 your configuration.
 
 The critical bit of Task plugins is their ``gen_tasks`` method, which ``yields``
-`doit tasks <http://pydoit.org/tasks.html>`_.
+`doit tasks <https://pydoit.org/tasks.html>`_.
 
 The details of how to handle dependencies, etc., are a bit too much for this
 document, so I'll just leave you with an example, the ``copy_assets`` task.
@@ -368,7 +373,7 @@ PageCompiler Plugins
 
 These plugins implement markup languages, they take sources for posts or pages and
 create HTML or other output files. A good example is `the misaka plugin
-<https://github.com/getnikola/plugins/tree/master/v7/misaka>`__ or the built-in
+<https://github.com/getnikola/plugins/tree/master/v8/misaka>`__ or the built-in
 compiler plugins.
 
 They must provide:
@@ -383,8 +388,31 @@ If the compiler produces something other than HTML files, it should also impleme
 returns the preferred extension for the output file.
 
 These plugins can also be used to extract metadata from a file. To do so, the
-plugin may implement ``read_metadata`` that will return a dict containing the
-metadata contained in the file.
+plugin must set ``supports_metadata`` to ``True`` and implement ``read_metadata`` that will return a dict containing the
+metadata contained in the file. Optionally, it may list ``metadata_conditions`` (see `MetadataExtractor Plugins`_ below)
+
+MetadataExtractor Plugins
+-------------------------
+
+Plugins that extract metadata from posts. If they are based on post content,
+they must implement ``_extract_metadata_from_text`` (takes source of a post
+returns a dict of metadata).  They may also implement
+``split_metadata_from_text``, ``extract_text``. If they are based on filenames,
+they only need ``extract_filename``. If ``support_write`` is set to True,
+``write_metadata`` must be implemented.
+
+Every extractor must be configured properly. The ``name``, ``source`` (from the
+``MetaSource`` enum in ``metadata_extractors``) and ``priority``
+(``MetaPriority``) fields are mandatory.  There might also be a list of
+``conditions`` (tuples of ``MetaCondition, arg``), used to check if an
+extractor can provide metadata, a compiled regular expression used to split
+metadata (``split_metadata_re``, may be ``None``, used by default
+``split_metadata_from_text``), a list of ``requirements`` (3-tuples: import
+name, pip name, friendly name), ``map_from`` (name of ``METADATA_MAPPING`` to
+use, if any) and ``supports_write`` (whether the extractor supports writing
+metadata in the desired format).
+
+For more details, see the definition in  ``plugin_categories.py`` and default extractors in ``metadata_extractors.py``.
 
 RestExtension Plugins
 ---------------------
@@ -417,7 +445,7 @@ SignalHandler Plugins
 ---------------------
 
 These plugins extend the ``SignalHandler`` class and connect to one or more
-signals via `blinker <http://pythonhosted.org/blinker/>`_.
+signals via `blinker <https://pythonhosted.org/blinker/>`_.
 
 The easiest way to do this is to reimplement ``set_site()`` and just connect to
 whatever signals you want there.
@@ -459,7 +487,7 @@ Currently Nikola emits the following signals:
          'post': # the Post object for the post/page
         }
 
-One example is the `deploy_hooks plugin. <https://github.com/getnikola/plugins/tree/master/v6/deploy_hooks>`__
+One example is the `deploy_hooks plugin. <https://github.com/getnikola/plugins/tree/master/v7/deploy_hooks>`__
 
 ConfigPlugin Plugins
 --------------------
@@ -467,14 +495,32 @@ ConfigPlugin Plugins
 Does nothing specific, can be used to modify the site object (and thus the config).
 
 Put all the magic you want in ``set_site()``, and don’t forget to run the one
-from ``super()``. Example  plugin: `navstories <https://github.com/getnikola/plugins/tree/master/v7/navstories>`__
+from ``super()``. Example plugin: `navstories <https://github.com/getnikola/plugins/tree/master/v7/navstories>`__
+
+
+CommentSystem Plugins
+---------------------
+
+Can be used to add a new comment system. (It doesn’t do anything by itself.) It’s expected to provide templates named ``comment_helper_foo.tmpl``.
+
+Example plugin: `cactuscomments <https://github.com/getnikola/plugins/tree/master/v8/cactuscomments>`__
+
+Shortcode Plugins
+-----------------
+
+Shortcode Plugins are a simple way to create a custom shortcode handler.
+By default, the ``set_site`` method will register the ``handler`` method as a
+shortcode with the plugin’s ``name`` as the shortcode name.
+
+See the Shortcodes_ section for more details on shortcodes.
 
 PostScanner Plugins
 -------------------
 
 Get posts and pages from "somewhere" to be added to the timeline.
-The only currently existing plugin of this kind reads them from disk.
-
+There are currently two plugins for this: the built-in ``scan_posts``, and
+``pkgindex_scan`` (in the Plugin Index), which is used to treat .plugin/.theme
++ README.md as posts to generate the Plugin and Theme Indexes.
 
 Plugin Index
 ============
@@ -503,7 +549,7 @@ Here's the relevant code from the tag plugin.
     # In set_site
     site.register_path_handler('tag_rss', self.tag_rss_path)
 
-    # And these always take name and lang as arguments and returl a list of
+    # And these always take name and lang as arguments and return a list of
     # path elements.
     def tag_rss_path(self, name, lang):
         return [_f for _f in [self.site.config['TRANSLATIONS'][lang],
@@ -575,21 +621,24 @@ Make sure to provide at least a docstring, or a identifier, to ensure rebuilds w
 Shortcodes
 ==========
 
-Some (hopefully all) markup compilers support shortcodes in these forms::
+Some (hopefully all) markup compilers support shortcodes in these forms:
 
-    {{% raw %}}{{% foo %}}  # No arguments
-    {{% foo bar %}}  # One argument, containing "bar"
-    {{% foo bar baz=bat %}}  # Two arguments, one containing "bar", one called "baz" containing "bat"
+.. code:: text
 
-    {{% foo %}}Some text{{% /foo %}}  # one argument called "data" containing "Some text"{{% /raw %}}
+    {{% raw %}}{{% foo %}}{{% /raw %}}  # No arguments
+    {{% raw %}}{{% foo bar %}}{{% /raw %}}  # One argument, containing "bar"
+    {{% raw %}}{{% foo bar baz=bat %}}{{% /raw %}}  # Two arguments, one containing "bar", one called "baz" containing "bat"
+
+    {{% raw %}}{{% foo %}}Some text{{% /foo %}}{{% /raw %}}  # one argument called "data" containing "Some text"
 
 So, if you are creating a plugin that generates markup, it may be a good idea
 to register it as a shortcode in addition of to restructured text directive or
 markdown extension, thus making it available to all markup formats.
 
-To implement your own shortcodes from a plugin, you can create a plugin inheriting ``ShortcodePlugin`` and
-from its ``set_site`` method,  call
-
+To implement your own shortcodes from a plugin, you can create a plugin inheriting ``ShortcodePlugin``.
+By default, the ``set_site`` method will register the ``handler`` method as a
+shortcode with the plugin’s ``name`` as the shortcode name. To have other
+shortcode names, you can call
 ``Nikola.register_shortcode(name, func)`` with the following arguments:
 
 ``name``:
@@ -697,3 +746,23 @@ guarantee that sort of thing?
 
 There are no sections, and no access protection, so let's not use it to store passwords and such. Use responsibly.
 
+Logging
+=======
+
+Plugins often need to produce messages to the screen. All plugins get a logger object (``self.logger``) by default,
+configured to work with Nikola (logging level, colorful output, plugin name as the logger name). If you need, you can
+also use the global (``nikola.utils.LOGGER``) logger, or you can instantiate custom loggers with
+``nikola.utils.get_logger`` or the ``nikola.log`` module.
+
+Template and Dependency Injection
+=================================
+
+Plugins have access to two injection facilities.
+
+If your plugin needs custom templates for its features (adding pages, displaying stuff, etc.), you can put them in the
+``templates/mako`` and ``templates/jinja`` subfolders in your plugin’s folder. Note that those templates have a very low
+priority, so that users can override your plugin’s templates with their own.
+
+If your plugin needs to inject dependencies, the ``inject_dependency(target, dependency)`` function can be used to add a
+``dependency`` for tasks which basename == ``target``. This facility should be limited to cases which really need it,
+consider other facilities first (eg. adding post dependencies).
