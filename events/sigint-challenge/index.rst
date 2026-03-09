@@ -2,7 +2,7 @@
 .. slug: sigint-challenge
 .. tags: isic
 
-.. image:: /images/2026/poster_out.png
+.. image:: /images/2026/poster_out_md.png
     :align: center
     :width: 600px
 

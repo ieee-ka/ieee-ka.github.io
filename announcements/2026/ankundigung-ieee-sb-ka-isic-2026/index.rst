@@ -8,7 +8,7 @@
 .. type: text
 .. author: Charlotte
 
-.. thumbnail:: /images/2026/poster_out.png
+.. thumbnail:: /images/2026/poster_out_md.png
     :align: right
     :width: 250px
 
