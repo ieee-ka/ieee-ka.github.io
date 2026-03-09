@@ -51,7 +51,7 @@ Rules are identical to last year, we will notify participants before the challen
 Prize ceremony
 -----------------
 
-The prize ceremony is held on May 20, starting at 18:00 at CEL. Every contestant but also non-contestants are invited to this free of charge event, there is no registration necessary. 
+The prize ceremony is held on May 21, starting at 18:00 at CEL. Every contestant but also non-contestants are invited to this free of charge event, there is no registration necessary.
 
 Additionally to the prize ceremony, there will be an interesting presentation! Exact details on the topic will follow shortly before the event.
  
