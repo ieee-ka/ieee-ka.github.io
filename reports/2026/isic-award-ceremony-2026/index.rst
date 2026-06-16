@@ -16,7 +16,7 @@ The IEEE SB Karlsruhe Signal Intelligence Challenge 2026 has come to a close, ma
 
 At the award ceremony, Dr.-Ing. Johannes Sterz Demel from our sponsor Dedrone delivered an engaging presentation on the technical challenges of real-world signal intelligence, focusing on the decoding of OFDM signals.
 
-.. thumbnail:: /images/2026/isic-award-ceremony-group.jpeg
+.. thumbnail:: /images/2026/isic-award-ceremony-group2.jpeg
    :align: right
    :width: 300px
 
