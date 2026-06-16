@@ -291,7 +291,7 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/archive.html</loc>
-  <lastmod>2026-04-23T09:04:00Z</lastmod>
+  <lastmod>2026-06-16T09:04:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/events/science-spotlight/</loc>
@@ -307,7 +307,15 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/galleries/</loc>
-  <lastmod>2026-04-23T09:04:00Z</lastmod>
+  <lastmod>2026-06-16T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/galleries/isic-award-ceremony-2026/</loc>
+  <lastmod>2026-06-16T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/galleries/isic-kickoff-2026/</loc>
+  <lastmod>2026-06-16T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/galleries/loeten2023/</loc>
@@ -339,7 +347,7 @@
  </url>
  <url>
   <loc>http://www.ieee-ka.de/index-6.html</loc>
-  <lastmod>2026-04-23T09:04:00Z</lastmod>
+  <lastmod>2026-06-16T09:04:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/reports/2016/rs-challenge/</loc>
@@ -368,6 +376,14 @@
  <url>
   <loc>http://www.ieee-ka.de/reports/2025/awb_december/</loc>
   <lastmod>2026-04-23T09:04:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/reports/2026/isic-award-ceremony-2026/</loc>
+  <lastmod>2026-06-16T08:55:00Z</lastmod>
+ </url>
+ <url>
+  <loc>http://www.ieee-ka.de/reports/2026/isic/</loc>
+  <lastmod>2026-06-16T08:55:00Z</lastmod>
  </url>
  <url>
   <loc>http://www.ieee-ka.de/tags/</loc>

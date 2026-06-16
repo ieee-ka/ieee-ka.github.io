@@ -1,5 +1,53 @@
 <?xml version="1.0" encoding="utf-8"?>
-<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE Student Branch Karlsruhe (Einträge über Berichte)</title><link>http://www.ieee-ka.de/</link><description></description><atom:link href="http://www.ieee-ka.de/tags/cat_berichte.xml" rel="self" type="application/rss+xml"></atom:link><language>de</language><lastBuildDate>Thu, 23 Apr 2026 09:04:26 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>Event Report: After Work Beer December 2025</title><link>http://www.ieee-ka.de/reports/2025/awb_december/?utm_source=/tags/cat_berichte.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Andrej</dc:creator><description>&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2025/awb_dec.jpeg"&gt;
+<?xml-stylesheet type="text/xsl" href="../assets/xml/rss.xsl" media="all"?><rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>IEEE Student Branch Karlsruhe (Einträge über Berichte)</title><link>http://www.ieee-ka.de/</link><description></description><atom:link href="http://www.ieee-ka.de/tags/cat_berichte.xml" rel="self" type="application/rss+xml"></atom:link><language>de</language><lastBuildDate>Tue, 16 Jun 2026 09:22:29 GMT</lastBuildDate><generator>Nikola (getnikola.com)</generator><docs>http://blogs.law.harvard.edu/tech/rss</docs><item><title>10th ISIC Award Ceremony - How to detect OFDM?</title><link>http://www.ieee-ka.de/reports/2026/isic-award-ceremony-2026/?utm_source=/tags/cat_berichte.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Andrej</dc:creator><description>&lt;p&gt;The IEEE SB Karlsruhe Signal Intelligence Challenge 2026 has come to a close, marking the tenth anniversary of this event. We would like to extend our gratitude to our sponsors, Dedrone, Emerson NI, Procitec, the IEEE Germany Section, and the KIT CEL, without whom organizing this challenge would not have been possible.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2026/isic-award-ceremony-talk.jpeg"&gt;
+&lt;img alt="/images/2026/isic-award-ceremony-talk.thumbnail.jpeg" class="align-left" src="http://www.ieee-ka.de/images/2026/isic-award-ceremony-talk.thumbnail.jpeg" style="width: 200px;"&gt;
+&lt;/a&gt;
+&lt;p&gt;At the award ceremony, Dr.-Ing. Johannes Sterz Demel from our sponsor Dedrone delivered an engaging presentation on the technical challenges of real-world signal intelligence, focusing on the decoding of OFDM signals.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2026/isic-award-ceremony-group.jpeg"&gt;
+&lt;img alt="/images/2026/isic-award-ceremony-group.thumbnail.jpeg" class="align-right" src="http://www.ieee-ka.de/images/2026/isic-award-ceremony-group.thumbnail.jpeg" style="width: 300px;"&gt;
+&lt;/a&gt;
+&lt;p&gt;The past four weeks of the challenge consisted of recording, decoding, and deciphering signals to recover flags. This year, two geolocation challenges were placed in Karlsruhe, and participants had to recover the locations from live messages over-the-air and after decoding and some good guessing the locations have been found.
+Two teams actively participated in the challenge, and between the teams "Die transformierten Fourien" and "BruteForce" a close battle ensued in the final week.
+The kickoff was marked by "Die transformierten Fourien" taking the lead, but "BruteForce" quickly closed the gap by solving many of the offline challenges as the first team.&lt;/p&gt;
+&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2026/isic-award-ceremony-pizza.jpeg"&gt;
+&lt;img alt="/images/2026/isic-award-ceremony-pizza.thumbnail.jpeg" class="align-left" src="http://www.ieee-ka.de/images/2026/isic-award-ceremony-pizza.thumbnail.jpeg" style="width: 200px;"&gt;
+&lt;/a&gt;
+&lt;p&gt;In the end, "Die transformierten Fourien" have succesfully defended their lead and could score a total of 1153 points, which translates to 11 solved challenges and almost all of them as the first team. Team "BruteForce" placed second with a final score of 525 points which translates to 5 solved challenges. Interestingly, they solved every challenge as first team while not solving the same challenges as our first placed team.
+The first placed team was able to secure their prizes which are two SDRs, a USRP B206mini and a USRP B210 with various antennas and the second placed team also secured two SDRs, a USRP B210 and a HackRF One. The participants also enjoyed the messages and opportunities offered by our sponsors.
+Following the award ceremony all participants, organizers and guests at the event enjoyed some pizza and cold drinks while discussing the past three weeks.&lt;/p&gt;
+&lt;p&gt;We look forward to the next edition of the signal intelligence challenge. If you want to join the organizing committee, please reach out to us at &lt;a class="reference external" href="mailto:info@ieee-ka.de"&gt;info@ieee-ka.de&lt;/a&gt; or join us at the next After Work Beer at Thursday June 18th, 17:30 at the IHE Seminarroom.&lt;/p&gt;</description><category>isic</category><guid>http://www.ieee-ka.de/reports/2026/isic-award-ceremony-2026/</guid><pubDate>Tue, 16 Jun 2026 07:00:00 GMT</pubDate></item><item><title>ISIC Kickoff 2026</title><link>http://www.ieee-ka.de/reports/2026/isic/?utm_source=/tags/cat_berichte.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Charlotte</dc:creator><description>&lt;p&gt;We just kicked off the Signal intelligence challenge! All teams familiarized themselves with the SDRs and were seen recording mysterious signals. We provided some drinks, some snacks and the first challenge was already solved by the team "DieTransformiertenFourien".&lt;/p&gt;
+&lt;p&gt;Registration is still open (up util the last day), so feel free to join the challenge! A first step could be joining our matrix room and messaging the organizers to get your own recording done ;). As of now, 7 Challenges are online, 5 distinct radio signals and 2 non-RF challenges that are provided as files in the CTF system.&lt;/p&gt;
+&lt;p&gt;Good luck to all the teams and happy decoding!&lt;/p&gt;
+
+
+&lt;div id="gallery_container"&gt;&lt;/div&gt;
+&lt;div class="row"&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/isic-kickoff-2026/IMG_0701.JPEG" class="thumbnail image-reference" title="Img 0701"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/isic-kickoff-2026/IMG_0701.thumbnail.JPEG" alt="Img 0701"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/isic-kickoff-2026/IMG_0703.JPEG" class="thumbnail image-reference" title="Img 0703"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/isic-kickoff-2026/IMG_0703.thumbnail.JPEG" alt="Img 0703"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/isic-kickoff-2026/IMG_0702.JPEG" class="thumbnail image-reference" title="Img 0702"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/isic-kickoff-2026/IMG_0702.thumbnail.JPEG" alt="Img 0702"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+    &lt;div class="col-xs-6 col-md-3"&gt;
+        &lt;a href="http://www.ieee-ka.de/galleries/isic-kickoff-2026/IMG_0700.JPEG" class="thumbnail image-reference" title="Img 0700"&gt;
+            &lt;img src="http://www.ieee-ka.de/galleries/isic-kickoff-2026/IMG_0700.thumbnail.JPEG" alt="Img 0700"&gt;
+        &lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;ul class="thumbnails"&gt;
+        &lt;li&gt;
+&lt;/li&gt;&lt;/ul&gt;</description><guid>http://www.ieee-ka.de/reports/2026/isic/</guid><pubDate>Wed, 22 Apr 2026 16:15:20 GMT</pubDate></item><item><title>Event Report: After Work Beer December 2025</title><link>http://www.ieee-ka.de/reports/2025/awb_december/?utm_source=/tags/cat_berichte.xml&amp;utm_medium=nikola_feed&amp;utm_campaign=rss_feed</link><dc:creator>Andrej</dc:creator><description>&lt;a class="reference external image-reference" href="http://www.ieee-ka.de/images/2025/awb_dec.jpeg"&gt;
 &lt;img alt="/images/2025/awb_dec.thumbnail.jpeg" class="align-right" src="http://www.ieee-ka.de/images/2025/awb_dec.thumbnail.jpeg" style="width: 300px;"&gt;
 &lt;/a&gt;
 &lt;p&gt;On December 11, 2025, the last IEEE SB Karlsruhe After Work Beer event of 2025 took place at Pfannestiel. A total of 16 participants took the opportunity to meet and discuss their interests and possible IEEE events in 2026.&lt;/p&gt;
